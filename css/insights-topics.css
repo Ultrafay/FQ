@@ -1,0 +1,231 @@
+.topics {
+  position: relative;
+  height: 320px;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+/* Dot-grid texture — reproduces 384 individually-positioned "Ellipse" divs
+   from the Figma export (3px circle, r=1.5, fill white, opacity 0.05) as a
+   two-layer radial-gradient. The dots sit in a staggered/brick grid: columns
+   40px apart, rows 36px apart, with every other row offset by 20px (half the
+   horizontal step) — hence two gradient layers, each with a 40x72 tile, one
+   shifted by (20px, 36px) from the other. Same technique as
+   .industries::before in home-industries.css. */
+.topics::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 1.6px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1.5px, transparent 1.6px);
+  background-size: 40px 72px, 40px 72px;
+  background-position: 0 0, 20px 36px;
+  pointer-events: none;
+}
+
+.topics__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.topics__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 56px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  opacity: 0.6;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.topics__heading {
+  position: absolute;
+  left: 82px;
+  top: 103px;
+  width: 403px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.topics__heading-line {
+  display: block;
+}
+
+.topics__grid {
+  position: absolute;
+  left: 560px;
+  top: 96px;
+  display: grid;
+  grid-template-columns: repeat(4, 172px);
+  gap: 28px;
+}
+
+.topics__card {
+  position: relative;
+  width: 172px;
+  height: 120px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: var(--font-primary);
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.topics__card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.25);
+}
+
+.topics__card-dot {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.topics__card--red .topics__card-dot { background: var(--color-brand-red); }
+.topics__card--green .topics__card-dot { background: var(--color-green); }
+
+.topics__card-title {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white);
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Figma export quirk: the "VAT & Compliance" card title sits at left-10px
+   relative to its card (all other card titles sit at left-20px, matching
+   their dot/subtitle/arrow). Preserved exactly per source. */
+.topics__card-title--tight {
+  left: 10px;
+}
+
+.topics__card-subtitle {
+  position: absolute;
+  left: 20px;
+  top: 66px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-white);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.topics__card-arrow {
+  position: absolute;
+  left: 20px;
+  top: 92px;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.topics__card--red .topics__card-arrow { color: var(--color-brand-red); }
+.topics__card--green .topics__card-arrow { color: var(--color-green); }
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   section. Heading drops above the grid (full width, static flow); the
+   4-column card grid becomes 2 columns. Cards keep their fixed 120px
+   height (their dot/title/subtitle/arrow children are all absolutely
+   positioned against it and don't contribute to auto height themselves),
+   but the title/subtitle text switches off `white-space: nowrap` and gets
+   a constrained width so long labels ("VAT & Compliance") wrap inside the
+   narrower card instead of overflowing it. */
+@media (max-width: 900px) {
+  .topics {
+    height: auto;
+  }
+
+  .topics__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .topics__eyebrow {
+    position: static;
+  }
+
+  .topics__heading {
+    position: static;
+    width: 100%;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 12px;
+  }
+
+  .topics__grid {
+    position: static;
+    left: auto;
+    top: auto;
+    margin-top: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+
+  /* Cards switch from fixed-offset absolute children (sized for a single-
+     line title) to a flow layout — at these widths titles like "VAT &
+     Compliance" / "Business Growth" wrap to 2 lines, which collided with
+     the subtitle/arrow below when they kept their desktop `top` offsets. */
+  .topics__card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .topics__card-dot {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .topics__card-title,
+  .topics__card-title--tight {
+    position: static;
+    left: auto;
+    white-space: normal;
+    width: 100%;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .topics__card-subtitle {
+    position: static;
+    left: auto;
+    white-space: normal;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .topics__card-arrow {
+    position: static;
+    left: auto;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .topics__grid {
+    grid-template-columns: 1fr;
+  }
+}

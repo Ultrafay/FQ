@@ -1,0 +1,204 @@
+.industries-hero {
+  position: relative;
+  background: var(--color-black);
+  overflow: hidden;
+}
+
+/* Dot-grid texture — reproduces the repeating "Ellipse" divs from the Figma
+   export (3px circle, r=1.5, fill white, opacity 0.06) as a two-layer
+   radial-gradient. Identical staggered/brick grid to home-industries.css:
+   rows 40px apart horizontally, 36px apart vertically, alternate rows offset
+   by 20px. (Confirmed by curling the source asset: viewBox 0 0 3 3, circle
+   r=1.5 opacity 0.06 fill white — same token reused across the site.)
+   z-index: 1 keeps this above .industries-hero__bg regardless of DOM order
+   — both are position:absolute with no stacking context of their own, so
+   without this the pseudo-element (painted first, as if it were the
+   hero's first child) would sit BELOW a later sibling like __bg by default
+   stacking rules. */
+.industries-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.6px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.6px);
+  background-size: 40px 72px, 40px 72px;
+  background-position: 0 0, 20px 36px;
+  pointer-events: none;
+}
+
+/* Full-bleed background photo (a stylized isometric "miniature city" scene
+   depicting each served industry as a storefront). A previous session's
+   metadata-only check found no fill data for this node and omitted it
+   entirely — `download_assets` on the node's containing group succeeded
+   where that check didn't, turning up the actual 1704x923 source image
+   (Figma node 3:5085 in file 2jqlOQ1ErKnhZFEcLTkE8B), positioned per the
+   node's own designated offset (-189, -412). Opacity 0.65 is Figma's
+   stated value, trusted directly per this project's established pattern
+   (every other hero's "opacity looks wrong, dial it down" guess turned out
+   wrong — the literal stated value was correct every time it was
+   re-checked against a fresh, native-resolution Figma pull).
+   `left: calc(50% - 909px)` = `calc(50% - 720px - 189px)` centers this on
+   the true viewport (matching -189px exactly at 1440px) rather than
+   drifting off-center on wider viewports — the full-bleed-gap bug found
+   and fixed on every other hero this pass, applied here from the start
+   instead of needing a second pass. */
+.industries-hero__bg {
+  position: absolute;
+  left: calc(50% - 909px);
+  top: -412px;
+  width: 1704px;
+  height: 923px;
+  opacity: 0.65;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.industries-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.industries-hero__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 380px;
+}
+
+.industries-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 72px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.industries-hero__heading {
+  position: absolute;
+  left: 80px;
+  top: 104px;
+  width: 880px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 68px;
+  color: var(--color-white);
+}
+
+.industries-hero__subtext {
+  position: absolute;
+  left: 80px;
+  top: 261px;
+  width: 640px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+/* Industry quick-link pills. Only the first (Direct to Consumer & CPG) is
+   filled/active in the source file; the rest render as plain white text on
+   a transparent pill. Hover fills use each industry's own accent color
+   (red / navy / green, matching the quick-nav + detail-section mapping) —
+   an added affordance since static pills would otherwise have no
+   interactive feedback; the Figma export's own transparent rgba fills on
+   these frames are alpha-0 and carry no reliable color signal. */
+.industries-hero__pills {
+  position: absolute;
+  left: 1060px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.industries-hero__pill {
+  width: 240px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-white);
+  text-align: center;
+  background: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.industries-hero__pill--active {
+  background: var(--color-brand-red);
+}
+
+.industries-hero__pill--red:hover { background: rgba(139, 10, 50, 0.35); }
+.industries-hero__pill--navy:hover { background: rgba(2, 12, 69, 0.35); }
+.industries-hero__pill--green:hover { background: rgba(43, 107, 37, 0.35); }
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   hero, so this reflow (text stacked full-width, pills dropped below as a
+   wrapped list) is a judgment call, not a traced layout. */
+@media (max-width: 900px) {
+  .industries-hero__inner {
+    height: auto;
+    padding: 48px 24px 40px;
+  }
+
+  /* Same reasoning as About/How We Work: no mobile Figma frame exists to
+     verify a correct crop for this photo, and the desktop crop landing on
+     an arbitrary patch at a narrow width risks the same text-legibility
+     regression found and reverted on those heroes — hide rather than
+     guess. */
+  .industries-hero__bg {
+    display: none;
+  }
+
+  .industries-hero__eyebrow {
+    position: static;
+  }
+
+  .industries-hero__heading {
+    position: static;
+    width: 100%;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 16px;
+  }
+
+  .industries-hero__subtext {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .industries-hero__pills {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .industries-hero__pill {
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-hero__heading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

@@ -1,0 +1,268 @@
+.industries {
+  position: relative;
+  background: var(--color-navy);
+  overflow: hidden;
+}
+
+/* Dot-grid texture — reproduces 481 individually-positioned "Ellipse" divs
+   from the Figma export (3px circle, r=1.5, fill white, opacity 0.06) as a
+   two-layer radial-gradient. The dots sit in a staggered/brick grid: rows
+   40px apart horizontally, 36px apart vertically, with every other row
+   offset by 20px (half the horizontal step) — hence two gradient layers,
+   each with a 40x72 tile, one shifted by (20px, 36px) from the other. */
+.industries::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.6px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.6px);
+  background-size: 40px 72px, 40px 72px;
+  background-position: 0 0, 20px 36px;
+  pointer-events: none;
+}
+
+.industries__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 460px;
+}
+
+.industries__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 52px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  opacity: 0.66;
+  white-space: nowrap;
+}
+
+.industries__heading {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.industries__subtext {
+  position: absolute;
+  left: 80px;
+  top: 136px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #aeb2c7;
+  white-space: nowrap;
+}
+
+.industries__cta {
+  position: absolute;
+  left: 1205px;
+  top: 92px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 13px;
+  color: #5fb85a;
+  white-space: nowrap;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.industries__cta:hover {
+  color: #7fd479;
+  transform: translateX(2px);
+}
+
+.industries__cta-rule {
+  position: absolute;
+  left: 1205px;
+  top: 114px;
+  width: 40px;
+  height: 3px;
+  background: #5fb85a;
+}
+
+.industries__grid {
+  position: absolute;
+  left: 80px;
+  top: 210px;
+  display: flex;
+  gap: 12px;
+}
+
+.industries__card {
+  position: relative;
+  width: 203px;
+  /* Extra 24px over the 210px content-derived minimum: .industries__desc
+     (top:130px) fits its longest real description in exactly 2 lines
+     (34px) with the current font metrics, but that's a zero-margin fit —
+     any font-rasterization difference across browsers/OSes/print engines
+     that widens the text even slightly forces a 3rd line, which a
+     razor-thin fixed height + overflow:hidden would silently clip. The
+     added height keeps a full line of headroom below the arrow so a
+     3-line description (51px) still clears it before hitting the card's
+     overflow boundary. */
+  height: 234px;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: var(--font-primary);
+  color: var(--color-white);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* No shadow at rest, and the section itself is navy — a navy-tinted shadow
+   (the convention used on the white-section cards elsewhere on Home) would
+   have almost no contrast here, so this one hover shadow is deliberately
+   black instead of navy to actually read against the dark background. */
+.industries__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+.industries__card--red { background: var(--color-brand-red); }
+.industries__card--green { background: var(--color-green); }
+.industries__card--cream {
+  background: var(--color-cream);
+  color: var(--color-navy);
+}
+
+.industries__icon-circle {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* white-tinted highlight circle, used on the red/green cards */
+.industries__icon-circle--light { background: rgba(255, 255, 255, 0.15); }
+/* navy-tinted highlight circle, used on the cream cards */
+.industries__icon-circle--dark { background: rgba(2, 12, 69, 0.15); }
+
+.industries__icon-circle svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.industries__title {
+  position: absolute;
+  left: 20px;
+  top: 64px;
+  width: 163px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: inherit;
+}
+
+.industries__rule {
+  position: absolute;
+  left: 20px;
+  top: 118px;
+  width: 28px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.industries__desc {
+  position: absolute;
+  left: 20px;
+  top: 130px;
+  width: 163px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 17px;
+  color: inherit;
+  opacity: 0.65;
+}
+
+.industries__arrow {
+  position: absolute;
+  left: 20px;
+  /* Shifted down from 182px to clear a worst-case 3-line description
+     (ends at 130+51=181px) with the same ~18px breathing room the
+     original 2-line layout had — see .industries__card's height comment. */
+  top: 199px;
+  font-weight: 700;
+  font-size: 14px;
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.industries__card:hover .industries__arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* No mobile Figma frame — fallback: flow eyebrow/heading/subtext/cta
+   normally, and stack the 6 fixed-width (203px) industry cards into a
+   single full-width column instead of a 6-across row. Each card's
+   internal content stays absolutely positioned (it already fits within
+   the card's fixed 210px height at any width), only the grid/container
+   changes. */
+@media (max-width: 900px) {
+  .industries__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .industries__eyebrow,
+  .industries__heading,
+  .industries__subtext {
+    position: static;
+    white-space: normal;
+  }
+
+  .industries__heading {
+    margin-top: 8px;
+    font-size: 28px;
+  }
+
+  .industries__subtext {
+    margin-top: 12px;
+  }
+
+  .industries__cta,
+  .industries__cta-rule {
+    position: static;
+  }
+
+  .industries__cta {
+    display: inline-flex;
+    margin-top: 20px;
+  }
+
+  .industries__cta-rule {
+    margin-top: 8px;
+  }
+
+  .industries__grid {
+    position: static;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .industries__card {
+    width: 100%;
+  }
+}

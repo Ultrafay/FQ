@@ -1,0 +1,161 @@
+.faq {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.faq__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  /* Was a fixed 560px matching Figma's always-open frame; the grid below is
+     now in normal flow (auto height) so this container grows/shrinks with
+     however many rows the user has actually opened, instead of reserving
+     open-state space for a closed-by-default accordion. */
+  padding: 220px 0 60px;
+}
+
+.faq__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 39px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.faq__heading {
+  position: absolute;
+  left: 80px;
+  top: 76px;
+  width: 440px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--color-navy);
+}
+
+.faq__heading p {
+  margin: 0;
+}
+
+/* Two-column x three-row grid of accordion rows. Figma's static frame shows
+   every row expanded, at fixed heights matching its divider positions
+   (top: 220, 296, 392, section end 560) — but a real accordion defaults to
+   closed, so rows are auto-sized to their (closed, then later opened)
+   content instead of locked to those open-state heights. */
+.faq__grid {
+  position: relative;
+  margin-left: 80px;
+  width: 1220px;
+  display: grid;
+  grid-template-columns: 580px 580px;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 60px;
+}
+
+.faq__item {
+  border-top: 1px solid rgba(2, 12, 69, 0.08);
+  padding-top: 10px;
+}
+
+.faq__item > summary {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-navy);
+}
+
+/* Changing summary's display away from list-item removes the native
+   disclosure triangle in Chrome/Firefox/Safari; these rules are a
+   belt-and-suspenders reset for browsers that still render one. */
+.faq__item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__item > summary::marker {
+  content: '';
+}
+
+.faq__icon {
+  flex: 0 0 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.faq__icon--red {
+  color: var(--color-brand-red);
+}
+
+.faq__icon--green {
+  color: var(--color-green);
+}
+
+.faq__question {
+  flex: 1;
+  transition: color 0.15s ease;
+}
+
+/* Subtle color-shift on the question text itself (not the whole row) so
+   it's clear each row is clickable, independent of open/closed state. */
+.faq__item > summary:hover .faq__question {
+  color: var(--color-brand-red);
+}
+
+.faq__answer {
+  margin: 6px 0 0;
+  padding-left: 24px;
+  max-width: 556px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-navy);
+  opacity: 0.55;
+}
+
+/* No mobile Figma frame — fallback: flow eyebrow/heading normally and
+   collapse the 2-column x 3-row FAQ grid (fixed row heights tuned to the
+   desktop 2-column reading order) into a single column with auto-height
+   rows, since a single column no longer needs matched row heights across
+   both columns. */
+@media (max-width: 900px) {
+  .faq__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .faq__eyebrow,
+  .faq__heading {
+    position: static;
+    width: auto;
+  }
+
+  .faq__heading {
+    margin-top: 8px;
+  }
+
+  .faq__grid {
+    position: static;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    column-gap: 0;
+    row-gap: 4px;
+    margin-top: 24px;
+  }
+
+  .faq__answer {
+    max-width: none;
+  }
+}

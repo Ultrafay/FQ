@@ -1,0 +1,271 @@
+.why-fq {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.why-fq__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 560px;
+}
+
+/* Cross-grid texture — reproduces ~130 individually-positioned "Rectangle"
+   divs from the Figma export (two 1.5px-thick navy bars per tick — one
+   10px-wide horizontal, one 10px-tall vertical — crossing to form a small
+   "+" mark, opacity 6%) as a single tiled SVG background. Ticks repeat
+   every 48px both horizontally and vertically. The tile is 48x48 with the
+   "+" centered at its middle (24,24); background-position shifts the tile
+   by (-24px, -24px) so a tick lands exactly on the container's origin,
+   matching the Figma grid's (0, 0) / (48, 0) / (0, 48) ... tick positions. */
+.why-fq__pattern {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 520px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Crect x='19' y='23.25' width='10' height='1.5' fill='%23020c45' fill-opacity='0.06'/%3E%3Crect x='23.25' y='19' width='1.5' height='10' fill='%23020c45' fill-opacity='0.06'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 48px 48px;
+  background-position: -24px -24px;
+  pointer-events: none;
+}
+
+/* Giant faint "5" watermark behind the heading/cards */
+.why-fq__bignum {
+  position: absolute;
+  left: 1100px;
+  top: -60px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 480px;
+  line-height: 1;
+  color: var(--color-navy);
+  opacity: 0.03;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Figma's own value for this node ("Left Accent Panel", 3:1721) is exactly
+   x=0 relative to the Why FQ section frame — matches this left:0 exactly,
+   no discrepancy in the numbers. The bug wasn't the value, it was the
+   reference point: this was positioned relative to .why-fq__inner (capped
+   at --page-width/1440px, centered), so on any viewport wider than 1440px
+   it sat flush with the *design column's* edge, not the true browser edge
+   — visibly "indented" exactly the same way the full-bleed photo/panel
+   backgrounds were on other sections (see progress.md). Moved to be a
+   direct child of .why-fq (the true full-width section) so left:0 now
+   means the true edge, matching Figma at 1440px and staying flush at any
+   width, same fix pattern as every other full-bleed element this project. */
+.why-fq__accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 540px;
+  background: var(--color-brand-red);
+}
+
+.why-fq__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 24px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.why-fq__heading {
+  position: absolute;
+  left: 80px;
+  top: 64px;
+  width: 560px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--color-navy);
+}
+
+/* Each card is one "row": a top divider rule, an icon circle, a small
+   colored index number, a title, and a description. Children are
+   positioned relative to the card's own box; only left/top (column +
+   row position) vary per instance, set inline. */
+.why-fq__card {
+  position: absolute;
+  width: 520px;
+  /* All of this card's actual content (icon/num/title/desc) is
+     absolutely positioned, so without an explicit height the box itself
+     collapses to 0px tall — invisible to hit-testing/screenshots and, more
+     importantly, too small for the hover box-shadow below to draw around.
+     94px matches the deepest child (the 2-line description, bottom-anchored
+     at top:54px + ~40px of text); explicit height doesn't move any child
+     since their `top` offsets are anchored to this box's top edge, not its
+     bottom, so this is a pure sizing fix with no layout side effects. */
+  height: 94px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* This "card" is really a borderless/backgroundless row (just a hairline
+   divider), not a filled box — so there's no box-shadow at rest. A shadow
+   still reads fine on hover (it draws off the element's box shape
+   regardless of background), giving the lift a "card" feel without
+   needing to add a background fill that would risk shifting the
+   absolutely-positioned icon/title/desc children inside it. */
+.why-fq__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(2, 12, 69, 0.1);
+}
+
+.why-fq__card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 520px;
+  height: 1px;
+  background: var(--color-navy);
+  opacity: 0.1;
+}
+
+.why-fq__card-icon {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-fq__card-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.why-fq__card--red .why-fq__card-icon { background: rgba(139, 10, 50, 0.12); }
+.why-fq__card--green .why-fq__card-icon { background: rgba(43, 107, 37, 0.12); }
+
+.why-fq__card-num {
+  position: absolute;
+  left: 44px;
+  top: 16px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.why-fq__card--red .why-fq__card-num { color: var(--color-brand-red); }
+.why-fq__card--green .why-fq__card-num { color: var(--color-green); }
+
+.why-fq__card-title {
+  position: absolute;
+  left: 44px;
+  top: 30px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.why-fq__card-desc {
+  position: absolute;
+  left: 44px;
+  top: 54px;
+  width: 476px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-navy);
+  opacity: 0.55;
+}
+
+/* No mobile Figma frame — fallback: hide the decorative cross-grid,
+   giant "5" watermark and accent bar; flow eyebrow/heading normally; and
+   stack all 5 cards into a single column (each card had its left/top set
+   inline for the 2-column desktop layout, so those inline values are
+   overridden to position:static here). */
+@media (max-width: 900px) {
+  .why-fq__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .why-fq__pattern,
+  .why-fq__bignum,
+  .why-fq__accent {
+    display: none;
+  }
+
+  .why-fq__eyebrow,
+  .why-fq__heading {
+    position: static;
+    width: auto;
+  }
+
+  .why-fq__heading {
+    margin-top: 8px;
+  }
+
+  .why-fq__card {
+    position: static !important;
+    width: auto;
+    /* Reset the desktop-only fixed 94px (sized for the absolutely-positioned
+       2-column layout's shortest content) back to auto — mobile stacks
+       icon/num/title/desc in normal block flow, which needs more height
+       than that and would otherwise get clipped. */
+    height: auto;
+    display: block;
+    margin-top: 28px;
+    padding-top: 16px;
+  }
+
+  .why-fq__card:first-of-type {
+    margin-top: 24px;
+  }
+
+  .why-fq__card::before {
+    width: 100%;
+  }
+
+  .why-fq__card-icon,
+  .why-fq__card-num,
+  .why-fq__card-title,
+  .why-fq__card-desc {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .why-fq__card-icon {
+    margin-bottom: 10px;
+  }
+
+  .why-fq__card-num {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .why-fq__card-title {
+    display: block;
+    margin-top: 4px;
+    white-space: normal;
+  }
+
+  .why-fq__card-desc {
+    width: auto;
+    margin-top: 8px;
+  }
+}

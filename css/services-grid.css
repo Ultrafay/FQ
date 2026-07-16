@@ -1,0 +1,430 @@
+.services-grid {
+  position: relative;
+  height: 1620px;
+  background: var(--color-cream);
+  overflow: hidden;
+}
+
+.services-grid__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 1620px;
+}
+
+.services-grid__eyebrow {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.services-grid__heading {
+  position: absolute;
+  left: 100px;
+  top: 78px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 34px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.services-grid__accent {
+  position: absolute;
+  left: 100px;
+  top: 138px;
+  width: 56px;
+  height: 4px;
+  background: var(--color-green);
+}
+
+.services-grid__cards {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 604px);
+  grid-template-rows: repeat(3, 420px);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.services-grid__card {
+  position: relative;
+  width: 604px;
+  height: 420px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 14px;
+  box-shadow: 0px 14px 34px -4px rgba(3, 13, 69, 0.1);
+  overflow: hidden;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+/* `filter: drop-shadow(...)` rather than `box-shadow` for the hover
+   elevation — this card has `overflow: hidden` (needed to clip the giant
+   watermark digit + top accent bar to the rounded corners), and a
+   box-shadow on the same element gets clipped by its own overflow. A
+   drop-shadow filter is applied to the element's rendered output *after*
+   its own clipping, so it paints outside the box uncropped. */
+.services-grid__card:hover {
+  transform: translateY(-4px);
+  filter: drop-shadow(0 10px 22px rgba(2, 12, 69, 0.16));
+}
+
+.services-grid__card-bar {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 604px;
+  height: 5px;
+}
+
+.services-grid__watermark {
+  position: absolute;
+  left: 507px;
+  top: 7px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 104px;
+  opacity: 0.07;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Accent color groups: FP&A + Bookkeeping = green, Management Reporting +
+   Tax & VAT = navy, Cash Flow + Cleanup = red */
+.services-grid__card--green .services-grid__card-bar,
+.services-grid__card--green .services-grid__icon { background: var(--color-green); }
+.services-grid__card--navy .services-grid__card-bar,
+.services-grid__card--navy .services-grid__icon { background: var(--color-navy); }
+.services-grid__card--red .services-grid__card-bar,
+.services-grid__card--red .services-grid__icon { background: var(--color-brand-red); }
+
+.services-grid__card--green .services-grid__watermark,
+.services-grid__card--green .services-grid__rule,
+.services-grid__card--green .services-grid__link-arrow { color: var(--color-green); }
+.services-grid__card--navy .services-grid__watermark,
+.services-grid__card--navy .services-grid__rule,
+.services-grid__card--navy .services-grid__link-arrow { color: var(--color-navy); }
+.services-grid__card--red .services-grid__watermark,
+.services-grid__card--red .services-grid__rule,
+.services-grid__card--red .services-grid__link-arrow { color: var(--color-brand-red); }
+
+/* .services-grid__link-arrow was mistakenly grouped into these `background`
+   rules too — it's the text glyph "→" (see 03-services-grid.html), not a
+   decorative bar like .services-grid__rule, so painting a solid background
+   behind it rendered as a plain colored block instead of a visible arrow
+   character. It only needs the `color` rule above; removed from here. */
+.services-grid__card--green .services-grid__rule { background: var(--color-green); }
+.services-grid__card--navy .services-grid__rule { background: var(--color-navy); }
+.services-grid__card--red .services-grid__rule { background: var(--color-brand-red); }
+
+.services-grid__icon {
+  position: absolute;
+  left: 35px;
+  top: 41px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.services-grid__title {
+  position: absolute;
+  left: 35px;
+  top: 119px;
+  width: 500px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.services-grid__rule {
+  position: absolute;
+  left: 35px;
+  top: 161px;
+  width: 40px;
+  height: 3px;
+}
+
+/* #1a1a2e doesn't map to any existing variable (--color-text-body is
+   #2a2a3a) — kept literal to match the Figma export exactly. */
+.services-grid__body {
+  position: absolute;
+  left: 35px;
+  top: 179px;
+  width: 532px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.services-grid__tags {
+  position: absolute;
+  left: 35px;
+  display: flex;
+  gap: 8px;
+}
+
+.services-grid__tag {
+  height: 26px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 11px;
+  white-space: nowrap;
+  flex: none;
+}
+
+.services-grid__card--green .services-grid__tag { background: #e9f0e7; color: var(--color-green); }
+.services-grid__card--navy .services-grid__tag { background: #e7e9f2; color: var(--color-navy); }
+.services-grid__card--red .services-grid__tag { background: #f6e7ec; color: var(--color-brand-red); }
+
+.services-grid__divider {
+  position: absolute;
+  left: 35px;
+  top: 355px;
+  width: 532px;
+  height: 1px;
+  background: var(--color-border-soft);
+}
+
+.services-grid__link {
+  position: absolute;
+  left: 35px;
+  top: 372px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.services-grid__link-arrow {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform 0.15s ease;
+}
+
+/* The "-> Better financial decision-making" line isn't a real link (no
+   href anywhere in the markup) — it's descriptive copy inside the card, not
+   a separate "Learn more" CTA. So the arrow-nudge affordance is triggered by
+   hovering the card as a whole (which already lifts/shadows) rather than a
+   hover on the text itself. */
+.services-grid__card:hover .services-grid__link-arrow {
+  transform: translateX(4px);
+}
+
+.services-grid__link-text {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+/* ---- Icon glyphs ---- */
+/* FP&A / Business Finance — person bust (circle head + ellipse shoulders,
+   bottom half of the ellipse masked by a solid rect matching the card's
+   accent color, reproducing the exact layering used in the Figma source) */
+.services-grid__icon--fpa { position: relative; }
+.services-grid__icon--fpa .fpa-head {
+  position: absolute; left: 24px; top: 12px; width: 12px; height: 12px;
+  border-radius: 50%; background: #fff;
+}
+.services-grid__icon--fpa .fpa-body {
+  position: absolute; left: 17px; top: 26px; width: 26px; height: 22px;
+  border-radius: 50%; background: #fff;
+}
+.services-grid__icon--fpa .fpa-mask {
+  position: absolute; left: 17px; top: 31px; width: 26px; height: 11px;
+  background: var(--color-green);
+}
+
+/* Management Reporting — ascending bar chart */
+.services-grid__icon--mgmt .bar {
+  position: absolute; width: 5px; border-radius: 1px; background: #fff;
+}
+.services-grid__icon--mgmt .bar--1 { left: 17px; top: 32px; height: 10px; }
+.services-grid__icon--mgmt .bar--2 { left: 25px; top: 25px; height: 17px; }
+.services-grid__icon--mgmt .bar--3 { left: 33px; top: 19px; height: 23px; }
+
+/* Cash Flow & Forecasting — trend line + arrowhead accent (from Figma
+   vector assets, reproduced as inline SVG) */
+.services-grid__icon--cashflow .cf-line {
+  position: absolute; left: 16px; top: 23px; width: 24px; height: 17px;
+}
+.services-grid__icon--cashflow .cf-dot {
+  position: absolute; left: 37px; top: 20px; width: 6px; height: 6px;
+}
+
+/* Bookkeeping & Accounting — document with lines */
+.services-grid__icon--bookkeeping .doc-outline {
+  position: absolute; left: 21px; top: 17px; width: 18px; height: 26px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+}
+.services-grid__icon--bookkeeping .doc-line {
+  position: absolute; height: 2px; border-radius: 1px; background: #fff;
+}
+.services-grid__icon--bookkeeping .doc-line--1 { left: 25px; top: 22px; width: 11px; }
+.services-grid__icon--bookkeeping .doc-line--2 { left: 25px; top: 27px; width: 11px; }
+.services-grid__icon--bookkeeping .doc-line--3 { left: 25px; top: 32px; width: 8px; }
+
+/* Tax & VAT Compliance — shield + checkmark (from Figma vector assets) */
+.services-grid__icon--tax .tax-shield {
+  position: absolute; left: 19px; top: 17px; width: 22px; height: 25px;
+}
+.services-grid__icon--tax .tax-check {
+  position: absolute; left: 24px; top: 26px; width: 11px; height: 8px;
+}
+
+/* Cleanup & Catch-Up Accounting — stacked documents */
+.services-grid__icon--cleanup .paper-back {
+  position: absolute; left: 21px; top: 17px; width: 18px; height: 22px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+}
+.services-grid__icon--cleanup .paper-front {
+  position: absolute; left: 17px; top: 22px; width: 18px; height: 22px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+  background: var(--color-brand-red);
+}
+.services-grid__icon--cleanup .doc-line {
+  position: absolute; height: 2px; border-radius: 1px; background: #fff;
+}
+.services-grid__icon--cleanup .doc-line--1 { left: 21px; top: 28px; width: 10px; }
+.services-grid__icon--cleanup .doc-line--2 { left: 21px; top: 33px; width: 10px; }
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   repeating 2x3 card grid. Cards drop to a single flex column (philosophy
+   #3); each 604x420 card (already position:relative in the base rules)
+   reflows to width:100%/height:auto with every internal absolutely-
+   positioned element (icon, title, rule, body, tag rows, divider, link)
+   switched to static flow so they stack in DOM order instead of relying on
+   fixed left/top offsets. The large "01".."06" watermark digit is purely
+   decorative background typography, so it's hidden rather than repositioned. */
+@media (max-width: 900px) {
+  .services-grid,
+  .services-grid__inner {
+    height: auto;
+  }
+
+  .services-grid__inner {
+    padding: 48px 24px 56px;
+  }
+
+  .services-grid__eyebrow,
+  .services-grid__heading,
+  .services-grid__accent {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .services-grid__heading {
+    margin-top: 8px;
+    white-space: normal;
+  }
+
+  .services-grid__accent {
+    margin-top: 16px;
+  }
+
+  .services-grid__cards {
+    position: static;
+    left: auto;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .services-grid__card {
+    width: 100%;
+    height: auto;
+    padding: 24px 24px 28px;
+    box-sizing: border-box;
+  }
+
+  .services-grid__watermark {
+    display: none;
+  }
+
+  .services-grid__icon {
+    /* Must stay `relative`, not `static` — the icon's internal glyph
+       pieces (.fpa-head, .bar--1/2/3, .doc-line--*, etc.) are all
+       `position: absolute` and rely on this element as their positioning
+       context. `static` breaks that containing-block relationship,
+       collapsing every glyph to whatever ancestor is positioned next
+       (the card), which is why icons rendered as blank color blobs here. */
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 16px;
+  }
+
+  .services-grid__title {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin: 0 0 8px;
+    white-space: normal;
+  }
+
+  .services-grid__rule {
+    position: static;
+    left: auto;
+    top: auto;
+    margin: 0 0 12px;
+  }
+
+  .services-grid__body {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .services-grid__tags {
+    position: static;
+    left: auto;
+    top: auto;
+    flex-wrap: wrap;
+    margin: 0 0 12px;
+  }
+
+  .services-grid__divider {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .services-grid__link {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .services-grid__link-text {
+    white-space: normal;
+  }
+}

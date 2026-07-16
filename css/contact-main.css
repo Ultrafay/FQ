@@ -1,0 +1,428 @@
+.contact-main {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.contact-main__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 840px;
+}
+
+/* ---------- Left panel ---------- */
+
+/* Positioned against .contact-main (the true full-width section) instead
+   of .contact-main__inner (capped at --page-width, 1440px) — it used to be
+   a fixed 560px wide at left:0 *relative to that centered inner box*, so
+   on any viewport wider than 1440px there was a gap between the true left
+   edge of the browser and where this panel actually started, showing
+   .contact-main's white background instead of black. This panel is meant
+   to always touch the true left edge, with only its right edge (where it
+   meets the form) staying anchored to the design's center-relative split
+   point — so left stays 0 (now relative to the true viewport), and width
+   is a calc() that keeps the right edge exactly where it was at 1440px
+   (50vw - 720px + 560px simplifies to 50vw - 160px) while growing to fill
+   the extra space at any wider viewport instead of leaving it exposed. */
+.contact-main__left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(50vw - 160px);
+  height: 840px;
+  background: var(--color-black);
+  overflow: hidden;
+}
+
+/* NOTE (blend-mode flag): the Figma export gives this photo an explicit
+   opacity of 53%. Twice before on this project, a stated opacity on a
+   full-bleed background photo has turned out to be a Figma blend-mode
+   artifact that renders far more subtly (or far more solidly) in the
+   actual design than the raw opacity number suggests. Built as spec'd
+   here (53%) — verify against the Figma screenshot and adjust if the
+   photo reads too strong/washed-out against the black panel. */
+.contact-main__photo {
+  display: none;
+}
+
+/* Dash-grid texture — reproduces ~330 individually-positioned 10x1.5px
+   white "Rectangle" divs (opacity 4%) from the Figma export as a single
+   tiled SVG background. Dashes repeat every 48px horizontally (centered
+   on x = 0, 48, 96...) and every 36px vertically. */
+.contact-main__pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='36'%3E%3Crect x='0' y='0' width='10' height='1.5' fill='%23ffffff' fill-opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 48px 36px;
+  background-position: -5px 0;
+  pointer-events: none;
+}
+
+.contact-main__accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 840px;
+  background: var(--color-brand-red);
+}
+
+.contact-main__eyebrow {
+  position: absolute;
+  left: 48px;
+  top: 64px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.contact-main__heading {
+  position: absolute;
+  left: 48px;
+  top: 96px;
+  width: 464px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 64px;
+  color: var(--color-white);
+}
+
+/* Direct-child combinator only — matching all descendant spans would also
+   catch the nested .contact-main__outline span (used for the "discuss"
+   stroke-text effect) and force it block-level too, splitting "Let's" and
+   "discuss" onto separate lines and pushing the whole heading to 4 lines
+   instead of 3 (it also beats .contact-main__outline's own
+   `display: inline` on specificity, regardless of source order). */
+.contact-main__heading > span {
+  display: block;
+}
+
+.contact-main__outline {
+  display: inline;
+}
+
+.contact-main__body {
+  position: absolute;
+  left: 48px;
+  top: 324px;
+  width: 464px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--color-white);
+}
+
+.contact-main__divider {
+  position: absolute;
+  left: 48px;
+  width: 464px;
+  height: 1px;
+  background: var(--color-white);
+}
+
+.contact-main__detail {
+  position: absolute;
+  left: 48px;
+  width: 464px;
+}
+
+.contact-main__detail-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  color: var(--color-brand-red);
+  line-height: 1;
+}
+
+.contact-main__detail-label {
+  position: absolute;
+  left: 28px;
+  top: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.contact-main__detail-value {
+  position: absolute;
+  left: 28px;
+  top: 16px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-white);
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+/* ---------- Right column: form ---------- */
+
+.contact-main__form {
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 680px;
+  height: 810px;
+}
+
+.contact-main__form-eyebrow {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.contact-main__form-heading {
+  position: absolute;
+  left: 0;
+  top: 66px;
+  width: 680px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 56px;
+  color: var(--color-navy);
+}
+
+.contact-main__form-heading span {
+  display: block;
+}
+
+.contact-main__field {
+  position: absolute;
+  left: 0;
+  width: 680px;
+}
+
+.contact-main__field label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-navy);
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.contact-main__field input,
+.contact-main__field select {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 680px;
+  height: 44px;
+  background: var(--color-cream);
+  border: 1px solid var(--color-navy);
+  border-radius: 4px;
+  padding: 0 15px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-navy);
+}
+
+.contact-main__field select {
+  font-size: 12px;
+  color: rgba(2, 12, 69, 0.3);
+  appearance: none;
+}
+
+.contact-main__field--message textarea {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 680px;
+  height: 120px;
+  background: var(--color-cream);
+  border: 1px solid var(--color-navy);
+  border-radius: 4px;
+  padding: 11px 15px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--color-navy);
+  resize: none;
+}
+
+.contact-main__field input::placeholder,
+.contact-main__field--message textarea::placeholder {
+  color: var(--color-navy);
+  opacity: 0.3;
+}
+
+.contact-main__submit {
+  position: absolute;
+  left: 0;
+  top: 758px;
+  width: 300px;
+  height: 52px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists. The left
+   info panel and the form both switch from absolute-positioned-against-a-
+   fixed-840px-canvas to normal flow, form below panel. Every left/top
+   offset below (including several set inline in the HTML via style="top:…")
+   is on an element also being switched to position:static here, so those
+   offsets go inert automatically — position:static never reads top/left,
+   regardless of whether the value came from a stylesheet or an inline
+   style attribute. Detail rows (icon + label/value) and form fields
+   (label + input) are the two spots that need their own small internal
+   layout (grid / stacked block) rather than a flat reset, since their
+   children are independently absolute-positioned against them. */
+@media (max-width: 900px) {
+  .contact-main__inner {
+    height: auto;
+  }
+
+  .contact-main__left {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 48px 24px 40px;
+  }
+
+  .contact-main__accent {
+    display: none;
+  }
+
+  .contact-main__eyebrow {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .contact-main__heading {
+    position: static;
+    width: auto;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .contact-main__body {
+    position: static;
+    width: auto;
+    margin-bottom: 24px;
+  }
+
+  .contact-main__divider {
+    position: static;
+    width: auto;
+    margin: 0 0 20px;
+  }
+
+  .contact-main__detail {
+    position: static;
+    width: auto;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    column-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contact-main__detail-icon {
+    position: static;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .contact-main__detail-label {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+    white-space: normal;
+    margin-bottom: 4px;
+  }
+
+  .contact-main__detail-value {
+    position: static;
+    grid-column: 2;
+    grid-row: 2;
+    white-space: normal;
+  }
+
+  /* ---------- Form ---------- */
+
+  .contact-main__form {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 40px 24px 48px;
+  }
+
+  .contact-main__form-eyebrow {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .contact-main__form-heading {
+    position: static;
+    width: auto;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 24px;
+  }
+
+  .contact-main__field {
+    position: static;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-main__field label {
+    position: static;
+    display: block;
+    white-space: normal;
+    margin-bottom: 6px;
+  }
+
+  .contact-main__field input,
+  .contact-main__field select {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-main__field--message textarea {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-main__submit {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main__heading {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .contact-main__form-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

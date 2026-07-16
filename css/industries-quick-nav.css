@@ -1,0 +1,145 @@
+.quick-nav {
+  position: relative;
+  height: 80px;
+  background: #f8f6f2;
+  border-bottom: 1px solid var(--color-border-soft);
+  overflow: hidden;
+}
+
+.quick-nav__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.quick-nav__list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quick-nav__item {
+  position: relative;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 16px 0 0 30px;
+}
+
+/* Vertical divider before every item except the first (Figma: 1px
+   rectangles at left 240/480/720/960/1200, 48px tall, centered in the
+   80px-tall bar: (80 - 48) / 2 = 16px top). */
+.quick-nav__item + .quick-nav__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 1px;
+  height: 48px;
+  background: #e2ded5;
+}
+
+.quick-nav__num {
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.quick-nav__item--red .quick-nav__num { color: var(--color-brand-red); }
+.quick-nav__item--navy .quick-nav__num { color: var(--color-navy); }
+.quick-nav__item--green .quick-nav__num { color: var(--color-green); }
+
+.quick-nav__label {
+  display: block;
+  margin-top: 16px;
+  width: 190px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-navy);
+}
+
+.quick-nav__link {
+  display: block;
+  height: 100%;
+  transition: background-color 0.15s ease;
+}
+
+/* Background-tint hover, same convention as industries-hero__pill's
+   per-accent rgba fills — but at a much lower alpha (0.08 vs. the pill's
+   0.35) since these tabs sit on the light `--color-cream`-ish bar background
+   rather than the hero's solid black, where a 0.35 tint would read as an
+   overpowering block of color instead of a subtle affordance. */
+.quick-nav__item--red .quick-nav__link:hover { background: rgba(139, 10, 50, 0.08); }
+.quick-nav__item--navy .quick-nav__link:hover { background: rgba(2, 12, 69, 0.08); }
+.quick-nav__item--green .quick-nav__link:hover { background: rgba(43, 107, 37, 0.08); }
+
+/* Active-tab indicator — a 3px red bar flush with the bottom edge of the
+   nav bar. Only the first item ("01 – Direct to Consumer & CPG") is active
+   in the Figma export. */
+.quick-nav__item--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 3px;
+  background: var(--color-brand-red);
+}
+
+/* Mobile/tablet fallback — no mobile Figma frame exists for this bar. The
+   6 tabs (240px each = 1440px total) can't wrap sensibly without breaking
+   the divider/active-underline math per item, so per the brief this becomes
+   a horizontally-scrollable strip contained to its own inner element
+   (`overflow-x: auto`), never the page — width per item is trimmed so more
+   of the strip is visible before scrolling is needed. */
+@media (max-width: 900px) {
+  .quick-nav {
+    height: auto;
+    overflow: visible;
+  }
+
+  .quick-nav__inner {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+  }
+
+  .quick-nav__list {
+    width: max-content;
+  }
+
+  .quick-nav__item {
+    width: 180px;
+    flex-shrink: 0;
+    padding: 14px 0 14px 20px;
+  }
+
+  .quick-nav__label {
+    width: 150px;
+  }
+
+  .quick-nav__item--active::after {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-nav__item {
+    width: 150px;
+    padding: 12px 0 12px 16px;
+  }
+
+  .quick-nav__label {
+    width: 124px;
+  }
+
+  .quick-nav__item--active::after {
+    width: 150px;
+  }
+}

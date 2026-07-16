@@ -1,0 +1,251 @@
+.how-it-works {
+  position: relative;
+  height: 480px;
+  background: var(--color-cream);
+  overflow: hidden;
+}
+
+/* Cross-grid texture — reproduces ~690 individually-positioned "Rectangle"
+   divs from the Figma export (a "+" cross made of a 10x1.5px horizontal bar
+   and a 1.5x10px vertical bar, both navy at 6% opacity, repeated on a 48px
+   grid across the full 1440x480 section) as a two-layer background-image of
+   flattened ellipse gradients — one wide/short (the horizontal arm), one
+   narrow/tall (the vertical arm), both centered on the same 48px tile and
+   shifted by half a tile so the crosses land on grid intersections
+   starting at (0, 0), matching the original node positions exactly. */
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 5px 0.75px at center, rgba(2, 12, 69, 0.06) 99%, transparent 100%),
+    radial-gradient(ellipse 0.75px 5px at center, rgba(2, 12, 69, 0.06) 99%, transparent 100%);
+  background-size: 48px 48px, 48px 48px;
+  background-position: -24px -24px, -24px -24px;
+  pointer-events: none;
+}
+
+.how-it-works__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 480px;
+}
+
+.how-it-works__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 24px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.how-it-works__heading {
+  position: absolute;
+  left: 80px;
+  top: 56px;
+  width: 706px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--color-navy);
+}
+
+.how-it-works__connector {
+  position: absolute;
+  left: 240px;
+  top: 200px;
+  width: 960px;
+  height: 2px;
+  background: var(--color-navy);
+  opacity: 0.1;
+}
+
+.how-it-works__steps {
+  position: absolute;
+  left: 90px;
+  top: 180px;
+  width: 1260px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.how-it-works__step {
+  position: relative;
+  width: 300px;
+  height: 252px;
+}
+
+.how-it-works__badge {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--color-white);
+}
+
+.how-it-works__badge--navy { background: var(--color-navy); }
+.how-it-works__badge--red { background: var(--color-brand-red); }
+.how-it-works__badge--green { background: var(--color-green); }
+
+.how-it-works__card {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 300px;
+  height: 200px;
+  background: var(--color-white);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Hover is bound to the whole step (badge + card) rather than just the
+   card box, so mousing over the numbered badge above the card also
+   triggers the lift — the badge and card read as one unit visually. */
+.how-it-works__step:hover .how-it-works__card {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(2, 12, 69, 0.14);
+}
+
+.how-it-works__card-title {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.how-it-works__card-rule {
+  position: absolute;
+  left: 24px;
+  top: 50px;
+  width: 36px;
+  height: 2px;
+}
+
+.how-it-works__card-rule--navy { background: var(--color-navy); }
+.how-it-works__card-rule--red { background: var(--color-brand-red); }
+.how-it-works__card-rule--green { background: var(--color-green); }
+
+.how-it-works__card-text {
+  position: absolute;
+  left: 24px;
+  top: 64px;
+  width: 252px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-navy);
+  opacity: 0.6;
+}
+
+.how-it-works__icon {
+  position: absolute;
+  left: 24px;
+  top: 140px;
+  width: 32px;
+  height: 32px;
+}
+
+.how-it-works__icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* No mobile Figma frame — fallback: hide the decorative cross-grid and
+   the horizontal connector line (both pure decoration tied to the 4-across
+   row), flow eyebrow/heading normally, and stack the 4 steps into a single
+   column. Each step's badge sits centered above its card on desktop via a
+   fixed height; both switch to static flow so the card can grow to fit
+   its own text. */
+@media (max-width: 900px) {
+  .how-it-works,
+  .how-it-works__inner {
+    height: auto;
+  }
+
+  .how-it-works__inner {
+    padding: 40px 24px;
+  }
+
+  .how-it-works__connector {
+    display: none;
+  }
+
+  .how-it-works__eyebrow,
+  .how-it-works__heading {
+    position: static;
+    width: auto;
+  }
+
+  .how-it-works__heading {
+    margin-top: 8px;
+  }
+
+  .how-it-works__steps {
+    position: static;
+    width: auto;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 24px;
+  }
+
+  .how-it-works__step {
+    width: 100%;
+    height: auto;
+    padding-top: 48px;
+  }
+
+  .how-it-works__badge {
+    left: 0;
+    transform: none;
+  }
+
+  .how-it-works__card {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .how-it-works__card-title,
+  .how-it-works__card-rule,
+  .how-it-works__card-text,
+  .how-it-works__icon {
+    position: static;
+  }
+
+  .how-it-works__card-rule {
+    margin-top: 12px;
+  }
+
+  .how-it-works__card-text {
+    width: auto;
+    margin-top: 12px;
+  }
+
+  .how-it-works__icon {
+    margin-top: 16px;
+  }
+}

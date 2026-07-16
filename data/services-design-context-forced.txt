@@ -1,0 +1,1911 @@
+const img13 = "https://www.figma.com/api/mcp/asset/2dbd7d29-0a50-4399-a326-5aabcf6234dc";
+const img14 = "https://www.figma.com/api/mcp/asset/1d82da3a-e802-41eb-b974-b34cd681e547";
+const imgChatGptImageJun62026021213Pm1 = "https://www.figma.com/api/mcp/asset/0fceb5e4-0bd1-4c0f-8629-438ef3f459dd";
+const imgNeoEssentialsLogo1 = "https://www.figma.com/api/mcp/asset/59eee159-4e55-4f09-accd-22934c564205";
+const imgTheBotanistLogo1 = "https://www.figma.com/api/mcp/asset/18dd2993-ddd2-4898-87c0-d99bd8594014";
+const imgAdayeLogo1 = "https://www.figma.com/api/mcp/asset/dccba772-a0b2-450f-bfd8-3c4e4abb82ed";
+const imgDatacadeLogo1 = "https://www.figma.com/api/mcp/asset/21fb1a93-97d3-42e5-abd7-0b117e510fa4";
+const imgCocoBitesLogo1 = "https://www.figma.com/api/mcp/asset/7dd44ba1-ce6e-4150-8829-9986975f96ef";
+const imgEhadLogo1 = "https://www.figma.com/api/mcp/asset/da2a59b8-371f-4c8b-b078-3cba16330f9d";
+const imgEmpiricaLogo1 = "https://www.figma.com/api/mcp/asset/dc999ef0-d0a6-425a-94eb-d4730368b25e";
+const imgGreenimpactsolutionsLogo1 = "https://www.figma.com/api/mcp/asset/003bb6a9-56e0-480c-bd59-993ca7aa3768";
+const imgHilalFulLogo1 = "https://www.figma.com/api/mcp/asset/b047f67e-3b4b-4fed-b7a0-83f20ab59f06";
+const imgIndusHospitalLogo1 = "https://www.figma.com/api/mcp/asset/41f29af4-3525-476d-a94d-4086b94e273f";
+const imgNisLogo1 = "https://www.figma.com/api/mcp/asset/52741afe-7d4a-41db-8147-9f8630dd3bae";
+const imgMedznmoreLogo1 = "https://www.figma.com/api/mcp/asset/d55a14f2-e5d2-4716-8c43-b527ec86f9ba";
+const imgOverDoseLogo1 = "https://www.figma.com/api/mcp/asset/bec1e16f-b520-45e4-afab-2990cf0820d4";
+const imgNolmaLogo1 = "https://www.figma.com/api/mcp/asset/9f4a7481-77e2-4de6-8c4f-7e851c246c6e";
+const imgBambuyuLogo1 = "https://www.figma.com/api/mcp/asset/dd441204-f9d6-4c14-98c0-8c564a90662f";
+const imgPawPotsLogo1 = "https://www.figma.com/api/mcp/asset/c488e3f5-5dc2-4a7f-91ee-973207df9fe9";
+const imgPlaayLogo1 = "https://www.figma.com/api/mcp/asset/c17ab35e-535b-4150-8d51-d6ca1da17ec3";
+const imgSyncosseLogo1 = "https://www.figma.com/api/mcp/asset/f04a8156-a074-4be8-b920-c3b02134acf7";
+const imgRihanRealEstateLogo1 = "https://www.figma.com/api/mcp/asset/f0c0d586-30b3-46e3-b2cd-f3c816494101";
+const imgTexKoopLogo1 = "https://www.figma.com/api/mcp/asset/161801f5-d8b7-4141-88c6-cac260497aa8";
+const imgSamuraLogo1 = "https://www.figma.com/api/mcp/asset/6b0d2348-f186-43fd-99f6-c151a5c1bfcb";
+const imgArkPmLogo1 = "https://www.figma.com/api/mcp/asset/4adca041-4187-46c6-87b2-350adebf433e";
+const imgUnileverLogo1 = "https://www.figma.com/api/mcp/asset/c821b23a-8cf0-4a02-b79d-7b4934040038";
+const imgHomegrownLogo1 = "https://www.figma.com/api/mcp/asset/f8b742d7-c911-499a-a99c-5f77f3640796";
+const imgWaxeleneLogo1 = "https://www.figma.com/api/mcp/asset/7b8df85f-b6ff-4492-b666-483be33d41dc";
+const imgContextualaiLogo1 = "https://www.figma.com/api/mcp/asset/d4e2171e-ea37-44af-a266-6c87ec0bd328";
+const imgEllipse = "https://www.figma.com/api/mcp/asset/328813f2-b3e6-4bdc-9ca4-feef9fe9665e";
+const imgDecoRing = "https://www.figma.com/api/mcp/asset/0766805b-c063-4cdd-aa79-88c1a33e8623";
+const imgDecoRing2 = "https://www.figma.com/api/mcp/asset/771799e2-044c-40b6-a3ff-f97d99054aff";
+const imgEllipse1 = "https://www.figma.com/api/mcp/asset/b6378308-e089-4bee-8514-70f07adedeb7";
+const imgEllipse2 = "https://www.figma.com/api/mcp/asset/ebc13155-1492-459f-baa2-b1966e956325";
+const imgVector = "https://www.figma.com/api/mcp/asset/69590833-b6df-47f4-a2ef-f42d538e3751";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/d67c61d9-431d-4ef0-a2db-c5e420bb0b95";
+const imgEllipse3 = "https://www.figma.com/api/mcp/asset/921646d3-8855-42fc-acc8-4429a6eea5fb";
+const imgEllipse4 = "https://www.figma.com/api/mcp/asset/95ba2bd6-fae8-4d0b-ba4e-ce3633ae8975";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/d3acd7a6-831f-4587-9617-fc6fb02e8e7f";
+const imgVector3 = "https://www.figma.com/api/mcp/asset/7cf4fe68-09ab-4411-9073-757d16c7d8a3";
+
+export default function Group5() {
+  return (
+    <div className="contents relative size-full" data-node-id="52:9">
+      <div className="absolute bg-white border-[#8b0a32] border-b-3 border-solid h-[80px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4997" data-name="Navbar">
+        <div className="absolute contents left-[34px] top-[-61px]" data-node-id="52:6">
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[280px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:4998">
+            Home
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[366px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:4999">
+            About
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[452px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5000">
+            Services
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[552px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5001">
+            How We Work
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[692px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5002">
+            Industries
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[803px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5003">
+            Case Studies
+          </p>
+          <div className="absolute bg-[#8b0a32] h-[44px] left-[1176px] overflow-clip rounded-[3px] top-[18px] w-[200px]" data-node-id="1:5004" data-name="Frame">
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Bold'] font-bold h-[18px] leading-[normal] left-[100px] text-[10px] text-center text-white top-[14px] tracking-[1.5px] w-[200px]" data-node-id="1:5005">
+              BOOK A CONSULTATION
+            </p>
+          </div>
+          <div className="absolute left-[34px] size-[201px] top-[-61px]" data-node-id="1:5006" data-name="1 3">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img13} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[933px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5007">
+            Insights
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[1031px] text-[#020c45] text-[13px] top-[30px] whitespace-nowrap" data-node-id="1:5008">
+            Contact Us
+          </p>
+        </div>
+      </div>
+      <div className="absolute bg-[#020c45] h-[400px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:5009" data-name="Footer">
+        <div className="absolute left-0 size-[2.5px] top-0" data-node-id="1:5010" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[20px] size-[2.5px] top-[38px]" data-node-id="1:5047" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-0 size-[2.5px] top-[76px]" data-node-id="1:5084" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[20px] size-[2.5px] top-[114px]" data-node-id="1:5121" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-0 size-[2.5px] top-[152px]" data-node-id="1:5158" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[20px] size-[2.5px] top-[190px]" data-node-id="1:5195" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-0 size-[2.5px] top-[228px]" data-node-id="1:5232" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[20px] size-[2.5px] top-[266px]" data-node-id="1:5269" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-0 size-[2.5px] top-[304px]" data-node-id="1:5306" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[20px] size-[2.5px] top-[342px]" data-node-id="1:5343" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-0 size-[2.5px] top-[380px]" data-node-id="1:5380" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute contents left-0 top-[-46px]" data-node-id="52:8">
+          <div className="absolute left-[40px] size-[2.5px] top-0" data-node-id="1:5011" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-0" data-node-id="1:5012" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-0" data-node-id="1:5013" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-0" data-node-id="1:5014" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-0" data-node-id="1:5015" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-0" data-node-id="1:5016" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-0" data-node-id="1:5017" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-0" data-node-id="1:5018" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-0" data-node-id="1:5019" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-0" data-node-id="1:5020" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-0" data-node-id="1:5021" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-0" data-node-id="1:5022" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-0" data-node-id="1:5023" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-0" data-node-id="1:5024" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-0" data-node-id="1:5025" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-0" data-node-id="1:5026" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-0" data-node-id="1:5027" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-0" data-node-id="1:5028" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-0" data-node-id="1:5029" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-0" data-node-id="1:5030" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-0" data-node-id="1:5031" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-0" data-node-id="1:5032" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-0" data-node-id="1:5033" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-0" data-node-id="1:5034" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-0" data-node-id="1:5035" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-0" data-node-id="1:5036" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-0" data-node-id="1:5037" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-0" data-node-id="1:5038" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-0" data-node-id="1:5039" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-0" data-node-id="1:5040" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-0" data-node-id="1:5041" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-0" data-node-id="1:5042" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-0" data-node-id="1:5043" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-0" data-node-id="1:5044" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-0" data-node-id="1:5045" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-0" data-node-id="1:5046" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[60px] size-[2.5px] top-[38px]" data-node-id="1:5048" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[100px] size-[2.5px] top-[38px]" data-node-id="1:5049" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[140px] size-[2.5px] top-[38px]" data-node-id="1:5050" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[180px] size-[2.5px] top-[38px]" data-node-id="1:5051" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[220px] size-[2.5px] top-[38px]" data-node-id="1:5052" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[260px] size-[2.5px] top-[38px]" data-node-id="1:5053" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[300px] size-[2.5px] top-[38px]" data-node-id="1:5054" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[340px] size-[2.5px] top-[38px]" data-node-id="1:5055" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[380px] size-[2.5px] top-[38px]" data-node-id="1:5056" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[420px] size-[2.5px] top-[38px]" data-node-id="1:5057" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[460px] size-[2.5px] top-[38px]" data-node-id="1:5058" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[500px] size-[2.5px] top-[38px]" data-node-id="1:5059" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[540px] size-[2.5px] top-[38px]" data-node-id="1:5060" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[580px] size-[2.5px] top-[38px]" data-node-id="1:5061" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[620px] size-[2.5px] top-[38px]" data-node-id="1:5062" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[660px] size-[2.5px] top-[38px]" data-node-id="1:5063" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[700px] size-[2.5px] top-[38px]" data-node-id="1:5064" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[740px] size-[2.5px] top-[38px]" data-node-id="1:5065" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[780px] size-[2.5px] top-[38px]" data-node-id="1:5066" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[820px] size-[2.5px] top-[38px]" data-node-id="1:5067" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[860px] size-[2.5px] top-[38px]" data-node-id="1:5068" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[900px] size-[2.5px] top-[38px]" data-node-id="1:5069" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[940px] size-[2.5px] top-[38px]" data-node-id="1:5070" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[980px] size-[2.5px] top-[38px]" data-node-id="1:5071" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1020px] size-[2.5px] top-[38px]" data-node-id="1:5072" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1060px] size-[2.5px] top-[38px]" data-node-id="1:5073" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1100px] size-[2.5px] top-[38px]" data-node-id="1:5074" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1140px] size-[2.5px] top-[38px]" data-node-id="1:5075" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1180px] size-[2.5px] top-[38px]" data-node-id="1:5076" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1220px] size-[2.5px] top-[38px]" data-node-id="1:5077" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1260px] size-[2.5px] top-[38px]" data-node-id="1:5078" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1300px] size-[2.5px] top-[38px]" data-node-id="1:5079" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1340px] size-[2.5px] top-[38px]" data-node-id="1:5080" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1380px] size-[2.5px] top-[38px]" data-node-id="1:5081" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1420px] size-[2.5px] top-[38px]" data-node-id="1:5082" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1460px] size-[2.5px] top-[38px]" data-node-id="1:5083" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[40px] size-[2.5px] top-[76px]" data-node-id="1:5085" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-[76px]" data-node-id="1:5086" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-[76px]" data-node-id="1:5087" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-[76px]" data-node-id="1:5088" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-[76px]" data-node-id="1:5089" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-[76px]" data-node-id="1:5090" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-[76px]" data-node-id="1:5091" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-[76px]" data-node-id="1:5092" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-[76px]" data-node-id="1:5093" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-[76px]" data-node-id="1:5094" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-[76px]" data-node-id="1:5095" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-[76px]" data-node-id="1:5096" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-[76px]" data-node-id="1:5097" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-[76px]" data-node-id="1:5098" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-[76px]" data-node-id="1:5099" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-[76px]" data-node-id="1:5100" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-[76px]" data-node-id="1:5101" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-[76px]" data-node-id="1:5102" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-[76px]" data-node-id="1:5103" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-[76px]" data-node-id="1:5104" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-[76px]" data-node-id="1:5105" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-[76px]" data-node-id="1:5106" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-[76px]" data-node-id="1:5107" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-[76px]" data-node-id="1:5108" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-[76px]" data-node-id="1:5109" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-[76px]" data-node-id="1:5110" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-[76px]" data-node-id="1:5111" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-[76px]" data-node-id="1:5112" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-[76px]" data-node-id="1:5113" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-[76px]" data-node-id="1:5114" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-[76px]" data-node-id="1:5115" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-[76px]" data-node-id="1:5116" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-[76px]" data-node-id="1:5117" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-[76px]" data-node-id="1:5118" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-[76px]" data-node-id="1:5119" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-[76px]" data-node-id="1:5120" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[60px] size-[2.5px] top-[114px]" data-node-id="1:5122" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[100px] size-[2.5px] top-[114px]" data-node-id="1:5123" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[140px] size-[2.5px] top-[114px]" data-node-id="1:5124" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[180px] size-[2.5px] top-[114px]" data-node-id="1:5125" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[220px] size-[2.5px] top-[114px]" data-node-id="1:5126" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[260px] size-[2.5px] top-[114px]" data-node-id="1:5127" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[300px] size-[2.5px] top-[114px]" data-node-id="1:5128" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[340px] size-[2.5px] top-[114px]" data-node-id="1:5129" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[380px] size-[2.5px] top-[114px]" data-node-id="1:5130" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[420px] size-[2.5px] top-[114px]" data-node-id="1:5131" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[460px] size-[2.5px] top-[114px]" data-node-id="1:5132" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[500px] size-[2.5px] top-[114px]" data-node-id="1:5133" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[540px] size-[2.5px] top-[114px]" data-node-id="1:5134" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[580px] size-[2.5px] top-[114px]" data-node-id="1:5135" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[620px] size-[2.5px] top-[114px]" data-node-id="1:5136" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[660px] size-[2.5px] top-[114px]" data-node-id="1:5137" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[700px] size-[2.5px] top-[114px]" data-node-id="1:5138" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[740px] size-[2.5px] top-[114px]" data-node-id="1:5139" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[780px] size-[2.5px] top-[114px]" data-node-id="1:5140" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[820px] size-[2.5px] top-[114px]" data-node-id="1:5141" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[860px] size-[2.5px] top-[114px]" data-node-id="1:5142" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[900px] size-[2.5px] top-[114px]" data-node-id="1:5143" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[940px] size-[2.5px] top-[114px]" data-node-id="1:5144" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[980px] size-[2.5px] top-[114px]" data-node-id="1:5145" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1020px] size-[2.5px] top-[114px]" data-node-id="1:5146" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1060px] size-[2.5px] top-[114px]" data-node-id="1:5147" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1100px] size-[2.5px] top-[114px]" data-node-id="1:5148" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1140px] size-[2.5px] top-[114px]" data-node-id="1:5149" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1180px] size-[2.5px] top-[114px]" data-node-id="1:5150" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1220px] size-[2.5px] top-[114px]" data-node-id="1:5151" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1260px] size-[2.5px] top-[114px]" data-node-id="1:5152" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1300px] size-[2.5px] top-[114px]" data-node-id="1:5153" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1340px] size-[2.5px] top-[114px]" data-node-id="1:5154" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1380px] size-[2.5px] top-[114px]" data-node-id="1:5155" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1420px] size-[2.5px] top-[114px]" data-node-id="1:5156" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1460px] size-[2.5px] top-[114px]" data-node-id="1:5157" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[40px] size-[2.5px] top-[152px]" data-node-id="1:5159" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-[152px]" data-node-id="1:5160" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-[152px]" data-node-id="1:5161" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-[152px]" data-node-id="1:5162" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-[152px]" data-node-id="1:5163" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-[152px]" data-node-id="1:5164" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-[152px]" data-node-id="1:5165" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-[152px]" data-node-id="1:5166" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-[152px]" data-node-id="1:5167" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-[152px]" data-node-id="1:5168" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-[152px]" data-node-id="1:5169" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-[152px]" data-node-id="1:5170" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-[152px]" data-node-id="1:5171" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-[152px]" data-node-id="1:5172" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-[152px]" data-node-id="1:5173" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-[152px]" data-node-id="1:5174" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-[152px]" data-node-id="1:5175" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-[152px]" data-node-id="1:5176" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-[152px]" data-node-id="1:5177" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-[152px]" data-node-id="1:5178" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-[152px]" data-node-id="1:5179" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-[152px]" data-node-id="1:5180" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-[152px]" data-node-id="1:5181" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-[152px]" data-node-id="1:5182" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-[152px]" data-node-id="1:5183" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-[152px]" data-node-id="1:5184" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-[152px]" data-node-id="1:5185" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-[152px]" data-node-id="1:5186" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-[152px]" data-node-id="1:5187" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-[152px]" data-node-id="1:5188" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-[152px]" data-node-id="1:5189" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-[152px]" data-node-id="1:5190" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-[152px]" data-node-id="1:5191" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-[152px]" data-node-id="1:5192" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-[152px]" data-node-id="1:5193" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-[152px]" data-node-id="1:5194" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[60px] size-[2.5px] top-[190px]" data-node-id="1:5196" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[100px] size-[2.5px] top-[190px]" data-node-id="1:5197" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[140px] size-[2.5px] top-[190px]" data-node-id="1:5198" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[180px] size-[2.5px] top-[190px]" data-node-id="1:5199" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[220px] size-[2.5px] top-[190px]" data-node-id="1:5200" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[260px] size-[2.5px] top-[190px]" data-node-id="1:5201" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[300px] size-[2.5px] top-[190px]" data-node-id="1:5202" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[340px] size-[2.5px] top-[190px]" data-node-id="1:5203" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[380px] size-[2.5px] top-[190px]" data-node-id="1:5204" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[420px] size-[2.5px] top-[190px]" data-node-id="1:5205" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[460px] size-[2.5px] top-[190px]" data-node-id="1:5206" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[500px] size-[2.5px] top-[190px]" data-node-id="1:5207" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[540px] size-[2.5px] top-[190px]" data-node-id="1:5208" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[580px] size-[2.5px] top-[190px]" data-node-id="1:5209" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[620px] size-[2.5px] top-[190px]" data-node-id="1:5210" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[660px] size-[2.5px] top-[190px]" data-node-id="1:5211" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[700px] size-[2.5px] top-[190px]" data-node-id="1:5212" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[740px] size-[2.5px] top-[190px]" data-node-id="1:5213" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[780px] size-[2.5px] top-[190px]" data-node-id="1:5214" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[820px] size-[2.5px] top-[190px]" data-node-id="1:5215" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[860px] size-[2.5px] top-[190px]" data-node-id="1:5216" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[900px] size-[2.5px] top-[190px]" data-node-id="1:5217" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[940px] size-[2.5px] top-[190px]" data-node-id="1:5218" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[980px] size-[2.5px] top-[190px]" data-node-id="1:5219" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1020px] size-[2.5px] top-[190px]" data-node-id="1:5220" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1060px] size-[2.5px] top-[190px]" data-node-id="1:5221" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1100px] size-[2.5px] top-[190px]" data-node-id="1:5222" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1140px] size-[2.5px] top-[190px]" data-node-id="1:5223" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1180px] size-[2.5px] top-[190px]" data-node-id="1:5224" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1220px] size-[2.5px] top-[190px]" data-node-id="1:5225" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1260px] size-[2.5px] top-[190px]" data-node-id="1:5226" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1300px] size-[2.5px] top-[190px]" data-node-id="1:5227" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1340px] size-[2.5px] top-[190px]" data-node-id="1:5228" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1380px] size-[2.5px] top-[190px]" data-node-id="1:5229" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1420px] size-[2.5px] top-[190px]" data-node-id="1:5230" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1460px] size-[2.5px] top-[190px]" data-node-id="1:5231" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[40px] size-[2.5px] top-[228px]" data-node-id="1:5233" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-[228px]" data-node-id="1:5234" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-[228px]" data-node-id="1:5235" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-[228px]" data-node-id="1:5236" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-[228px]" data-node-id="1:5237" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-[228px]" data-node-id="1:5238" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-[228px]" data-node-id="1:5239" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-[228px]" data-node-id="1:5240" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-[228px]" data-node-id="1:5241" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-[228px]" data-node-id="1:5242" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-[228px]" data-node-id="1:5243" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-[228px]" data-node-id="1:5244" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-[228px]" data-node-id="1:5245" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-[228px]" data-node-id="1:5246" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-[228px]" data-node-id="1:5247" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-[228px]" data-node-id="1:5248" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-[228px]" data-node-id="1:5249" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-[228px]" data-node-id="1:5250" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-[228px]" data-node-id="1:5251" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-[228px]" data-node-id="1:5252" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-[228px]" data-node-id="1:5253" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-[228px]" data-node-id="1:5254" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-[228px]" data-node-id="1:5255" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-[228px]" data-node-id="1:5256" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-[228px]" data-node-id="1:5257" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-[228px]" data-node-id="1:5258" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-[228px]" data-node-id="1:5259" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-[228px]" data-node-id="1:5260" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-[228px]" data-node-id="1:5261" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-[228px]" data-node-id="1:5262" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-[228px]" data-node-id="1:5263" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-[228px]" data-node-id="1:5264" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-[228px]" data-node-id="1:5265" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-[228px]" data-node-id="1:5266" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-[228px]" data-node-id="1:5267" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-[228px]" data-node-id="1:5268" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[60px] size-[2.5px] top-[266px]" data-node-id="1:5270" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[100px] size-[2.5px] top-[266px]" data-node-id="1:5271" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[140px] size-[2.5px] top-[266px]" data-node-id="1:5272" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[180px] size-[2.5px] top-[266px]" data-node-id="1:5273" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[220px] size-[2.5px] top-[266px]" data-node-id="1:5274" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[260px] size-[2.5px] top-[266px]" data-node-id="1:5275" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[300px] size-[2.5px] top-[266px]" data-node-id="1:5276" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[340px] size-[2.5px] top-[266px]" data-node-id="1:5277" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[380px] size-[2.5px] top-[266px]" data-node-id="1:5278" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[420px] size-[2.5px] top-[266px]" data-node-id="1:5279" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[460px] size-[2.5px] top-[266px]" data-node-id="1:5280" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[500px] size-[2.5px] top-[266px]" data-node-id="1:5281" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[540px] size-[2.5px] top-[266px]" data-node-id="1:5282" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[580px] size-[2.5px] top-[266px]" data-node-id="1:5283" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[620px] size-[2.5px] top-[266px]" data-node-id="1:5284" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[660px] size-[2.5px] top-[266px]" data-node-id="1:5285" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[700px] size-[2.5px] top-[266px]" data-node-id="1:5286" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[740px] size-[2.5px] top-[266px]" data-node-id="1:5287" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[780px] size-[2.5px] top-[266px]" data-node-id="1:5288" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[820px] size-[2.5px] top-[266px]" data-node-id="1:5289" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[860px] size-[2.5px] top-[266px]" data-node-id="1:5290" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[900px] size-[2.5px] top-[266px]" data-node-id="1:5291" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[940px] size-[2.5px] top-[266px]" data-node-id="1:5292" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[980px] size-[2.5px] top-[266px]" data-node-id="1:5293" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1020px] size-[2.5px] top-[266px]" data-node-id="1:5294" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1060px] size-[2.5px] top-[266px]" data-node-id="1:5295" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1100px] size-[2.5px] top-[266px]" data-node-id="1:5296" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1140px] size-[2.5px] top-[266px]" data-node-id="1:5297" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1180px] size-[2.5px] top-[266px]" data-node-id="1:5298" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1220px] size-[2.5px] top-[266px]" data-node-id="1:5299" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1260px] size-[2.5px] top-[266px]" data-node-id="1:5300" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1300px] size-[2.5px] top-[266px]" data-node-id="1:5301" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1340px] size-[2.5px] top-[266px]" data-node-id="1:5302" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1380px] size-[2.5px] top-[266px]" data-node-id="1:5303" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1420px] size-[2.5px] top-[266px]" data-node-id="1:5304" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1460px] size-[2.5px] top-[266px]" data-node-id="1:5305" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[40px] size-[2.5px] top-[304px]" data-node-id="1:5307" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-[304px]" data-node-id="1:5308" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-[304px]" data-node-id="1:5309" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-[304px]" data-node-id="1:5310" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-[304px]" data-node-id="1:5311" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-[304px]" data-node-id="1:5312" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-[304px]" data-node-id="1:5313" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-[304px]" data-node-id="1:5314" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-[304px]" data-node-id="1:5315" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-[304px]" data-node-id="1:5316" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-[304px]" data-node-id="1:5317" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-[304px]" data-node-id="1:5318" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-[304px]" data-node-id="1:5319" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-[304px]" data-node-id="1:5320" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-[304px]" data-node-id="1:5321" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-[304px]" data-node-id="1:5322" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-[304px]" data-node-id="1:5323" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-[304px]" data-node-id="1:5324" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-[304px]" data-node-id="1:5325" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-[304px]" data-node-id="1:5326" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-[304px]" data-node-id="1:5327" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-[304px]" data-node-id="1:5328" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-[304px]" data-node-id="1:5329" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-[304px]" data-node-id="1:5330" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-[304px]" data-node-id="1:5331" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-[304px]" data-node-id="1:5332" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-[304px]" data-node-id="1:5333" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-[304px]" data-node-id="1:5334" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-[304px]" data-node-id="1:5335" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-[304px]" data-node-id="1:5336" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-[304px]" data-node-id="1:5337" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-[304px]" data-node-id="1:5338" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-[304px]" data-node-id="1:5339" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-[304px]" data-node-id="1:5340" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-[304px]" data-node-id="1:5341" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-[304px]" data-node-id="1:5342" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[60px] size-[2.5px] top-[342px]" data-node-id="1:5344" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[100px] size-[2.5px] top-[342px]" data-node-id="1:5345" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[140px] size-[2.5px] top-[342px]" data-node-id="1:5346" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[180px] size-[2.5px] top-[342px]" data-node-id="1:5347" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[220px] size-[2.5px] top-[342px]" data-node-id="1:5348" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[260px] size-[2.5px] top-[342px]" data-node-id="1:5349" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[300px] size-[2.5px] top-[342px]" data-node-id="1:5350" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[340px] size-[2.5px] top-[342px]" data-node-id="1:5351" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[380px] size-[2.5px] top-[342px]" data-node-id="1:5352" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[420px] size-[2.5px] top-[342px]" data-node-id="1:5353" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[460px] size-[2.5px] top-[342px]" data-node-id="1:5354" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[500px] size-[2.5px] top-[342px]" data-node-id="1:5355" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[540px] size-[2.5px] top-[342px]" data-node-id="1:5356" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[580px] size-[2.5px] top-[342px]" data-node-id="1:5357" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[620px] size-[2.5px] top-[342px]" data-node-id="1:5358" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[660px] size-[2.5px] top-[342px]" data-node-id="1:5359" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[700px] size-[2.5px] top-[342px]" data-node-id="1:5360" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[740px] size-[2.5px] top-[342px]" data-node-id="1:5361" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[780px] size-[2.5px] top-[342px]" data-node-id="1:5362" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[820px] size-[2.5px] top-[342px]" data-node-id="1:5363" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[860px] size-[2.5px] top-[342px]" data-node-id="1:5364" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[900px] size-[2.5px] top-[342px]" data-node-id="1:5365" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[940px] size-[2.5px] top-[342px]" data-node-id="1:5366" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[980px] size-[2.5px] top-[342px]" data-node-id="1:5367" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1020px] size-[2.5px] top-[342px]" data-node-id="1:5368" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1060px] size-[2.5px] top-[342px]" data-node-id="1:5369" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1100px] size-[2.5px] top-[342px]" data-node-id="1:5370" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1140px] size-[2.5px] top-[342px]" data-node-id="1:5371" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1180px] size-[2.5px] top-[342px]" data-node-id="1:5372" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1220px] size-[2.5px] top-[342px]" data-node-id="1:5373" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1260px] size-[2.5px] top-[342px]" data-node-id="1:5374" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1300px] size-[2.5px] top-[342px]" data-node-id="1:5375" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1340px] size-[2.5px] top-[342px]" data-node-id="1:5376" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1380px] size-[2.5px] top-[342px]" data-node-id="1:5377" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1420px] size-[2.5px] top-[342px]" data-node-id="1:5378" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1460px] size-[2.5px] top-[342px]" data-node-id="1:5379" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[40px] size-[2.5px] top-[380px]" data-node-id="1:5381" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[80px] size-[2.5px] top-[380px]" data-node-id="1:5382" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[120px] size-[2.5px] top-[380px]" data-node-id="1:5383" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[160px] size-[2.5px] top-[380px]" data-node-id="1:5384" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[200px] size-[2.5px] top-[380px]" data-node-id="1:5385" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[240px] size-[2.5px] top-[380px]" data-node-id="1:5386" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[280px] size-[2.5px] top-[380px]" data-node-id="1:5387" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[320px] size-[2.5px] top-[380px]" data-node-id="1:5388" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[360px] size-[2.5px] top-[380px]" data-node-id="1:5389" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[400px] size-[2.5px] top-[380px]" data-node-id="1:5390" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[440px] size-[2.5px] top-[380px]" data-node-id="1:5391" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[480px] size-[2.5px] top-[380px]" data-node-id="1:5392" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[520px] size-[2.5px] top-[380px]" data-node-id="1:5393" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[560px] size-[2.5px] top-[380px]" data-node-id="1:5394" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[600px] size-[2.5px] top-[380px]" data-node-id="1:5395" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[640px] size-[2.5px] top-[380px]" data-node-id="1:5396" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[680px] size-[2.5px] top-[380px]" data-node-id="1:5397" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[720px] size-[2.5px] top-[380px]" data-node-id="1:5398" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[760px] size-[2.5px] top-[380px]" data-node-id="1:5399" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[800px] size-[2.5px] top-[380px]" data-node-id="1:5400" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[840px] size-[2.5px] top-[380px]" data-node-id="1:5401" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[880px] size-[2.5px] top-[380px]" data-node-id="1:5402" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[920px] size-[2.5px] top-[380px]" data-node-id="1:5403" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[960px] size-[2.5px] top-[380px]" data-node-id="1:5404" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1000px] size-[2.5px] top-[380px]" data-node-id="1:5405" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1040px] size-[2.5px] top-[380px]" data-node-id="1:5406" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1080px] size-[2.5px] top-[380px]" data-node-id="1:5407" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1120px] size-[2.5px] top-[380px]" data-node-id="1:5408" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1160px] size-[2.5px] top-[380px]" data-node-id="1:5409" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1200px] size-[2.5px] top-[380px]" data-node-id="1:5410" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1240px] size-[2.5px] top-[380px]" data-node-id="1:5411" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1280px] size-[2.5px] top-[380px]" data-node-id="1:5412" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1320px] size-[2.5px] top-[380px]" data-node-id="1:5413" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1360px] size-[2.5px] top-[380px]" data-node-id="1:5414" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1400px] size-[2.5px] top-[380px]" data-node-id="1:5415" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute left-[1440px] size-[2.5px] top-[380px]" data-node-id="1:5416" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+          </div>
+          <div className="absolute bg-[#8b0a32] h-[5px] left-0 top-0 w-[1440px]" data-node-id="1:5417" data-name="Rectangle" />
+          <div className="absolute left-[65px] size-[211px] top-[-46px]" data-node-id="1:5418" data-name="1 3">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img14} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal h-[52px] leading-[24px] left-[80px] opacity-70 text-[14px] text-white top-[106px] w-[260px]" data-node-id="1:5419">{`Strategic finance for the Gulf's operators.`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[80px] text-[14px] text-white top-[170px] whitespace-nowrap" dir="auto" data-node-id="1:5420">
+            الحدود تُدفع، النجاح يُقاس
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[380px] text-[10px] text-white top-[40px] tracking-[2.5px] whitespace-nowrap" data-node-id="1:5421">
+            SERVICES
+          </p>
+          <div className="absolute bg-[#8b0a32] h-[2px] left-[380px] top-[58px] w-[32px]" data-node-id="1:5422" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[72px] whitespace-nowrap" data-node-id="1:5423">{`Bookkeeping & Accounting`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[102px] whitespace-nowrap" data-node-id="1:5424">
+            Management Reporting
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[132px] whitespace-nowrap" data-node-id="1:5425">{`Cash Flow & Forecasting`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[162px] whitespace-nowrap" data-node-id="1:5426">{`FP&A / Business Finance`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[192px] whitespace-nowrap" data-node-id="1:5427">{`Tax & VAT Compliance`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[640px] text-[10px] text-white top-[40px] tracking-[2.5px] whitespace-nowrap" data-node-id="1:5428">
+            COMPANY
+          </p>
+          <div className="absolute bg-[#8b0a32] h-[2px] left-[640px] top-[58px] w-[32px]" data-node-id="1:5429" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[640px] opacity-75 text-[13px] text-white top-[72px] whitespace-nowrap" data-node-id="1:5430">
+            About Us
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[640px] opacity-75 text-[13px] text-white top-[102px] whitespace-nowrap" data-node-id="1:5431">
+            How We Work
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[640px] opacity-75 text-[13px] text-white top-[132px] whitespace-nowrap" data-node-id="1:5432">
+            Industries
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[640px] opacity-75 text-[13px] text-white top-[162px] whitespace-nowrap" data-node-id="1:5433">
+            Insights
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[640px] opacity-75 text-[13px] text-white top-[192px] whitespace-nowrap" data-node-id="1:5434">
+            Contact
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[900px] text-[10px] text-white top-[40px] tracking-[2.5px] whitespace-nowrap" data-node-id="1:5435">
+            CONTACT
+          </p>
+          <div className="absolute bg-[#8b0a32] h-[2px] left-[900px] top-[58px] w-[32px]" data-node-id="1:5436" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[900px] opacity-75 text-[13px] text-white top-[72px] whitespace-nowrap" data-node-id="1:5437">
+            info@frontierquotient.com
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[900px] opacity-75 text-[13px] text-white top-[102px] whitespace-nowrap" data-node-id="1:5438">
+            UAE · KSA · Qatar · Bahrain
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[900px] opacity-75 text-[13px] text-white top-[132px] whitespace-nowrap" data-node-id="1:5439">
+            Mon – Fri, 9am – 6pm
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[1160px] text-[10px] text-white top-[40px] tracking-[2.5px] whitespace-nowrap" data-node-id="1:5440">
+            FOLLOW
+          </p>
+          <div className="absolute bg-[#8b0a32] h-[2px] left-[1160px] top-[58px] w-[32px]" data-node-id="1:5441" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[1160px] text-[13px] text-white top-[72px] whitespace-nowrap" data-node-id="1:5442">
+            LinkedIn ↗
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[1160px] text-[13px] text-white top-[102px] whitespace-nowrap" data-node-id="1:5443">
+            Twitter / X ↗
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[1160px] text-[13px] text-white top-[132px] whitespace-nowrap" data-node-id="1:5444">
+            Instagram ↗
+          </p>
+          <div className="absolute bg-white h-px left-[80px] opacity-15 top-[342px] w-[1280px]" data-node-id="1:5445" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[80px] opacity-50 text-[11px] text-white top-[356px] whitespace-nowrap" data-node-id="1:5446">
+            © 2026 Frontier Quotient. All rights reserved.
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[1160px] opacity-50 text-[11px] text-white top-[356px] whitespace-pre" data-node-id="1:5447">{`Privacy Policy  ·  Terms of Service`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[normal] left-[380px] opacity-75 text-[13px] text-white top-[222px] whitespace-nowrap" data-node-id="1:5448">{`Cleanup & Catch-Up Accounting`}</p>
+        </div>
+      </div>
+      <div className="absolute bg-black h-[540px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:5449" data-name="Section / 01 – Hero">
+        <div className="absolute contents left-[-1347px] top-[-191px]" data-node-id="52:4">
+          <div className="absolute h-[1622px] left-[-1347px] opacity-65 top-[-191px] w-[2942px]" data-node-id="1:5450" data-name="ChatGPT Image Jun 6, 2026, 02_12_13 PM 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-full left-[45.74%] max-w-none top-[-13.27%] w-[100.02%]" src={imgChatGptImageJun62026021213Pm1} />
+            </div>
+          </div>
+          <div className="absolute left-[1080px] size-[520px] top-[180px]" data-node-id="1:5451" data-name="deco-ring">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDecoRing} />
+          </div>
+          <div className="absolute left-[1160px] size-[360px] top-[260px]" data-node-id="1:5452" data-name="deco-ring2">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDecoRing2} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[100px] text-[15px] text-white top-[75px] tracking-[3px] whitespace-nowrap" data-node-id="1:5453">
+            OUR SERVICES
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[59px] left-[100px] text-[64px] text-white top-[122px] w-[950px]" data-node-id="1:5454">{`Finance & accounting services `}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[54px] left-[394px] text-[64px] text-[transparent] top-[183px] w-[447px]" data-node-id="1:5455">
+            designed for
+          </p>
+          <div className="absolute bg-[#2b6b25] h-[4px] left-[100px] top-[312px] w-[56px]" data-node-id="1:5456" data-name="accent-underline" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[26px] left-[100px] text-[17px] text-white top-[366px] w-[480px]" data-node-id="1:5457">
+            Flexible finance support tailored to your business needs.
+          </p>
+          <div className="absolute bg-white h-[360px] left-[900px] overflow-clip rounded-[16px] shadow-[0px_10px_30px_0px_rgba(0,0,0,0.08)] top-[90px] w-[440px]" data-node-id="1:5458" data-name="Index / Full Suite">
+            <div className="absolute bg-[#2b6b25] h-[5px] left-0 top-0 w-[440px]" data-node-id="1:5459" data-name="bar" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[32px] text-[#2b6b25] text-[11px] top-[30px] tracking-[2px] whitespace-nowrap" data-node-id="1:5460">
+              THE FULL SUITE
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[68px] whitespace-nowrap" data-node-id="1:5461">
+              01
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[66px] whitespace-nowrap" data-node-id="1:5462">{`FP&A / Business Finance`}</p>
+            <div className="absolute bg-[#ece9e2] h-px left-[32px] top-[96px] w-[376px]" data-node-id="1:5463" data-name="div" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[114px] whitespace-nowrap" data-node-id="1:5464">
+              02
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[112px] whitespace-nowrap" data-node-id="1:5465">
+              Management Reporting
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[32px] top-[142px] w-[376px]" data-node-id="1:5466" data-name="div" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[160px] whitespace-nowrap" data-node-id="1:5467">
+              03
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[158px] whitespace-nowrap" data-node-id="1:5468">{`Cash Flow & Forecasting`}</p>
+            <div className="absolute bg-[#ece9e2] h-px left-[32px] top-[188px] w-[376px]" data-node-id="1:5469" data-name="div" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[206px] whitespace-nowrap" data-node-id="1:5470">
+              04
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[204px] whitespace-nowrap" data-node-id="1:5471">{`Bookkeeping & Accounting`}</p>
+            <div className="absolute bg-[#ece9e2] h-px left-[32px] top-[234px] w-[376px]" data-node-id="1:5472" data-name="div" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[252px] whitespace-nowrap" data-node-id="1:5473">
+              05
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[250px] whitespace-nowrap" data-node-id="1:5474">{`Tax & VAT Compliance`}</p>
+            <div className="absolute bg-[#ece9e2] h-px left-[32px] top-[280px] w-[376px]" data-node-id="1:5475" data-name="div" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[32px] text-[#2b6b25] text-[13px] top-[298px] whitespace-nowrap" data-node-id="1:5476">
+              06
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[72px] text-[#020c45] text-[14px] top-[296px] whitespace-nowrap" data-node-id="1:5477">{`Cleanup & Catch-Up Accounting`}</p>
+          </div>
+          <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[54px] left-[100px] text-[64px] text-[transparent] top-[237px] w-[713px]" data-node-id="1:5478">
+            growth
+          </p>
+        </div>
+      </div>
+      <div className="absolute bg-[#8b0a32] h-[300px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:5479" data-name="Section / 04 – Final CTA">
+        <div className="absolute contents left-[-120px] top-[-60px]" data-node-id="52:7">
+          <div className="absolute left-[-120px] size-[420px] top-[-60px]" data-node-id="1:5480" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse1} />
+          </div>
+          <div className="absolute left-[1220px] size-[300px] top-[80px]" data-node-id="1:5481" data-name="Ellipse">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse2} />
+          </div>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[44px] left-[720px] text-[32px] text-center text-white top-[92px] w-[960px]" data-node-id="1:5482">
+            Ready to simplify your finance operations?
+          </p>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[24px] left-[720px] opacity-88 text-[16px] text-center text-white top-[150px] w-[640px]" data-node-id="1:5483">
+            Let’s discuss how Frontier Quotient can support your business growth.
+          </p>
+          <div className="absolute bg-white content-stretch flex items-start left-[571.5px] overflow-clip px-[32px] py-[17px] rounded-[6px] top-[200px]" data-node-id="1:5484" data-name="Button / Schedule Consultation">
+            <p className="[word-break:break-word] font-['Montserrat:Bold'] font-bold leading-[normal] relative shrink-0 text-[#8b0a32] text-[13px] tracking-[1.5px] whitespace-nowrap" data-node-id="1:5485">
+              BOOK A CONSULTATION
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#f8f6f2] h-[1620px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:5486" data-name="Section / 03 – Services Grid">
+        <div className="absolute contents left-[100px] top-[50px]" data-node-id="52:3">
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[100px] text-[#8b0a32] text-[15px] top-[50px] tracking-[3px] whitespace-nowrap" data-node-id="1:5487">
+            WHAT WE DELIVER
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[100px] text-[#020c45] text-[34px] top-[78px] whitespace-nowrap" data-node-id="1:5488">
+            Six core services
+          </p>
+          <div className="absolute bg-[#2b6b25] h-[4px] left-[100px] top-[138px] w-[56px]" data-node-id="1:5489" data-name="Rectangle" />
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[736px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[652px] w-[604px]" data-node-id="1:5490" data-name="Service / 04 – Bookkeeping & Accounting">
+            <div className="absolute bg-[#2b6b25] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5491" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#2b6b25] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5492">
+              04
+            </p>
+            <div className="absolute bg-[#2b6b25] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5493" data-name="Rectangle" />
+            <div className="absolute border-[2.2px] border-solid border-white h-[26px] left-[56px] rounded-[2px] top-[58px] w-[18px]" data-node-id="1:5494" data-name="Rectangle" />
+            <div className="absolute bg-white h-[2px] left-[60px] rounded-[1px] top-[63px] w-[11px]" data-node-id="1:5495" data-name="Rectangle" />
+            <div className="absolute bg-white h-[2px] left-[60px] rounded-[1px] top-[68px] w-[11px]" data-node-id="1:5496" data-name="Rectangle" />
+            <div className="absolute bg-white h-[2px] left-[60px] rounded-[1px] top-[73px] w-[8px]" data-node-id="1:5497" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5498">{`Bookkeeping & Accounting`}</p>
+            <div className="absolute bg-[#2b6b25] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5499" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5500">
+              Organized, accurate bookkeeping that keeps your financial records up to date.
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[35px] rounded-[4px] top-[267px] w-[147px]" data-node-id="1:5501" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#2b6b25] text-[11px] top-[274px] whitespace-nowrap" data-node-id="1:5502">
+              Transaction recording
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[190px] rounded-[4px] top-[267px] w-[110px]" data-node-id="1:5503" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[202px] text-[#2b6b25] text-[11px] top-[274px] whitespace-nowrap" data-node-id="1:5504">
+              Reconciliations
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[308px] rounded-[4px] top-[267px] w-[119px]" data-node-id="1:5505" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[320px] text-[#2b6b25] text-[11px] top-[274px] whitespace-nowrap" data-node-id="1:5506">
+              Month-end close
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[35px] rounded-[4px] top-[301px] w-[142px]" data-node-id="1:5507" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#2b6b25] text-[11px] top-[308px] whitespace-nowrap" data-node-id="1:5508">
+              Financial statements
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5509" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#2b6b25] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5510">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5511">
+              Better accuracy and financial visibility
+            </p>
+          </div>
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[736px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[200px] w-[604px]" data-node-id="1:5512" data-name="Service / 02 – Management Reporting">
+            <div className="absolute bg-[#020c45] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5513" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#020c45] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5514">
+              02
+            </p>
+            <div className="absolute bg-[#020c45] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5515" data-name="Rectangle" />
+            <div className="absolute bg-white h-[10px] left-[52px] rounded-[1px] top-[73px] w-[5px]" data-node-id="1:5516" data-name="Rectangle" />
+            <div className="absolute bg-white h-[17px] left-[60px] rounded-[1px] top-[66px] w-[5px]" data-node-id="1:5517" data-name="Rectangle" />
+            <div className="absolute bg-white h-[23px] left-[68px] rounded-[1px] top-[60px] w-[5px]" data-node-id="1:5518" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5519">
+              Management Reporting
+            </p>
+            <div className="absolute bg-[#020c45] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5520" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5521">
+              Monthly reporting that helps leadership understand business performance.
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[35px] rounded-[4px] top-[245px] w-[89px]" data-node-id="1:5522" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5523">{`P&L reports`}</p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[132px] rounded-[4px] top-[245px] w-[92px]" data-node-id="1:5524" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[144px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5525">
+              Dashboards
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[232px] rounded-[4px] top-[245px] w-[93px]" data-node-id="1:5526" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[244px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5527">
+              KPI tracking
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[333px] rounded-[4px] top-[245px] w-[166px]" data-node-id="1:5528" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[345px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5529">
+              Management summaries
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5530" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#020c45] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5531">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5532">
+              Smarter operational and financial decisions
+            </p>
+          </div>
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[100px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[652px] w-[604px]" data-node-id="1:5533" data-name="Service / 03 – Cash Flow & Forecasting">
+            <div className="absolute bg-[#8b0a32] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5534" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#8b0a32] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5535">
+              03
+            </p>
+            <div className="absolute bg-[#8b0a32] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5536" data-name="Rectangle" />
+            <div className="absolute h-[17px] left-[51px] top-[64px] w-[24px]" data-node-id="1:5537" data-name="Vector">
+              <div className="absolute inset-[-7.65%_-5.42%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector} />
+              </div>
+            </div>
+            <div className="absolute left-[72px] size-[6px] top-[61px]" data-node-id="1:5538" data-name="Vector">
+              <div className="absolute inset-[-21.67%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5539">{`Cash Flow & Forecasting`}</p>
+            <div className="absolute bg-[#8b0a32] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5540" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5541">
+              Forecasting and cash flow planning for improved financial stability.
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[35px] rounded-[4px] top-[245px] w-[144px]" data-node-id="1:5542" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5543">
+              Cash flow forecasting
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[187px] rounded-[4px] top-[245px] w-[85px]" data-node-id="1:5544" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[199px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5545">
+              Budgeting
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[280px] rounded-[4px] top-[245px] w-[128px]" data-node-id="1:5546" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[292px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5547">
+              Financial planning
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5548" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#8b0a32] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5549">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5550">
+              Improved visibility and reduced surprises
+            </p>
+          </div>
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[100px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[200px] w-[604px]" data-node-id="1:5551" data-name="Service / 01 – FP&A / Business Finance">
+            <div className="absolute bg-[#2b6b25] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5552" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#2b6b25] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5553">
+              01
+            </p>
+            <div className="absolute bg-[#2b6b25] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5554" data-name="Rectangle" />
+            <div className="absolute left-[59px] size-[12px] top-[53px]" data-node-id="1:5555" data-name="Ellipse">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse3} />
+            </div>
+            <div className="absolute h-[22px] left-[52px] top-[67px] w-[26px]" data-node-id="1:5556" data-name="Ellipse">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse4} />
+            </div>
+            <div className="absolute bg-[#2b6b25] h-[11px] left-[52px] top-[72px] w-[26px]" data-node-id="1:5557" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5558">{`FP&A / Business Finance`}</p>
+            <div className="absolute bg-[#2b6b25] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5559" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5560">
+              Strategic finance leadership without the cost of a full-time CFO.
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[35px] rounded-[4px] top-[245px] w-[123px]" data-node-id="1:5561" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#2b6b25] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5562">
+              Financial strategy
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[166px] rounded-[4px] top-[245px] w-[114px]" data-node-id="1:5563" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[178px] text-[#2b6b25] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5564">
+              Board reporting
+            </p>
+            <div className="absolute bg-[#e9f0e7] h-[26px] left-[288px] rounded-[4px] top-[245px] w-[122px]" data-node-id="1:5565" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[300px] text-[#2b6b25] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5566">
+              Planning support
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5567" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#2b6b25] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5568">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5569">
+              Better financial decision-making
+            </p>
+          </div>
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[100px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[1104px] w-[604px]" data-node-id="1:5570" data-name="Service / 05 – Tax & VAT Compliance">
+            <div className="absolute bg-[#020c45] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5571" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#020c45] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5572">
+              05
+            </p>
+            <div className="absolute bg-[#020c45] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5573" data-name="Rectangle" />
+            <div className="absolute h-[25px] left-[54px] top-[58px] w-[22px]" data-node-id="1:5574" data-name="Vector">
+              <div className="absolute inset-[-4.4%_-5%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector2} />
+              </div>
+            </div>
+            <div className="absolute h-[8px] left-[59px] top-[67px] w-[11px]" data-node-id="1:5575" data-name="Vector">
+              <div className="absolute inset-[-15%_-10.91%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector3} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5576">{`Tax & VAT Compliance`}</p>
+            <div className="absolute bg-[#020c45] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5577" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5578">
+              Finance support that helps businesses stay compliant and organized.
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[35px] rounded-[4px] top-[245px] w-[93px]" data-node-id="1:5579" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5580">
+              VAT support
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[136px] rounded-[4px] top-[245px] w-[166px]" data-node-id="1:5581" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[148px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5582">
+              Compliance coordination
+            </p>
+            <div className="absolute bg-[#e7e9f2] h-[26px] left-[310px] rounded-[4px] top-[245px] w-[159px]" data-node-id="1:5583" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[322px] text-[#020c45] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5584">
+              Finance documentation
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5585" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#020c45] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5586">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5587">
+              Reduced operational risk
+            </p>
+          </div>
+          <div className="absolute bg-white border border-[#ece9e2] border-solid h-[420px] left-[736px] overflow-clip rounded-[14px] shadow-[0px_14px_34px_-4px_rgba(3,13,69,0.1)] top-[1104px] w-[604px]" data-node-id="1:5588" data-name="Service / 06 – Cleanup & Catch-Up Accounting">
+            <div className="absolute bg-[#8b0a32] h-[5px] left-[-1px] top-[-1px] w-[604px]" data-node-id="1:5589" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[507px] opacity-7 text-[#8b0a32] text-[104px] top-[7px] whitespace-nowrap" data-node-id="1:5590">
+              06
+            </p>
+            <div className="absolute bg-[#8b0a32] left-[35px] rounded-[16px] size-[60px] top-[41px]" data-node-id="1:5591" data-name="Rectangle" />
+            <div className="absolute border-[2.2px] border-solid border-white h-[22px] left-[56px] rounded-[2px] top-[58px] w-[18px]" data-node-id="1:5592" data-name="Rectangle" />
+            <div className="absolute bg-[#8b0a32] border-[2.2px] border-solid border-white h-[22px] left-[52px] rounded-[2px] top-[63px] w-[18px]" data-node-id="1:5593" data-name="Rectangle" />
+            <div className="absolute bg-white h-[2px] left-[56px] rounded-[1px] top-[69px] w-[10px]" data-node-id="1:5594" data-name="Rectangle" />
+            <div className="absolute bg-white h-[2px] left-[56px] rounded-[1px] top-[74px] w-[10px]" data-node-id="1:5595" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[30px] left-[35px] text-[#020c45] text-[24px] top-[119px] w-[500px]" data-node-id="1:5596">{`Cleanup & Catch-Up Accounting`}</p>
+            <div className="absolute bg-[#8b0a32] h-[3px] left-[35px] top-[161px] w-[40px]" data-node-id="1:5597" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[22px] left-[35px] text-[#1a1a2e] text-[14px] top-[179px] w-[532px]" data-node-id="1:5598">
+              Resolve accounting backlogs and organize financial records.
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[35px] rounded-[4px] top-[245px] w-[201px]" data-node-id="1:5599" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[47px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5600">
+              Historical bookkeeping cleanup
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[244px] rounded-[4px] top-[245px] w-[110px]" data-node-id="1:5601" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[256px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5602">
+              Reconciliations
+            </p>
+            <div className="absolute bg-[#f6e7ec] h-[26px] left-[362px] rounded-[4px] top-[245px] w-[109px]" data-node-id="1:5603" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[374px] text-[#8b0a32] text-[11px] top-[252px] whitespace-nowrap" data-node-id="1:5604">
+              Reporting fixes
+            </p>
+            <div className="absolute bg-[#ece9e2] h-px left-[35px] top-[355px] w-[532px]" data-node-id="1:5605" data-name="Rectangle" />
+            <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[35px] text-[#8b0a32] text-[14px] top-[372px] whitespace-nowrap" data-node-id="1:5606">
+              →
+            </p>
+            <p className="[word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[normal] left-[57px] text-[#020c45] text-[12px] top-[373px] whitespace-nowrap" data-node-id="1:5607">
+              Reliable and organized financial data
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[#f8f6f2] h-[400px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:5608" data-name="Section / 02 – Trusted By">
+        <div className="absolute contents left-0 top-0" data-node-id="52:5">
+          <div className="absolute bg-[#ece9e2] h-px left-0 top-0 w-[1440px]" data-node-id="1:5609" data-name="Rectangle" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[720px] text-[#8b0a32] text-[15px] text-center top-[44px] tracking-[3px] w-[1440px]" data-node-id="1:5610">
+            TRUSTED ACROSS THE GCC
+          </p>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[720px] text-[#020c45] text-[25px] text-center top-[72px] w-[1440px]" data-node-id="1:5611">
+            Businesses that trust us with their numbers
+          </p>
+          <div className="absolute bg-[#2b6b25] h-[4px] left-[692px] top-[114px] w-[56px]" data-node-id="1:5612" data-name="Rectangle" />
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[36px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5613" data-name="Logo 01 – Adaye" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[84px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5614">
+            Adaye
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[142px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5615" data-name="Logo 02 – Datacade" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[190px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5616">
+            Datacade
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[248px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5617" data-name="Logo 03 – CocoBites" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[296px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5618">
+            CocoBites
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[354px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5619" data-name="Logo 04 – EHAD" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[402px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5620">
+            EHAD
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[460px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5621" data-name="Logo 05 – Empirica" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[508px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5622">
+            Empirica
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[566px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5623" data-name="Logo 06 – Green Impact" />
+          <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[0] left-[614px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5624">
+            <p className="leading-[11px] mb-0">Green Impact</p>
+            <p className="leading-[11px]">Solutions</p>
+          </div>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[672px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5625" data-name="Logo 07 – HilalFul" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[720px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5626">
+            HilalFul
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[778px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5627" data-name="Logo 08 – Indus Hospital" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[826px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5628">
+            Indus Hospital
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[884px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5629" data-name="Logo 09 – NIS" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[932px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5630">
+            NIS
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[990px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5631" data-name="Logo 10 – Medznmore" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1038px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5632">
+            Medznmore
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1096px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5633" data-name="Logo 11 – Neo Essentials" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1144px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5634">
+            Neo Essentials
+          </p>
+          <div className="absolute left-[1103px] size-[82px] top-[145px]" data-node-id="1:5635" data-name="Neo Essentials Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgNeoEssentialsLogo1} />
+          </div>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1202px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5636" data-name="Logo 12 – OverDose" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1250px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5637">
+            OverDose
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1308px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[160px] w-[96px]" data-node-id="1:5638" data-name="Logo 13 – Nolma" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1356px] text-[#020c45] text-[8px] text-center top-[222px] w-[108px]" data-node-id="1:5639">
+            Nolma
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[36px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5640" data-name="Logo 14 – Bambuyu" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[84px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5641">
+            Bambuyu
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[142px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5642" data-name="Logo 15 – PawPots" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[190px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5643">
+            PawPots
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[248px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5644" data-name="Logo 16 – Plaay" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[296px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5645">
+            Plaay
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[354px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5646" data-name="Logo 17 – Syncosse" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[402px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5647">
+            Syncosse
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[460px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5648" data-name="Logo 18 – Rihan Real Estate" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[508px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5649">
+            Rihan Real Estate
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[566px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5650" data-name="Logo 19 – TexKoop" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[614px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5651">
+            TexKoop
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[672px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5652" data-name="Logo 20 – Samura" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[720px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5653">
+            Samura
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[778px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5654" data-name="Logo 21 – The Botanist" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[826px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5655">
+            The Botanist
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[884px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5656" data-name="Logo 22 – ARK PM" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[932px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5657">
+            ARK PM
+          </p>
+          <div className="absolute h-[34px] left-[784px] top-[283px] w-[83px]" data-node-id="1:5658" data-name="The Botanist Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTheBotanistLogo1} />
+          </div>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[990px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5659" data-name="Logo 23 – Unilever" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1038px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5660">
+            Unilever
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1096px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5661" data-name="Logo 24 – Homegrown" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1144px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5662">
+            Homegrown
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1202px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5663" data-name="Logo 25 – Waxelene" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1250px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5664">
+            Waxelene
+          </p>
+          <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[56px] left-[1308px] rounded-[6px] shadow-[0px_3px_9px_0px_rgba(3,13,69,0.05)] top-[272px] w-[96px]" data-node-id="1:5665" data-name="Logo 26 – Contextual AI" />
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:Medium'] font-medium leading-[11px] left-[1356px] text-[#020c45] text-[8px] text-center top-[334px] w-[108px]" data-node-id="1:5666">
+            Contextual AI
+          </p>
+          <div className="absolute h-[37px] left-[48px] top-[169px] w-[71px]" data-node-id="1:5667" data-name="Adaye Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAdayeLogo1} />
+          </div>
+          <div className="absolute left-[157px] size-[65px] top-[155px]" data-node-id="1:5668" data-name="datacade_logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDatacadeLogo1} />
+          </div>
+          <div className="absolute h-[44px] left-[256px] top-[166px] w-[79px]" data-node-id="1:5669" data-name="CocoBites Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCocoBitesLogo1} />
+          </div>
+          <div className="absolute h-[33px] left-[360px] top-[171px] w-[83px]" data-node-id="1:5670" data-name="Ehad logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgEhadLogo1} />
+          </div>
+          <div className="absolute h-[39px] left-[471px] top-[168px] w-[73px]" data-node-id="1:5671" data-name="Empirica Logo 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[186.57%] left-0 max-w-none top-[-40.3%] w-full" src={imgEmpiricaLogo1} />
+            </div>
+          </div>
+          <div className="absolute h-[43px] left-[590px] top-[166px] w-[48px]" data-node-id="1:5672" data-name="greenimpactsolutions_logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGreenimpactsolutionsLogo1} />
+          </div>
+          <div className="absolute left-[697px] size-[45px] top-[165px]" data-node-id="1:5673" data-name="HilalFul Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHilalFulLogo1} />
+          </div>
+          <div className="absolute left-[804px] size-[43px] top-[166px]" data-node-id="1:5674" data-name="Indus_Hospital_logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIndusHospitalLogo1} />
+          </div>
+          <div className="absolute h-[70px] left-[885px] top-[153px] w-[93px]" data-node-id="1:5675" data-name="NIS Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgNisLogo1} />
+          </div>
+          <div className="absolute h-[23px] left-[996px] top-[176px] w-[83px]" data-node-id="1:5676" data-name="Medznmore Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgMedznmoreLogo1} />
+          </div>
+          <div className="absolute left-[1221px] size-[58px] top-[159px]" data-node-id="1:5677" data-name="OverDose Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgOverDoseLogo1} />
+          </div>
+          <div className="absolute left-[1314px] size-[83px] top-[146px]" data-node-id="1:5678" data-name="Nolma Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgNolmaLogo1} />
+          </div>
+          <div className="absolute h-[43px] left-[52px] top-[278px] w-[64px]" data-node-id="1:5679" data-name="Bambuyu Logo 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[148.84%] left-[-0.22%] max-w-none top-[-16.28%] w-[100.45%]" src={imgBambuyuLogo1} />
+            </div>
+          </div>
+          <div className="absolute h-[46px] left-[161px] top-[277px] w-[57px]" data-node-id="1:5680" data-name="PawPots Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPawPotsLogo1} />
+          </div>
+          <div className="absolute h-[29px] left-[257px] top-[285px] w-[78px]" data-node-id="1:5681" data-name="Plaay Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPlaayLogo1} />
+          </div>
+          <div className="absolute left-[376px] size-[51px] top-[274px]" data-node-id="1:5682" data-name="Syncosse logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSyncosseLogo1} />
+          </div>
+          <div className="absolute h-[45px] left-[476px] top-[277px] w-[64px]" data-node-id="1:5683" data-name="Rihan Real Estate Logo 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[143.64%] left-0 max-w-none top-[-18.18%] w-full" src={imgRihanRealEstateLogo1} />
+            </div>
+          </div>
+          <div className="absolute left-[577px] size-[74px] top-[263px]" data-node-id="1:5684" data-name="TexKoop Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgTexKoopLogo1} />
+          </div>
+          <div className="absolute h-[34px] left-[679px] top-[283px] w-[82px]" data-node-id="1:5685" data-name="Samura Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSamuraLogo1} />
+          </div>
+          <div className="absolute h-[45px] left-[899px] top-[277px] w-[65px]" data-node-id="1:5686" data-name="ARK PM Logo 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[145.31%] left-0 max-w-none top-[-25.52%] w-full" src={imgArkPmLogo1} />
+            </div>
+          </div>
+          <div className="absolute h-[45px] left-[998px] top-[277px] w-[79px]" data-node-id="1:5687" data-name="Unilever Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgUnileverLogo1} />
+          </div>
+          <div className="absolute left-[1118px] size-[52px] top-[274px]" data-node-id="1:5688" data-name="Homegrown Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHomegrownLogo1} />
+          </div>
+          <div className="absolute h-[15px] left-[1208px] top-[292px] w-[83px]" data-node-id="1:5689" data-name="Waxelene Logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgWaxeleneLogo1} />
+          </div>
+          <div className="absolute left-[1324px] size-[63px] top-[268px]" data-node-id="1:5690" data-name="contextualai_logo 1">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgContextualaiLogo1} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,151 @@
+.quick-faq {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.quick-faq__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  /* Was a fixed 560px matching Figma's always-open frame; the grid below is
+     now in normal flow (auto height) so this container grows/shrinks with
+     however many rows the user has actually opened, instead of reserving
+     open-state space for a closed-by-default accordion. */
+  padding: 202px 0 60px;
+}
+
+.quick-faq__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 39px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.quick-faq__heading {
+  position: absolute;
+  left: 80px;
+  top: 76px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+/* Two-column x three-row grid of accordion rows. Figma's static frame shows
+   every row expanded at fixed heights matching its icon-row spacing (top:
+   210, 306, 402, section end 560) — but a real accordion defaults to closed,
+   so rows are auto-sized to their (closed, then later opened) content. */
+.quick-faq__grid {
+  position: relative;
+  margin-left: 80px;
+  width: 1220px;
+  display: grid;
+  grid-template-columns: 580px 580px;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 60px;
+}
+
+.quick-faq__item {
+  padding-top: 8px;
+}
+
+.quick-faq__item > summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(2, 12, 69, 0.08);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-navy);
+}
+
+.quick-faq__item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.quick-faq__item > summary::marker {
+  content: '';
+}
+
+.quick-faq__icon {
+  flex: 0 0 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.quick-faq__icon--red {
+  color: var(--color-brand-red);
+}
+
+.quick-faq__icon--green {
+  color: var(--color-green);
+}
+
+.quick-faq__question {
+  flex: 1;
+  max-width: 556px;
+}
+
+.quick-faq__answer {
+  margin: 18px 0 0;
+  padding-left: 24px;
+  max-width: 556px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-navy);
+  opacity: 0.55;
+}
+
+/* Collapse the 2x3 accordion grid to a single column. Rows drop their
+   fixed 96/96/168px heights (needed at desktop only to match exact
+   Figma divider positions) in favor of grid-template-rows:none so every
+   row sizes to its own content instead — all six items have the "open"
+   attribute, so each answer's real height must fit or rows below it
+   would overlap. */
+@media (max-width: 900px) {
+  .quick-faq__inner {
+    height: auto;
+    padding: 40px 24px 48px;
+  }
+
+  .quick-faq__eyebrow {
+    position: static;
+    margin-bottom: 12px;
+  }
+
+  .quick-faq__heading {
+    position: static;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .quick-faq__grid {
+    position: static;
+    margin-left: 0;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-faq__heading {
+    font-size: 24px;
+  }
+}

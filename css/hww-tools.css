@@ -1,0 +1,196 @@
+.hww-tools {
+  position: relative;
+  background: var(--color-cream-alt);
+  overflow: hidden;
+}
+
+.hww-tools__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
+}
+
+.hww-tools__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 37px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.hww-tools__heading {
+  position: absolute;
+  left: 80px;
+  top: 66px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 26px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.hww-tools__rule {
+  position: absolute;
+  left: 80px;
+  top: 124px;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-green);
+}
+
+.hww-tools__tag {
+  position: absolute;
+  left: 1256px;
+  top: 86px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* Logo ticker. The Figma export lists the same 10 logos twice (Xero, SAP,
+   PowerBI repeat a third time past x=1344, off the 1440 canvas, clipped by
+   overflow-clip) at a uniform 140px pitch — that's a marquee laid out at
+   rest, not a static row. Reproduced here as an actual infinite auto-scroll:
+   the 10-logo set is duplicated once in the track and animated by exactly
+   one set-width (1400px = 10 x 140px pitch) so the loop is seamless.
+   Scroll speed (32s/cycle) is not specified anywhere in the source and is a
+   reasonable default, not a measured value. */
+.hww-tools__band {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  height: 104px;
+  background: var(--color-green);
+  overflow: hidden;
+}
+
+.hww-tools__track {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  height: 100%;
+  padding-left: 56px;
+  width: max-content;
+  animation: hww-tools-scroll 32s linear infinite;
+}
+
+@keyframes hww-tools-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-1400px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hww-tools__track {
+    animation: none;
+  }
+}
+
+.hww-tools__chip {
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  background: var(--color-white);
+  box-shadow: 0 6px 16px 0 rgba(0, 13, 5, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hww-tools__chip img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.hww-tools__fade {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 104px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hww-tools__fade--left {
+  left: 0;
+  background: linear-gradient(to right, var(--color-green), rgba(43, 107, 37, 0));
+}
+
+.hww-tools__fade--right {
+  left: 1308px;
+  background: linear-gradient(to right, rgba(43, 107, 37, 0), var(--color-green));
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   section. IMPORTANT: the logo ticker is supposed to keep scrolling
+   horizontally at every width (that's the whole point of the marquee) —
+   nothing here stops the `.hww-tools__track` animation. What changes is
+   just the surrounding layout: eyebrow/heading/rule reflow to static
+   stacking, the small far-right "TECH STACK" tag (a decorative label, not
+   load-bearing content) is hidden since it has nowhere sensible to go once
+   the heading is full-width, and the band drops from an absolute
+   `top: 150px` to sitting in normal flow below the heading. The right-edge
+   fade was pinned at `left: 1308px`, a value that only makes sense against
+   the fixed 1440px desktop canvas — at fluid mobile widths it's swapped for
+   `right: 0` so it still sits flush with the band's actual right edge.
+   `.hww-tools__band` already has `overflow: hidden`, which is what keeps
+   the marquee's own horizontal scroll from ever affecting the page. */
+@media (max-width: 900px) {
+  .hww-tools__inner {
+    height: auto;
+    padding: 40px 24px 40px;
+  }
+
+  .hww-tools__eyebrow,
+  .hww-tools__heading,
+  .hww-tools__rule {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .hww-tools__heading {
+    margin-top: 8px;
+    white-space: normal;
+  }
+
+  .hww-tools__rule {
+    margin-top: 16px;
+  }
+
+  .hww-tools__tag {
+    display: none;
+  }
+
+  .hww-tools__band {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  .hww-tools__fade--right {
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hww-tools__fade--left,
+  .hww-tools__fade--right {
+    width: 80px;
+  }
+}

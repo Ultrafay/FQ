@@ -1,0 +1,591 @@
+.hero {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  background: #3a3838;
+}
+
+.hero__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 540px;
+  height: 620px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.hero__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__slide:nth-child(1) img { object-position: center 50%; } /* UAE */
+.hero__slide:nth-child(2) img { object-position: center 30%; } /* KSA */
+.hero__slide:nth-child(3) img { object-position: center 30%; } /* Qatar */
+.hero__slide:nth-child(4) img { object-position: center 15%; } /* Bahrain */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__slide {
+    transition: none;
+  }
+}
+
+.hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 8, 13, 0.35);
+  pointer-events: none;
+}
+
+.hero__rings {
+  position: absolute;
+  left: 0;
+  top: -12px;
+  width: 1587px;
+  height: 632px;
+  opacity: 0.91;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(2, 12, 69, 0.06);
+}
+
+/* right:0 instead of a fixed width:540px — the panel stretches to fill
+   whatever's left of `.hero` beyond the 900px-wide photo, so on viewports
+   wider than the 1440px design, the cream panel simply extends further
+   right instead of leaving `.hero`'s own dark background exposed as a
+   strip (min-width guards the panel if `.hero` itself were ever narrower
+   than 900+540px, an edge case outside any real viewport this site
+   supports). At exactly 1440px this computes to the same 540px as before —
+   confirmed no visual change at the design width. */
+.hero__panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 540px;
+  height: 620px;
+  background: var(--color-cream);
+}
+
+/* .hero__text wraps eyebrow through the actions row as a normal-flow stack
+   (each child's spacing is a margin-top, not a fixed absolute `top`) so that
+   if any block ever renders taller than expected — a font-metric difference
+   across browsers/OSes, a future copy change — it pushes the next block
+   down instead of the next block overlapping it. Margins below reproduce
+   the exact gaps this stack rendered at before the conversion (measured,
+   not recomputed from Figma's raw values, since the two matched already:
+   eyebrow bottom 87 -> headline top 108 = 21px; headline bottom 285.8 ->
+   body top 354 = 68px; body bottom 410 -> meta top 459 = 49px; meta bottom
+   475 -> actions top 492 = 17px). */
+.hero__text {
+  position: absolute;
+  left: 80px;
+  top: 68px;
+}
+
+.hero__eyebrow {
+  width: 500px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+}
+
+.hero__headline {
+  margin-top: 21px;
+  width: 800px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 57px;
+  line-height: 1.04;
+  color: var(--color-white);
+}
+
+.hero__body {
+  margin-top: 68px;
+  width: 700px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+.hero__meta {
+  margin-top: 49px;
+  width: 700px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-white);
+}
+
+.hero__actions {
+  margin-top: 17px;
+  display: flex;
+  gap: 16px;
+}
+
+.hero__btn-primary {
+  width: 212px;
+  height: 52px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.hero__btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 52px;
+  border-radius: 4px;
+  background: var(--color-navy);
+  border: 1.5px solid var(--color-navy);
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero__controls {
+  position: absolute;
+  left: 80px;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.hero__dot {
+  position: relative;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-white);
+  opacity: 0.45;
+  padding: 0;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+/* Invisible hit-area extension — keeps the visual dot at Figma's exact 9px
+   while giving it a real ~24x24 touch target (absolute positioning means
+   this doesn't add to the dot's own layout footprint / the 9px gap between
+   dots). */
+.hero__dot::before {
+  content: '';
+  position: absolute;
+  inset: -7.5px;
+}
+
+.hero__dot:hover {
+  opacity: 0.7;
+}
+
+.hero__dot.is-active {
+  background: var(--color-brand-red);
+  opacity: 1;
+}
+
+.hero__dot.is-active:hover {
+  opacity: 1;
+}
+
+.hero__controls-sep {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-green);
+  margin-left: 3px;
+}
+
+.hero__controls-label {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+/* FP&A Dashboard mockup card */
+.hero__dashboard {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  width: 460px;
+  height: 452px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 16px;
+  box-shadow: 0px 20px 44px -10px rgba(3, 13, 69, 0.16);
+  overflow: hidden;
+  font-family: var(--font-primary);
+}
+
+.dash__title {
+  position: absolute;
+  left: 21px;
+  top: 21px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.88px;
+  color: #1a1a2e;
+}
+
+.dash__badge {
+  position: absolute;
+  left: 329px;
+  top: 17px;
+  width: 108px;
+  height: 20px;
+  background: #e6f0e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 8.5px;
+  letter-spacing: 0.51px;
+  color: var(--color-green);
+}
+
+.dash__stat {
+  position: absolute;
+  top: 57px;
+  width: 130px;
+  height: 78px;
+  background: var(--color-cream);
+  border-radius: 10px;
+}
+
+.dash__stat--1 { left: 21px; }
+.dash__stat--2 { left: 164px; }
+.dash__stat--3 { left: 307px; }
+
+.dash__stat-label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.4px;
+  color: #8a8fa0;
+}
+
+.dash__stat-value {
+  position: absolute;
+  left: 12px;
+  top: 28px;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--color-navy);
+}
+
+.dash__stat-delta {
+  position: absolute;
+  left: 12px;
+  top: 58px;
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--color-green);
+}
+
+.dash__rev-label {
+  position: absolute;
+  left: 21px;
+  top: 155px;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.54px;
+  color: #8a8fa0;
+}
+
+.dash__legend {
+  position: absolute;
+  left: 373px;
+  top: 157px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.32px;
+  color: var(--color-green);
+}
+
+.dash__legend-swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--color-green);
+}
+
+.dash__chart {
+  position: absolute;
+  left: 21px;
+  top: 195px;
+  width: 416px;
+  height: 112px;
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+}
+
+/* Entrance animation: each bar scales up from 0 to its own inline
+   height on load. Animating `transform: scaleY()` (relative, 0->1)
+   rather than the `height` property itself is what lets one shared
+   @keyframes rule work for all 9 bars despite each having a different
+   explicit inline height — animating `height` directly would need a
+   separate keyframe per bar's specific target pixel value.
+   transform-origin: bottom + the flex container's align-items: flex-end
+   (both already bottom-aligned) means each bar grows straight up from
+   its own baseline, not from its vertical center. A short per-bar
+   nth-child delay staggers the reveal left-to-right instead of every
+   bar popping up at once. */
+.dash__bar {
+  width: 38px;
+  border-radius: 3px;
+  background: var(--color-navy);
+  transform-origin: bottom;
+  animation: dash-bar-grow 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.dash__bar.is-forecast {
+  background: var(--color-green);
+}
+
+.dash__bar:nth-child(1) { animation-delay: 0s; }
+.dash__bar:nth-child(2) { animation-delay: 0.04s; }
+.dash__bar:nth-child(3) { animation-delay: 0.08s; }
+.dash__bar:nth-child(4) { animation-delay: 0.12s; }
+.dash__bar:nth-child(5) { animation-delay: 0.16s; }
+.dash__bar:nth-child(6) { animation-delay: 0.2s; }
+.dash__bar:nth-child(7) { animation-delay: 0.24s; }
+.dash__bar:nth-child(8) { animation-delay: 0.28s; }
+.dash__bar:nth-child(9) { animation-delay: 0.32s; }
+
+@keyframes dash-bar-grow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash__bar {
+    animation: none;
+  }
+}
+
+.dash__divider {
+  position: absolute;
+  left: 21px;
+  top: 307px;
+  width: 416px;
+  height: 1px;
+  background: var(--color-border-soft);
+}
+
+.dash__table-title {
+  position: absolute;
+  left: 21px;
+  top: 323px;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.54px;
+  color: #8a8fa0;
+}
+
+.dash__table-head {
+  position: absolute;
+  left: 21px;
+  top: 345px;
+  width: 416px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.32px;
+  color: #8a8fa0;
+}
+
+.dash__table-head span {
+  width: 68px;
+  text-align: right;
+}
+
+.dash__row {
+  position: absolute;
+  left: 21px;
+  width: 416px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.dash__row-label {
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.dash__row-values {
+  display: flex;
+  gap: 20px;
+}
+
+.dash__row-values span {
+  width: 68px;
+  text-align: right;
+}
+
+.dash__row-plan { font-weight: 500; color: #1a1a2e; }
+.dash__row-actual { font-weight: 600; color: var(--color-navy); }
+.dash__row-delta { font-weight: 600; color: var(--color-green); }
+
+/* No mobile Figma frame — fallback for the whole hero.
+   - Decorative rings and the right-side cream "panel" background
+     rectangle are hidden (panel was absolutely positioned at left:900px,
+     which would overflow a narrow viewport if left visible).
+   - The slider becomes a full-width strip at a fixed height instead of a
+     900px-wide absolutely-positioned background (slides still crossfade
+     and the dots stay interactive); the dark scrim (which existed only to
+     keep the overlaid text readable on the photo) is hidden since text no
+     longer sits on top of the photo.
+   - Eyebrow/headline/body/meta/actions/controls convert to normal flow,
+     each given left/right padding since they no longer inherit position
+     from a padded parent.
+   - The FP&A dashboard mockup (~460x452px, dozens of internally
+     absolutely-positioned mini elements) is the one "self-contained fixed
+     -size illustrative widget" on this page — re-laying-out its internals
+     for every width would be very tedious for a fallback pass, so instead
+     it's visually shrunk with `transform: scale()` on the widget itself
+     (which leaves all internal absolute-pixel coordinates untouched and
+     still valid) while its *layout footprint* is separately collapsed by
+     wrapping it in `.hero__dashboard-wrap`, a container explicitly sized
+     to the post-scale footprint with `overflow: hidden` (transform alone
+     doesn't shrink the space an element reserves in flow, so without this
+     wrapper the unscaled 460x452 box would still reserve/overflow that
+     space). Scale factor 0.7 is sized for the narrowest supported width
+     (~375px → 327px usable after 24px side padding: 327/460 ≈ 0.71,
+     rounded down for safety) and reused unscaled-safe up through 900px —
+     the card renders smaller than strictly necessary on larger phones/
+     tablets, but this guarantees zero overflow across the whole range
+     with a single rule instead of tiered breakpoint-specific scales. */
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    background: #3a3838;
+  }
+
+  .hero__slider {
+    position: relative;
+    width: 100%;
+    height: 220px;
+  }
+
+  .hero__scrim,
+  .hero__rings,
+  .hero__panel {
+    display: none;
+  }
+
+  .hero__text,
+  .hero__eyebrow,
+  .hero__headline,
+  .hero__body,
+  .hero__meta,
+  .hero__actions,
+  .hero__controls {
+    position: static;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero__eyebrow {
+    margin-top: 28px;
+  }
+
+  .hero__headline {
+    margin-top: 12px;
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .hero__body {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+
+  .hero__meta {
+    margin-top: 14px;
+  }
+
+  .hero__actions {
+    margin-top: 22px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__btn-primary,
+  .hero__btn-secondary {
+    width: 100%;
+  }
+
+  .hero__controls {
+    margin-top: 24px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .hero__dashboard-wrap {
+    position: static;
+    width: 100%;
+    height: 350px;
+    margin-top: 4px;
+    padding: 0 24px 32px;
+    overflow: hidden;
+    background: var(--color-cream);
+  }
+
+  .hero__dashboard {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: scale(0.7);
+    transform-origin: top left;
+  }
+}

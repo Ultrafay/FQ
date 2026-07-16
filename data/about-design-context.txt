@@ -1,0 +1,145 @@
+const imgChatGptImageJun62026072235Pm1 = "https://www.figma.com/api/mcp/asset/8c5bf6d6-1826-41bd-94ca-f2c8c846914a";
+const imgEllipse = "https://www.figma.com/api/mcp/asset/df46e150-fa7e-43a5-bbe8-85c9363fe979";
+const imgEllipse1 = "https://www.figma.com/api/mcp/asset/1c8f7b52-0312-4507-a267-c50978d37572";
+const imgEllipse2 = "https://www.figma.com/api/mcp/asset/f9e3e3fe-e304-4c88-8f83-2464af6b48ef";
+const imgEllipse3 = "https://www.figma.com/api/mcp/asset/708038f4-018e-4aae-812d-e59d6e085ddc";
+
+export default function Group1() {
+  return (
+    <div className="contents relative size-full" data-node-id="36:2">
+      <div className="absolute bg-white h-[360px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4937" data-name="Section / 02 – Who We Are">
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[80px] text-[#8b0a32] text-[15px] top-[44px] tracking-[3px] whitespace-nowrap" data-node-id="1:4938">
+          WHO WE ARE
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[80px] text-[#020c45] text-[38px] top-[80px] whitespace-nowrap" data-node-id="1:4939">
+          Who We Are
+        </p>
+        <div className="absolute bg-[#2b6b25] h-[5px] left-[80px] top-[176px] w-[56px]" data-node-id="1:4940" data-name="Rectangle" />
+        <div className="absolute bg-[#2b6b25] h-[210px] left-[520px] top-[80px] w-[2px]" data-node-id="1:4941" data-name="Rectangle" />
+        <div className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[0] left-[580px] text-[#2a2a3a] text-[19px] top-[40px] w-[780px] whitespace-pre-wrap" data-node-id="1:4942">
+          <p className="leading-[31px] mb-0">{`Serious business finance has always been a luxury of scale. The FP&A talent that turns numbers into strategy usually sits inside large multinationals, the Unilevers and P&Gs of the world because only they can afford to keep it in-house. Smaller businesses go without it, not for lack of need, but because that talent is priced out of reach.`}</p>
+          <p className="leading-[31px] mb-0">​</p>
+          <p className="leading-[31px]">{`Frontier Quotient changes that. We democratize high-end FP&A and business finance giving growing companies the same financial muscle the biggest players run on, sized and priced for where you are today.`}</p>
+        </div>
+      </div>
+      <div className="absolute bg-[#f8f6f2] h-[552px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4943" data-name="Section / 03 – Mission">
+        <div className="absolute left-[1120px] size-[380px] top-[20px]" data-node-id="1:4944" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+        </div>
+        <div className="absolute left-[1170px] size-[280px] top-[70px]" data-node-id="1:4945" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse1} />
+        </div>
+        <div className="absolute left-[1220px] size-[180px] top-[120px]" data-node-id="1:4946" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse2} />
+        </div>
+        <div className="absolute left-[1306.5px] size-[7px] top-[206.5px]" data-node-id="1:4947" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse3} />
+        </div>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[60px] opacity-13 text-[#8b0a32] text-[210px] top-[-12px] whitespace-nowrap" data-node-id="1:4948">
+          “
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[104px] text-[#8b0a32] text-[15px] top-[78px] tracking-[3px] whitespace-nowrap" data-node-id="1:4949">
+          OUR MISSION
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[46px] left-[104px] text-[#020c45] text-[26px] top-[136px] w-[1046px]" data-node-id="1:4950">{`To give every growing business the financial clarity and foresight once reserved for the world's largest companies, so they can make sharper decisions and grow with confidence.`}</p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[104px] text-[#2b6b25] text-[15px] top-[110px] tracking-[2px] whitespace-nowrap" data-node-id="1:4951">
+          01 · FOR OUR CLIENTS
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[104px] text-[#2b6b25] text-[15px] top-[304px] tracking-[2px] whitespace-nowrap" data-node-id="1:4952">
+          02 · FOR OURSELVES
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[46px] left-[104px] text-[#020c45] text-[26px] top-[328px] w-[1100px]" data-node-id="1:4953">
+          And to build a finance partner worth keeping one held to the standard of the firms we benchmark against, that gets measurably sharper with every engagement.
+        </p>
+      </div>
+      <div className="absolute bg-white h-[520px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4954" data-name="Section / 04 – Values">
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[80px] text-[#8b0a32] text-[15px] top-[70px] tracking-[3px] whitespace-nowrap" data-node-id="1:4955">
+          OUR VALUES
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[normal] left-[80px] text-[#020c45] text-[38px] top-[96px] whitespace-nowrap" data-node-id="1:4956">
+          Our Values
+        </p>
+        <div className="absolute bg-[#2b6b25] h-[5px] left-[80px] top-[162px] w-[56px]" data-node-id="1:4957" data-name="Rectangle" />
+        <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[250px] left-[81px] overflow-clip rounded-[12px] shadow-[0px_6px_16px_0px_rgba(3,13,69,0.06)] top-[200px] w-[243px]" data-node-id="1:4958" data-name="Value 1">
+          <div className="absolute bg-[#8b0a32] h-[104px] left-[-1px] top-[-1px] w-[243px]" data-node-id="1:4959" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[19px] opacity-70 text-[13px] text-white top-[21px] whitespace-nowrap" data-node-id="1:4960">
+            01
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[22px] left-[19px] text-[18px] text-white top-[51px] w-[203px]" data-node-id="1:4961">{`FP&A in every engagement`}</p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[20px] left-[19px] text-[#55596b] text-[13px] top-[125px] w-[203px]" data-node-id="1:4962">{`And if it won't move your numbers, we'll tell you we're not the right fit.`}</p>
+        </div>
+        <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[250px] left-[340px] overflow-clip rounded-[12px] shadow-[0px_6px_16px_0px_rgba(3,13,69,0.06)] top-[200px] w-[243px]" data-node-id="1:4963" data-name="Value 2">
+          <div className="absolute bg-[#020c45] h-[104px] left-[-1px] top-[-1px] w-[243px]" data-node-id="1:4964" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[19px] opacity-70 text-[13px] text-white top-[21px] whitespace-nowrap" data-node-id="1:4965">
+            02
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[22px] left-[19px] text-[18px] text-white top-[51px] w-[203px]" data-node-id="1:4966">
+            Enterprise muscle, your size
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[20px] left-[19px] text-[#55596b] text-[13px] top-[125px] w-[203px]" data-node-id="1:4967">
+            The finance firepower a Unilever runs on — priced for a business like yours.
+          </p>
+        </div>
+        <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[250px] left-[599px] overflow-clip rounded-[12px] shadow-[0px_6px_16px_0px_rgba(3,13,69,0.06)] top-[200px] w-[243px]" data-node-id="1:4968" data-name="Value 3">
+          <div className="absolute bg-[#2b6b25] h-[104px] left-[-1px] top-[-1px] w-[243px]" data-node-id="1:4969" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[19px] opacity-70 text-[13px] text-white top-[21px] whitespace-nowrap" data-node-id="1:4970">
+            03
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[22px] left-[19px] text-[18px] text-white top-[51px] w-[203px]" data-node-id="1:4971">
+            We measure ourselves too
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[20px] left-[19px] text-[#55596b] text-[13px] top-[125px] w-[203px]" data-node-id="1:4972">{`If we can't show the impact on your numbers, we haven't earned the work.`}</p>
+        </div>
+        <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[250px] left-[858px] overflow-clip rounded-[12px] shadow-[0px_6px_16px_0px_rgba(3,13,69,0.06)] top-[200px] w-[243px]" data-node-id="1:4973" data-name="Value 4">
+          <div className="absolute bg-[#8b0a32] h-[104px] left-[-1px] top-[-1px] w-[243px]" data-node-id="1:4974" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[19px] opacity-70 text-[13px] text-white top-[21px] whitespace-nowrap" data-node-id="1:4975">
+            04
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[22px] left-[19px] text-[18px] text-white top-[51px] w-[203px]" data-node-id="1:4976">
+            Straight talk, no jargon
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[20px] left-[19px] text-[#55596b] text-[13px] top-[125px] w-[203px]" data-node-id="1:4977">{`You'll always know exactly where you stand — in plain words, not finance-speak.`}</p>
+        </div>
+        <div className="absolute bg-white border border-[#e4e0d7] border-solid h-[250px] left-[1117px] overflow-clip rounded-[12px] shadow-[0px_6px_16px_0px_rgba(3,13,69,0.06)] top-[200px] w-[243px]" data-node-id="1:4978" data-name="Value 5">
+          <div className="absolute bg-[#020c45] h-[104px] left-[-1px] top-[-1px] w-[243px]" data-node-id="1:4979" data-name="Rectangle" />
+          <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[19px] opacity-70 text-[13px] text-white top-[21px] whitespace-nowrap" data-node-id="1:4980">
+            05
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[22px] left-[19px] text-[18px] text-white top-[51px] w-[203px]" data-node-id="1:4981">
+            Honesty over invoices
+          </p>
+          <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[20px] left-[19px] text-[#55596b] text-[13px] top-[125px] w-[203px]" data-node-id="1:4982">{`We'd rather lose the work than oversell it. Good advice beats a comfortable retainer.`}</p>
+        </div>
+      </div>
+      <div className="absolute bg-[#8b0a32] h-[300px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4983" data-name="Section / 05 – CTA">
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[42px] left-[80px] text-[34px] text-white top-[62px] w-[760px]" data-node-id="1:4984">
+          Ready to simplify your finance operations?
+        </p>
+        <div className="absolute bg-[#2b6b25] h-[5px] left-[80px] top-[182px] w-[56px]" data-node-id="1:4985" data-name="Rectangle" />
+        <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[24px] left-[80px] text-[#f3d9e2] text-[16px] top-[206px] w-[620px]" data-node-id="1:4986">{`Let's discuss how Frontier Quotient can support your business growth.`}</p>
+        <div className="absolute bg-white h-[56px] left-[1120px] rounded-[8px] top-[120px] w-[240px]" data-node-id="1:4987" data-name="Rectangle" />
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Montserrat:SemiBold'] font-semibold leading-[normal] left-[1240px] text-[#8b0a32] text-[14px] text-center top-[138px] w-[240px]" data-node-id="1:4988">
+          BOOK A CONSULTATION
+        </p>
+      </div>
+      <div className="absolute bg-black h-[520px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="1:4989" data-name="Section / 01 – Hero">
+        <div className="absolute h-[941px] left-[-98px] opacity-65 top-[-211px] w-[1672px]" data-node-id="1:4990" data-name="ChatGPT Image Jun 6, 2026, 07_22_35 PM 1">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute left-[0.86%] max-w-none size-full top-[1.86%]" src={imgChatGptImageJun62026072235Pm1} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] absolute font-['Montserrat:Bold'] font-bold leading-[normal] left-[80px] text-[15px] text-white top-[67px] tracking-[3px] whitespace-nowrap" data-node-id="1:4991">
+          ABOUT FRONTIER QUOTIENT
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[64px] left-[80px] text-[64px] text-white top-[129px] w-[820px]" data-node-id="1:4992">
+          Finance support built for
+        </p>
+        <div className="absolute bg-[#2b6b25] h-[5px] left-[80px] top-[333px] w-[72px]" data-node-id="1:4993" data-name="Rectangle" />
+        <p className="[word-break:break-word] absolute font-['Montserrat:Regular'] font-normal leading-[28px] left-[80px] text-[17px] text-white top-[361px] w-[620px]" data-node-id="1:4994">
+          Frontier Quotient combines accounting expertise with practical finance strategy to help companies operate with clarity and confidence.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Montserrat:ExtraBold'] font-extrabold leading-[64px] left-[176px] text-[64px] text-[transparent] top-[193px] w-[769px]" data-node-id="1:4995">{` growing businesses`}</p>
+      </div>
+    </div>
+  );
+}

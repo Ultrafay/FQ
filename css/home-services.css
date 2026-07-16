@@ -1,0 +1,353 @@
+.services {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.services__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 660px;
+}
+
+/* Decorative outline circles (Pattern / Outline Circles) */
+.services__rings {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 680px;
+  pointer-events: none;
+}
+
+.services__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--color-brand-red);
+}
+
+.services__ring--1 {
+  left: 1051px;
+  top: -79px;
+  width: 498px;
+  height: 498px;
+  opacity: 0.05;
+}
+
+.services__ring--2 {
+  left: -59px;
+  top: 351px;
+  width: 298px;
+  height: 298px;
+  opacity: 0.04;
+}
+
+.services__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 42px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+/* Figma's raw value for this node is literally top:45px, 3px below the
+   eyebrow's own top:42px — taken at face value that overlaps badly (Figma
+   text boxes carry internal line-height padding that isn't 1:1 with CSS,
+   so a numeric near-collision in the raw data doesn't necessarily collide
+   visually in Figma itself). Every other eyebrow+heading pair on this site
+   uses a 28-47px gap between their tops; adjusted this one to match that
+   established pattern rather than the raw (visually broken) value. */
+.services__heading {
+  position: absolute;
+  left: 80px;
+  top: 84px;
+  width: 553px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 57px;
+  color: var(--color-navy);
+}
+
+.services__view-all {
+  position: absolute;
+  left: 1157px;
+  top: 84px;
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: var(--color-green);
+  white-space: nowrap;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.services__view-all:hover {
+  color: var(--color-green-hover);
+  transform: translateX(2px);
+}
+
+/* Card grid: row 1 = tall bordered cards (210px), row 2 = cream cards (130px) */
+.services__grid {
+  position: absolute;
+  left: 80px;
+  top: 196px;
+  width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
+  grid-template-rows: 210px 130px;
+  column-gap: 20px;
+  row-gap: 52px;
+}
+
+.services__card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.services__card:hover {
+  transform: translateY(-3px);
+}
+
+/* Type B: white, bordered, shadow, top accent bar (Management Reporting, Cash Flow, FP&A) */
+.services__card--lg {
+  background: var(--color-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 10px;
+  box-shadow: 0px 12px 28px -8px rgba(3, 13, 69, 0.1);
+}
+
+.services__card--lg:hover {
+  box-shadow: 0px 18px 34px -8px rgba(3, 13, 69, 0.18);
+}
+
+.services__card-bar {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 420px;
+  height: 6px;
+  background: var(--color-green);
+}
+
+/* Type A: cream, no border/shadow (Bookkeeping, Tax & VAT, Cleanup) */
+.services__card--sm {
+  background: var(--color-cream);
+  border-radius: 8px;
+}
+
+/* No shadow at rest (flat cream card) — add one on hover only, so the lift
+   reads as the card rising off the page rather than just sliding up. */
+.services__card--sm:hover {
+  box-shadow: 0 8px 20px rgba(2, 12, 69, 0.12);
+}
+
+/* Icon circle + glyph */
+.services__icon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+}
+
+.services__card--lg .services__icon {
+  left: 19px;
+  top: 19px;
+}
+
+.services__card--sm .services__icon {
+  left: 20px;
+  top: 20px;
+}
+
+.services__icon-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.services__icon-bg--navy { background: rgba(2, 12, 69, 0.12); }
+.services__icon-bg--green { background: rgba(43, 107, 37, 0.12); }
+.services__icon-bg--red { background: rgba(139, 10, 50, 0.12); }
+
+.services__icon-svg {
+  position: absolute;
+  inset: 0;
+}
+
+/* FP&A and Cleanup icons use a smaller native SVG size (22x22 / 24x21)
+   than the other 4 icons' 44x44 viewBox, so they can't just use inset:0
+   like .services__icon-svg (that would stretch them to fill the circle
+   instead of centering them at native size). A prior fix attempted to
+   center them with hardcoded inline `left`/`top` pixel styles (left:30px,
+   top:29px / top:31px) that were wrong — verified against a fresh Figma
+   pull showing both icons centered like every other one — pushing the
+   glyphs into the bottom-right, mostly clipped outside the circle.
+   left:50%/top:50% + translate(-50%,-50%) centers correctly regardless of
+   the SVG's exact width/height, so it isn't a second set of magic numbers
+   to get wrong. */
+.services__icon-loose {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Card title */
+.services__card-title {
+  position: absolute;
+  font-family: var(--font-primary);
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.services__card--lg .services__card-title {
+  left: 79px;
+  top: 21px;
+  width: 318px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.services__card--sm .services__card-title {
+  left: 80px;
+  top: 22px;
+  width: 318px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/* Card body copy */
+.services__card-body {
+  position: absolute;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  margin: 0;
+}
+
+.services__card--lg .services__card-body {
+  left: 23px;
+  top: 103px;
+  width: 372px;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-navy);
+  opacity: 0.55;
+}
+
+.services__card--sm .services__card-body {
+  left: 24px;
+  top: 80px;
+  width: 372px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6b7280;
+  opacity: 0.55;
+}
+
+.services__card-link {
+  position: absolute;
+  left: 23px;
+  top: 169px;
+  display: inline-block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--color-green);
+  white-space: nowrap;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.services__card-link:hover {
+  color: var(--color-green-hover);
+  transform: translateX(2px);
+}
+
+/* No mobile Figma frame — fallback: hide the decorative outline rings,
+   flow eyebrow/heading/"view all" link normally, and collapse the 3x2
+   fixed-position card grid into a single flexible column where each card
+   sizes to its own content instead of a fixed 210px/130px row height. */
+@media (max-width: 900px) {
+  .services__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .services__rings {
+    display: none;
+  }
+
+  .services__eyebrow {
+    position: static;
+  }
+
+  .services__heading {
+    position: static;
+    width: auto;
+    margin-top: 8px;
+  }
+
+  .services__view-all {
+    position: static;
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  .services__grid {
+    position: static;
+    width: auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    gap: 20px;
+  }
+
+  .services__card--lg,
+  .services__card--sm {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .services__card-bar {
+    width: 100%;
+  }
+
+  .services__card--lg .services__icon,
+  .services__card--sm .services__icon {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+  .services__card--lg .services__card-title,
+  .services__card--sm .services__card-title {
+    position: static;
+    width: auto;
+    margin-top: 16px;
+  }
+
+  .services__card--lg .services__card-body,
+  .services__card--sm .services__card-body {
+    position: static;
+    width: auto;
+    margin-top: 8px;
+  }
+
+  .services__card-link {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+  }
+}

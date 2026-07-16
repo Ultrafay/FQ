@@ -1,0 +1,105 @@
+.about-cta {
+  position: relative;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+.about-cta__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
+}
+
+.about-cta__heading {
+  position: absolute;
+  left: 80px;
+  top: 62px;
+  width: 760px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-white);
+}
+
+.about-cta__rule {
+  position: absolute;
+  left: 80px;
+  top: 182px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.about-cta__subtext {
+  position: absolute;
+  left: 80px;
+  top: 206px;
+  width: 620px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-pink-light);
+}
+
+.about-cta__button {
+  position: absolute;
+  left: 1120px;
+  top: 120px;
+  width: 240px;
+  height: 56px;
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-brand-red);
+}
+
+/* Same situation as home-final-cta.css's button: a solid-white button on
+   the red section, not using .btn-primary, so it needs its own hover
+   treatment rather than inheriting the shared red-darkening one. */
+.about-cta__button:hover {
+  background: var(--color-pink-light);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   CTA band. Desktop places the button floating at the far right; at
+   mobile it drops below the heading/subtext instead, keeping its own
+   auto width (still comfortably tappable, doesn't need to go full-width).
+   Mirrors the equivalent hww-cta.css treatment for consistency. */
+@media (max-width: 900px) {
+  .about-cta__inner {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .about-cta__heading,
+  .about-cta__rule,
+  .about-cta__subtext,
+  .about-cta__button {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .about-cta__heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .about-cta__rule {
+    margin-top: 24px;
+    width: 56px;
+  }
+
+  .about-cta__subtext {
+    margin-top: 16px;
+  }
+
+  .about-cta__button {
+    display: inline-flex;
+    width: auto;
+    margin-top: 24px;
+  }
+}

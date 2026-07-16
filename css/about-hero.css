@@ -1,0 +1,161 @@
+.about-hero {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  background: var(--color-black);
+}
+
+/* Full-bleed background photo, oversized and cropped by the section's
+   overflow: hidden (Figma: 1672x941 positioned at -98/-211 inside the
+   1440x520 frame). Source asset from Figma is already delivered at this
+   exact pixel size, so it is used at 1x rather than upscaled for a "2x" export.
+   Opacity was previously set to 0.03 (near-invisible) based on an earlier
+   session's Figma check — a fresh pull shows the photo is actually meant to
+   render clearly visible, matching Services/How We Work's heroes.
+   Figma dark scrim: the photo node (3:3767) sits at opacity 65% on the
+   frame's solid-black (bg-black) background — that IS the dark overlay
+   (it mixes 35% black into the photo, mathematically identical to a
+   rgba(0,0,0,0.35) scrim over a full-brightness photo). .about-hero
+   already paints `background: var(--color-black)`, so reproducing Figma
+   exactly means opacity: 0.65 here (was opacity: 1, i.e. no darkening,
+   which left the white heading/body text hard to read).
+   `left` was a fixed -98px measured from the true viewport edge, which only
+   lines up with the design at exactly 1440px — .about-hero has no
+   max-width cap, so unlike Services/Insights/Contact/HWW there's no capped
+   __inner box to blame, but the effect was the same one-sided gap bug: on
+   any wider viewport the image just sat there at a fixed offset instead of
+   tracking the page center, leaving a growing gap on the right (nothing on
+   the left, since -98 stays off the left edge at any width). `calc(50% -
+   818px)` = `calc(50% - 720px - 98px)` reproduces the same -98px at
+   exactly 1440px while re-centering on the true viewport at any other
+   width, matching the fix applied to every other hero's background. */
+.about-hero__bg {
+  position: absolute;
+  left: calc(50% - 818px);
+  top: -211px;
+  width: 1672px;
+  height: 941px;
+  opacity: 0.65;
+}
+
+.about-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 67px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.about-hero__headline {
+  position: absolute;
+  left: 80px;
+  top: 129px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: var(--color-white);
+}
+
+.about-hero__headline-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.about-hero__rule {
+  position: absolute;
+  left: 80px;
+  top: 333px;
+  width: 72px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.about-hero__body {
+  position: absolute;
+  left: 80px;
+  top: 361px;
+  width: 620px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+/* No mobile Figma frame — fallback. The background photo is now known to be
+   real, meaningful content (not decoration — see the opacity fix above), so
+   it stays visible on mobile too rather than being hidden outright.
+   Eyebrow/headline/rule/body convert to normal flow, each given left/right
+   padding since (unlike most other sections) this section has no max-width
+   __inner wrapper to inherit padding from. The 64px headline is scaled down
+   in two steps so it still fits comfortably at 375px, and both headline
+   lines drop their white-space: nowrap / indentation since they now wrap
+   naturally. */
+@media (max-width: 900px) {
+  .about-hero {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  /* Reverted an attempt to show the photo on mobile via inset:0 cover-fit —
+     it silently broke text legibility (the auto-generated crop put light/
+     white areas of the photo directly behind the white eyebrow/headline
+     text, since it doesn't preserve Figma's desktop-intended "text sits
+     over the dark part of the photo" composition). No mobile Figma frame
+     exists to verify a correct crop against, so hiding is the safe,
+     previously-proven choice rather than shipping unverified guesswork. */
+  .about-hero__bg {
+    display: none;
+  }
+
+  .about-hero__eyebrow,
+  .about-hero__headline,
+  .about-hero__rule,
+  .about-hero__body {
+    position: static;
+    left: auto;
+    top: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-hero__eyebrow {
+    padding-top: 32px;
+  }
+
+  .about-hero__headline {
+    margin-top: 12px;
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .about-hero__headline-line {
+    white-space: normal;
+  }
+
+  .about-hero__rule {
+    margin-top: 20px;
+  }
+
+  .about-hero__body {
+    width: auto;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero__headline {
+    font-size: 28px;
+  }
+}

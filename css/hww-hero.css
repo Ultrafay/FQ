@@ -1,0 +1,232 @@
+/* Was `max-width: var(--page-width); margin: 0 auto;` directly on this
+   section — meaning the ENTIRE hero (including its own #393939
+   background) was capped and centered at 1440px, so on any wider viewport
+   the page's own background showed as a mismatched strip on both edges.
+   Moved the cap to the new .hww-hero__inner wrapper below so the section
+   itself can stay full-width (photo can reach the true edges) while all
+   the text/decoration inside keeps its exact 1440px-design positioning
+   unchanged. */
+.hww-hero {
+  position: relative;
+  height: 460px;
+  background: #393939;
+  overflow: hidden;
+}
+
+.hww-hero__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* Full-bleed background photo. A prior session found this hidden entirely
+   in Figma and removed it; the user has since added/restored a real photo
+   here (confirmed via a fresh Figma pull). A later pass set this to full
+   opacity based on a screenshot comparison alone ("not the usual
+   heavily-dimmed treatment") — a fresh `get_design_context` pull now shows
+   the node's actual literal value is `opacity-64` (0.64), not 1. Corrected
+   to match exactly; this also happens to be the real fix for the grid
+   overlay "looks too solid" report elsewhere — the grid/ring elements'
+   own opacity and color values already matched Figma exactly, but with
+   the photo rendered fully opaque underneath them the whole scene reads
+   harder/more solid than Figma's dimmed version, even though the overlay
+   itself was never actually wrong.
+   Was an exact 1536x1024 crop window recentered with calc() to avoid a gap
+   up to ~1536px viewport width — explicitly flagged at the time as only a
+   partial fix, since the source photo isn't wide enough to reach the true
+   edges on genuinely wide monitors, and closing it fully would need
+   switching to object-fit:cover (trading exact-crop fidelity for true
+   full-bleed at any width). User has now explicitly asked for full-bleed
+   with no gap at all, so making that trade: 100vw box + object-fit:cover,
+   with object-position calibrated to the same focal point the old exact
+   crop was centered on (733/1536 = 47.7% across, 512/1024 = 50% down). */
+.hww-hero__bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  opacity: 0.64;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hww-hero__bg img {
+  object-position: 47.7% 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grid-line texture behind the decorative rings, right half only.
+   Reproduces 7 vertical + 4 horizontal 1px "Rectangle" divs from the Figma
+   export, all on a 96px pitch (verticals at x=816..1392, horizontals at
+   y=76..364) — collapsed into one repeating-gradient background instead of
+   11 literal divs. The vertical layer's natural cycle also plants a faint
+   extra line right at this box's own left edge (x=720, not present in the
+   source data); it lands on an empty area with no other content, so it's an
+   intentional negligible simplification rather than a data error. */
+.hww-hero__grid {
+  position: absolute;
+  left: 720px;
+  top: 0;
+  width: 720px;
+  height: 460px;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(to right, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px),
+    repeating-linear-gradient(to bottom, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px);
+  background-position: 0 0, 0 76px;
+}
+
+.hww-hero__ring {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.hww-hero__ring--1 {
+  left: 1010px;
+  top: 50px;
+  width: 360px;
+  height: 360px;
+  border-color: rgba(43, 107, 37, 0.4);
+}
+
+.hww-hero__ring--2 {
+  left: 1065px;
+  top: 105px;
+  width: 250px;
+  height: 250px;
+  border-color: rgba(139, 10, 50, 0.3);
+}
+
+.hww-hero__ring--3 {
+  left: 1120px;
+  top: 160px;
+  width: 140px;
+  height: 140px;
+  border-color: rgba(2, 12, 69, 0.45);
+}
+
+.hww-hero__dot {
+  position: absolute;
+  left: 1180px;
+  top: 220px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background: var(--color-green);
+}
+
+.hww-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 70px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.hww-hero__heading {
+  position: absolute;
+  left: 80px;
+  top: 104px;
+  width: 690px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 57px;
+  color: var(--color-white);
+}
+
+.hww-hero__heading-line {
+  display: block;
+}
+
+.hww-hero__rule {
+  position: absolute;
+  left: 80px;
+  top: 312px;
+  width: 64px;
+  height: 5px;
+  background: var(--color-brand-red);
+}
+
+.hww-hero__body {
+  position: absolute;
+  left: 80px;
+  top: 340px;
+  width: 560px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-white);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   hero. The horizontal padding that replaces the desktop `left: 80px`
+   offsets goes on `.hww-hero__inner` (added to fix the full-bleed-gap bug
+   above), not `.hww-hero` itself. Grid texture + rings + dot are pure
+   decoration -> hidden; eyebrow/heading/rule/body reflow to static
+   full-width stacking. */
+@media (max-width: 900px) {
+  .hww-hero {
+    height: auto;
+  }
+
+  .hww-hero__inner {
+    padding: 48px 24px 40px;
+  }
+
+  /* Same issue found and fixed on the About hero: the fixed-size desktop
+     crop (1536x1024 shifted to -13/-282) has no mobile-specific crop, so at
+     this width it lands on an arbitrary, often light, patch of the photo —
+     here a light tan wall — leaving white text with ~zero contrast. No
+     mobile Figma frame exists to verify a correct crop against, so hide it
+     rather than ship illegible text. */
+  .hww-hero__bg,
+  .hww-hero__grid,
+  .hww-hero__ring--1,
+  .hww-hero__ring--2,
+  .hww-hero__ring--3,
+  .hww-hero__dot {
+    display: none;
+  }
+
+  .hww-hero__eyebrow,
+  .hww-hero__heading,
+  .hww-hero__rule,
+  .hww-hero__body {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .hww-hero__heading {
+    margin-top: 16px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hww-hero__rule {
+    margin-top: 24px;
+  }
+
+  .hww-hero__body {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hww-hero__heading {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,400 @@
+.hww-process {
+  position: relative;
+  background: var(--color-cream-alt);
+  overflow: hidden;
+}
+
+.hww-process__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 780px;
+}
+
+/* Full-section grid texture — reproduces 14 vertical + 8 horizontal 1px
+   "Rectangle" divs from the Figma export. Checked the actual coordinates:
+   verticals sit at x=96,192,...,1344 and horizontals at y=96,192,...,768 —
+   an exact, unbroken 96px pitch across the whole 1440x780 section (unlike
+   the Hero's partial/offset grid), so this is a plain repeating background
+   rather than a handful of genuine dividers. Collapsed to one gradient
+   instead of 22 literal divs. */
+.hww-process__grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(to right, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px),
+    repeating-linear-gradient(to bottom, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px);
+}
+
+.hww-process__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 62px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.hww-process__heading {
+  position: absolute;
+  left: 80px;
+  top: 90px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 34px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.hww-process__rule {
+  position: absolute;
+  left: 80px;
+  top: 148px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.hww-process__count {
+  position: absolute;
+  left: 1280px;
+  top: 96px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* Decorative ring cluster filling the empty grid cell (row 2, column 1,
+   under Step 1/2) that has no step card. */
+.hww-process__ring {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 6px;
+}
+
+.hww-process__ring--1 {
+  left: 150px;
+  top: 480px;
+  width: 200px;
+  height: 200px;
+  border-color: rgba(43, 107, 37, 0.5);
+}
+
+.hww-process__ring--2 {
+  left: 180px;
+  top: 510px;
+  width: 140px;
+  height: 140px;
+  border-color: rgba(139, 10, 50, 0.35);
+}
+
+.hww-process__ring--3 {
+  left: 210px;
+  top: 540px;
+  width: 80px;
+  height: 80px;
+  border-color: rgba(2, 12, 69, 0.5);
+}
+
+.hww-process__dot {
+  position: absolute;
+  left: 241px;
+  top: 571px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: var(--color-green);
+}
+
+/* Four genuine connectors linking the S-shaped step flow
+   (1 -> 2 -> 3, down the right edge, 4 -> 5). Confirmed as distinct,
+   individually-styled dividers (different colors/opacity/orientation each),
+   not a repeating texture — kept as literal elements per instructions. */
+.hww-process__connector {
+  position: absolute;
+  background: var(--color-navy);
+  opacity: 0.25;
+}
+
+.hww-process__connector--h1 {
+  left: 440px;
+  top: 309px;
+  width: 100px;
+  height: 3px;
+}
+
+.hww-process__connector--h2 {
+  left: 900px;
+  top: 309px;
+  width: 100px;
+  height: 3px;
+}
+
+.hww-process__connector--v {
+  left: 1178px;
+  top: 380px;
+  width: 3px;
+  height: 90px;
+}
+
+.hww-process__connector--h3 {
+  left: 900px;
+  top: 569px;
+  width: 100px;
+  height: 3px;
+}
+
+.hww-process__arrow {
+  position: absolute;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.hww-process__arrow--1 {
+  left: 478px;
+  top: 296px;
+  color: var(--color-brand-red);
+}
+
+.hww-process__arrow--2 {
+  left: 938px;
+  top: 296px;
+  color: var(--color-green);
+}
+
+.hww-process__arrow--3 {
+  left: 1170px;
+  top: 404px;
+  color: var(--color-brand-red);
+}
+
+.hww-process__arrow--4 {
+  left: 938px;
+  top: 556px;
+  color: var(--color-navy);
+}
+
+.hww-process__steps {
+  list-style: none;
+}
+
+.hww-process__step {
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+/* `filter: drop-shadow(...)` rather than `box-shadow` for the hover
+   elevation — same reasoning as services-grid__card: this element has
+   `overflow: hidden` (needed to clip its own content to the rounded
+   corners), and a box-shadow on the same box would get clipped by that
+   overflow. drop-shadow paints outside the box, after its own clipping. */
+.hww-process__step:hover {
+  transform: translateY(-4px);
+  filter: drop-shadow(0 10px 20px rgba(2, 12, 69, 0.18));
+}
+
+.hww-process__step--01 { left: 80px; top: 210px; background: var(--color-brand-red); }
+.hww-process__step--02 {
+  left: 540px;
+  top: 210px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 20px 0 rgba(3, 13, 69, 0.07);
+}
+.hww-process__step--03 { left: 1000px; top: 210px; background: var(--color-green); }
+.hww-process__step--04 {
+  left: 1000px;
+  top: 470px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 20px 0 rgba(3, 13, 69, 0.07);
+}
+.hww-process__step--05 { left: 540px; top: 470px; background: var(--color-navy); }
+
+.hww-process__badge {
+  position: absolute;
+  left: 24px;
+  top: 26px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hww-process__badge--white { background: var(--color-white); }
+.hww-process__badge--navy { background: var(--color-navy); }
+.hww-process__badge--red { background: var(--color-brand-red); }
+
+.hww-process__badge-num {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.hww-process__badge-num--red { color: var(--color-brand-red); }
+.hww-process__badge-num--green { color: var(--color-green); }
+.hww-process__badge-num--navy { color: var(--color-navy); }
+.hww-process__badge-num--white { color: var(--color-white); }
+
+.hww-process__step-label {
+  position: absolute;
+  left: 90px;
+  top: 32px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.hww-process__step-label--light { color: var(--color-white); opacity: 0.75; }
+.hww-process__step-label--navy { color: var(--color-navy); }
+.hww-process__step-label--red { color: var(--color-brand-red); }
+
+.hww-process__step-title {
+  position: absolute;
+  left: 90px;
+  top: 52px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 21px;
+  white-space: nowrap;
+}
+
+.hww-process__step-title--light { color: var(--color-white); }
+.hww-process__step-title--navy { color: var(--color-navy); }
+
+.hww-process__step-desc {
+  position: absolute;
+  left: 28px;
+  top: 100px;
+  width: 304px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.hww-process__step-desc--light { color: #f0ece7; }
+.hww-process__step-desc--muted { color: var(--color-text-muted); }
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   zigzag 5-step layout. Grid texture + decorative ring cluster hidden
+   (pure decoration). The 4 connector lines + arrow glyphs are the
+   zigzag's wayfinding, not content, so they're hidden too — once all 5
+   step cards stack 01->05 in a single column, straight-line connectors
+   between them add nothing (steps are already read top-to-bottom in
+   order). `.hww-process__steps` becomes a flex column; each step card
+   (already `position:relative` in the base rules) reflows to
+   width:100%/height:auto with its badge/label/title/desc switched to
+   static flow. */
+@media (max-width: 900px) {
+  .hww-process,
+  .hww-process__inner {
+    height: auto;
+  }
+
+  .hww-process__inner {
+    padding: 48px 24px 56px;
+  }
+
+  .hww-process__grid,
+  .hww-process__ring--1,
+  .hww-process__ring--2,
+  .hww-process__ring--3,
+  .hww-process__dot,
+  .hww-process__connector,
+  .hww-process__arrow {
+    display: none;
+  }
+
+  .hww-process__eyebrow,
+  .hww-process__heading,
+  .hww-process__rule,
+  .hww-process__count {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .hww-process__heading {
+    margin-top: 8px;
+    white-space: normal;
+  }
+
+  .hww-process__rule {
+    margin-top: 16px;
+  }
+
+  .hww-process__count {
+    margin-top: 12px;
+    display: block;
+  }
+
+  .hww-process__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 32px 0 0;
+    padding: 0;
+  }
+
+  .hww-process__step--01,
+  .hww-process__step--02,
+  .hww-process__step--03,
+  .hww-process__step--04,
+  .hww-process__step--05 {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    padding: 24px 24px 28px;
+    box-sizing: border-box;
+  }
+
+  .hww-process__badge {
+    position: static;
+    left: auto;
+    top: auto;
+    margin-bottom: 12px;
+  }
+
+  .hww-process__step-label {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .hww-process__step-title {
+    position: static;
+    left: auto;
+    top: auto;
+    margin-top: 4px;
+    white-space: normal;
+  }
+
+  .hww-process__step-desc {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin-top: 12px;
+  }
+}

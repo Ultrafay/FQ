@@ -1,0 +1,475 @@
+/* Shared layout for the six industry-vertical detail sections (Direct to
+   Consumer & CPG, Retail & E-commerce, Healthcare, Manufacturing, Logistics
+   & Supply Chain, Construction & Real Estate). All six share one structure:
+   a "challenges + services" panel on one side and a "heading + description +
+   case study" content block on the other, with the two sides mirrored on
+   alternating sections. Per-instance differences are driven by three
+   modifier classes:
+     .industry-detail--reverse      panel on the right, content on the left
+                                     (Retail, Manufacturing, Construction)
+     .industry-detail--single-line  heading is one line instead of two, so
+                                     the tagline/description sit higher
+                                     (Healthcare, Manufacturing)
+     .industry-detail--red / --navy / --green   accent color for this
+                                     industry's labels, tint, dividers, etc. */
+
+.industry-detail {
+  position: relative;
+  height: 460px;
+  scroll-margin-top: 96px;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border-soft);
+  overflow: hidden;
+}
+
+.industry-detail--reverse {
+  background: var(--color-cream-alt);
+}
+
+/* ---- accent color modifiers ---- */
+.industry-detail--red .industry-detail__watermark,
+.industry-detail--red .industry-detail__panel-label,
+.industry-detail--red .industry-detail__eyebrow,
+.industry-detail--red .industry-detail__tagline,
+.industry-detail--red .industry-detail__case-study-label,
+.industry-detail--red .industry-detail__case-study-arrow {
+  color: var(--color-brand-red);
+}
+.industry-detail--navy .industry-detail__watermark,
+.industry-detail--navy .industry-detail__panel-label,
+.industry-detail--navy .industry-detail__eyebrow,
+.industry-detail--navy .industry-detail__tagline,
+.industry-detail--navy .industry-detail__case-study-label,
+.industry-detail--navy .industry-detail__case-study-arrow {
+  color: var(--color-navy);
+}
+.industry-detail--green .industry-detail__watermark,
+.industry-detail--green .industry-detail__panel-label,
+.industry-detail--green .industry-detail__eyebrow,
+.industry-detail--green .industry-detail__tagline,
+.industry-detail--green .industry-detail__case-study-label,
+.industry-detail--green .industry-detail__case-study-arrow {
+  color: var(--color-green);
+}
+
+.industry-detail--red .industry-detail__tint { background: rgba(139, 10, 50, 0.06); }
+.industry-detail--navy .industry-detail__tint { background: rgba(2, 12, 69, 0.06); }
+.industry-detail--green .industry-detail__tint { background: rgba(43, 107, 37, 0.06); }
+
+.industry-detail--red .industry-detail__vdivider { background: rgba(139, 10, 50, 0.25); }
+.industry-detail--navy .industry-detail__vdivider { background: rgba(2, 12, 69, 0.25); }
+.industry-detail--green .industry-detail__vdivider { background: rgba(43, 107, 37, 0.25); }
+
+.industry-detail--red .industry-detail__service { background: rgba(139, 10, 50, 0.1); }
+.industry-detail--navy .industry-detail__service { background: rgba(2, 12, 69, 0.1); }
+.industry-detail--green .industry-detail__service { background: rgba(43, 107, 37, 0.1); }
+
+.industry-detail--red .industry-detail__bullet::before { background: var(--color-brand-red); }
+.industry-detail--navy .industry-detail__bullet::before { background: var(--color-navy); }
+.industry-detail--green .industry-detail__bullet::before { background: var(--color-green); }
+
+.industry-detail--red .industry-detail__case-study { background: rgba(139, 10, 50, 0.08); }
+.industry-detail--red .industry-detail__case-study::before { background: var(--color-brand-red); }
+.industry-detail--navy .industry-detail__case-study { background: rgba(2, 12, 69, 0.08); }
+.industry-detail--navy .industry-detail__case-study::before { background: var(--color-navy); }
+.industry-detail--green .industry-detail__case-study { background: rgba(43, 107, 37, 0.08); }
+.industry-detail--green .industry-detail__case-study::before { background: var(--color-green); }
+
+/* Hover: deepen the tint (0.08 -> 0.16) plus nudge the arrow — the block
+   itself isn't a single link (it wraps two separate <a> tags, the case-study
+   sentence and the arrow glyph, over a shared label/background), so the
+   deepen is keyed off :hover on the whole container rather than either
+   individual link, giving one consistent "this whole strip is interactive"
+   response no matter which part the pointer is over. */
+.industry-detail--red .industry-detail__case-study:hover { background: rgba(139, 10, 50, 0.16); }
+.industry-detail--navy .industry-detail__case-study:hover { background: rgba(2, 12, 69, 0.16); }
+.industry-detail--green .industry-detail__case-study:hover { background: rgba(43, 107, 37, 0.16); }
+
+/* ---- left "panel" (challenges + services) ---- */
+
+.industry-detail__tint {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 460px;
+}
+.industry-detail--reverse .industry-detail__tint { left: 1000px; }
+
+/* Giant faint index numeral (01–06), bleeding off the section edge. */
+.industry-detail__watermark {
+  position: absolute;
+  left: -70px;
+  top: 24px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 300px;
+  line-height: 1;
+  opacity: 0.1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.industry-detail--reverse .industry-detail__watermark { left: 1190px; }
+
+.industry-detail__panel {
+  position: absolute;
+  left: 72px;
+  top: 0;
+  width: 300px;
+}
+.industry-detail--reverse .industry-detail__panel { left: 1072px; }
+
+.industry-detail__panel-label {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.industry-detail__challenges {
+  position: absolute;
+  top: 83px;
+  left: 0;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.industry-detail__bullet {
+  position: relative;
+  padding-left: 16px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--color-navy);
+  margin-bottom: 15px;
+}
+
+.industry-detail__bullet:last-child { margin-bottom: 0; }
+
+.industry-detail__bullet::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.industry-detail__divider {
+  position: absolute;
+  top: 224px;
+  left: 0;
+  width: 300px;
+  height: 1px;
+  background: rgba(2, 12, 69, 0.15);
+}
+
+.industry-detail__services-label {
+  position: absolute;
+  top: 238px;
+  left: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.industry-detail__services {
+  position: absolute;
+  top: 258px;
+  left: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.industry-detail__service {
+  width: 300px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-navy);
+}
+
+/* Thick accent rule separating panel from content. */
+.industry-detail__vdivider {
+  position: absolute;
+  left: 470px;
+  top: 70px;
+  width: 2px;
+  height: 320px;
+}
+.industry-detail--reverse .industry-detail__vdivider { left: 966px; }
+
+/* ---- right "content" block (heading + description + case study) ---- */
+
+.industry-detail__content {
+  position: absolute;
+  left: 500px;
+  top: 0;
+  width: 800px;
+  height: 460px;
+}
+.industry-detail--reverse .industry-detail__content { left: 80px; }
+
+.industry-detail__eyebrow {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.industry-detail__heading {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 800px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 46px;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.industry-detail__heading-line {
+  display: block;
+}
+
+.industry-detail__tagline {
+  position: absolute;
+  left: 0;
+  top: 184px;
+  width: 800px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+.industry-detail--single-line .industry-detail__tagline { top: 138px; }
+
+.industry-detail__description {
+  position: absolute;
+  left: 0;
+  top: 214px;
+  width: 760px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-navy);
+  margin: 0;
+}
+.industry-detail--single-line .industry-detail__description { top: 168px; }
+
+.industry-detail__case-study {
+  position: absolute;
+  left: 0;
+  top: 382px;
+  width: 780px;
+  height: 52px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.industry-detail__case-study::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 52px;
+}
+
+.industry-detail__case-study-label {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.industry-detail__case-study-link {
+  position: absolute;
+  left: 20px;
+  top: 26px;
+  width: 700px;
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-navy);
+}
+
+.industry-detail__case-study-arrow {
+  position: absolute;
+  left: 746px;
+  top: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  transition: transform 0.15s ease;
+}
+
+.industry-detail__case-study:hover .industry-detail__case-study-arrow {
+  transform: translateX(4px);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for these
+   detail sections. Per the brief: the two columns (challenges/services
+   panel + heading/description/case-study content) stack vertically in
+   natural DOM order regardless of the --reverse modifier (visual left/right
+   no longer matters once there's only one column), and the giant faint
+   watermark numeral is hidden outright since it's pure decoration that
+   would otherwise bleed across the stacked content at these widths. */
+@media (max-width: 900px) {
+  .industry-detail {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .industry-detail__watermark {
+    display: none;
+  }
+
+  .industry-detail__tint {
+    display: none;
+  }
+
+  .industry-detail__panel,
+  .industry-detail--reverse .industry-detail__panel {
+    position: static;
+    left: auto;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .industry-detail__panel-label {
+    position: static;
+  }
+
+  .industry-detail__challenges {
+    position: static;
+    width: 100%;
+    margin: 16px 0 0;
+  }
+
+  .industry-detail__divider {
+    position: static;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .industry-detail__services-label {
+    position: static;
+  }
+
+  .industry-detail__services {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .industry-detail__service {
+    width: 100%;
+  }
+
+  .industry-detail__vdivider,
+  .industry-detail--reverse .industry-detail__vdivider {
+    display: none;
+  }
+
+  .industry-detail__content,
+  .industry-detail--reverse .industry-detail__content {
+    position: static;
+    left: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .industry-detail__eyebrow {
+    position: static;
+  }
+
+  .industry-detail__heading {
+    position: static;
+    width: 100%;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 10px 0 0;
+  }
+
+  .industry-detail__tagline,
+  .industry-detail--single-line .industry-detail__tagline {
+    position: static;
+    width: 100%;
+    margin: 12px 0 0;
+  }
+
+  .industry-detail__description,
+  .industry-detail--single-line .industry-detail__description {
+    position: static;
+    width: 100%;
+    margin: 12px 0 0;
+  }
+
+  .industry-detail__case-study {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    padding: 14px 20px 14px 24px;
+    box-sizing: border-box;
+  }
+
+  .industry-detail__case-study-label {
+    position: static;
+  }
+
+  .industry-detail__case-study-link {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .industry-detail__case-study-arrow {
+    position: static;
+    display: inline-block;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .industry-detail__heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

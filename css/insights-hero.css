@@ -1,0 +1,270 @@
+.insights-hero {
+  position: relative;
+  height: 480px;
+  background: #252525;
+  overflow: hidden;
+}
+
+.insights-hero__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* Background photo — exported as a 1536x1024 layer shifted to (-43px, -338px)
+   so only a 1440x480 window of it shows through the section's clipped bounds.
+   Opacity was previously dropped to 0.015 (near-invisible) on a guess that
+   the raw export's 66% must be a blend-mode artifact like several other
+   pages — a fresh Figma pull confirms 66% (0.66) is correct as literally
+   stated; this section really is meant to show the photo clearly.
+   Positioned against .insights-hero (the true full-width section) instead
+   of .insights-hero__inner (capped at --page-width, 1440px) — the old
+   `left: -43px` was relative to that capped-and-centered box, so on any
+   viewport wider than 1440px the photo stopped short of the true edges,
+   leaving solid #252525 gaps. `calc(50% - 763px)` = `calc(50% - 720px -
+   43px)` reproduces the exact same position at 1440px (half of
+   --page-width plus the original offset) while re-anchoring to the true
+   viewport center at any other width, so the (deliberately oversized)
+   photo bleeds past the design column instead of stopping dead at it. */
+.insights-hero__bg {
+  position: absolute;
+  left: calc(50% - 763px);
+  top: -338px;
+  width: 1536px;
+  height: 1024px;
+  opacity: 0.66;
+  pointer-events: none;
+}
+
+.insights-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insights-hero__rings {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.insights-hero__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.insights-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 72px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+/* Giant faint typographic watermark behind the headline */
+.insights-hero__watermark {
+  position: absolute;
+  left: 0;
+  top: 159px;
+  width: 554px;
+  height: 281px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 320px;
+  line-height: normal;
+  color: var(--color-white);
+  opacity: 0.03;
+  margin: 0;
+}
+
+.insights-hero__title {
+  position: absolute;
+  left: 80px;
+  top: 104px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.insights-hero__title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.insights-hero__body {
+  position: absolute;
+  left: 80px;
+  top: 296px;
+  width: 497px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.insights-hero__newsletter {
+  position: absolute;
+  left: 1020px;
+  top: 140px;
+  width: 340px;
+  height: 180px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.insights-hero__newsletter-title {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.insights-hero__newsletter-subtitle {
+  position: absolute;
+  left: 20px;
+  top: 42px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-white);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.insights-hero__form {
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  width: 300px;
+}
+
+.insights-hero__input {
+  display: block;
+  width: 300px;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.39);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-white);
+  padding: 0 12px;
+}
+
+.insights-hero__input::placeholder {
+  color: var(--color-white);
+  opacity: 0.4;
+}
+
+.insights-hero__submit {
+  display: block;
+  width: 300px;
+  height: 44px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background: var(--color-brand-red);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   hero. Pure decoration (background photo, rings, giant typographic
+   watermark) is hidden outright; text + newsletter card drop into normal
+   flow, full width, stacked top-to-bottom. */
+@media (max-width: 900px) {
+  .insights-hero {
+    height: auto;
+  }
+
+  .insights-hero__inner {
+    height: auto;
+    padding: 56px 24px 40px;
+  }
+
+  .insights-hero__bg,
+  .insights-hero__rings,
+  .insights-hero__watermark {
+    display: none;
+  }
+
+  .insights-hero__eyebrow {
+    position: static;
+  }
+
+  .insights-hero__title {
+    position: static;
+    font-size: 40px;
+    line-height: 1.15;
+    margin-top: 16px;
+  }
+
+  .insights-hero__title-line {
+    white-space: normal;
+  }
+
+  .insights-hero__body {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .insights-hero__newsletter {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .insights-hero__newsletter-title {
+    position: static;
+    white-space: normal;
+  }
+
+  .insights-hero__newsletter-subtitle {
+    position: static;
+    white-space: normal;
+    margin-top: 6px;
+  }
+
+  .insights-hero__form {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .insights-hero__input,
+  .insights-hero__submit {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .insights-hero__title {
+    font-size: 32px;
+  }
+}

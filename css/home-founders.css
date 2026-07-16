@@ -1,0 +1,181 @@
+.founders {
+  position: relative;
+  background: var(--color-navy);
+  overflow: hidden;
+}
+
+.founders__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 360px;
+}
+
+.founders__ring {
+  position: absolute;
+  left: 1200px;
+  top: -150px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.founders__eyebrow {
+  position: absolute;
+  left: 120px;
+  top: 48px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.founders__heading {
+  position: absolute;
+  left: 120px;
+  top: 122px;
+  width: 434px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.founders__cta {
+  position: absolute;
+  left: 120px;
+  top: 212px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.26px;
+  color: var(--color-cream);
+  white-space: nowrap;
+}
+
+/* Each member block is anchored at the photo's left edge; name/role sit
+   at a fixed offset to the right of it (matches Figma: photo at x=900,
+   name/role at x=1069 → +169px). */
+.founders__member {
+  position: absolute;
+  left: 900px;
+}
+
+.founders__portrait {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.founders__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founders__name {
+  position: absolute;
+  left: 169px;
+  top: 37px;
+  width: 191px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.founders__role {
+  position: absolute;
+  left: 169px;
+  top: 71px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  color: #8893b5;
+  white-space: nowrap;
+}
+
+/* No mobile Figma frame — fallback: hide the decorative outline ring,
+   flow eyebrow/heading/cta normally, and turn each founder "member" block
+   (whose top offset is set inline for the desktop 2-row stack) into a
+   static flex row of photo + name/role, stacked one per line. */
+@media (max-width: 900px) {
+  .founders__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .founders__ring {
+    display: none;
+  }
+
+  .founders__eyebrow,
+  .founders__heading,
+  .founders__cta {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .founders__heading {
+    margin-top: 12px;
+  }
+
+  .founders__cta {
+    display: inline-block;
+    margin-top: 16px;
+  }
+
+  /* name + role sit beside the photo via grid rather than flex, since
+     they're two separate sibling <p> tags (not wrapped in one block) —
+     the photo spans both text rows, name/role stack in the 2nd column. */
+  .founders__member {
+    position: static !important;
+    left: auto;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    column-gap: 16px;
+    margin-top: 28px;
+  }
+
+  .founders__member:first-of-type {
+    margin-top: 32px;
+  }
+
+  .founders__portrait {
+    position: static;
+    grid-row: 1 / 3;
+    align-self: center;
+    width: 84px;
+    height: 84px;
+  }
+
+  .founders__name,
+  .founders__role {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+    grid-column: 2;
+  }
+
+  .founders__name {
+    align-self: end;
+  }
+
+  .founders__role {
+    align-self: start;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Frontier Quotient | GCC Financial Consultancy",
+  "description": "Strategic finance for the Gulf's most ambitious operators. Accounting, FP&A, and business finance for GCC growth companies.",
+  "sections": [
+    "home/01-hero.html",
+    "home/02-trust-strip.html",
+    "home/04-problem-solution.html",
+    "home/03-trust-intro.html",
+    "home/04-statement.html",
+    "home/05-services.html",
+    "home/08-industries.html",
+    "home/06-why-fq.html",
+    "home/07-founders.html",
+    "home/09-how-it-works.html",
+    "home/10-faq.html",
+    "home/11-final-cta.html"
+  ],
+  "css": [
+    "home-hero.css",
+    "home-trust-strip.css",
+    "home-problem-solution.css",
+    "home-trust-intro.css",
+    "home-statement.css",
+    "home-services.css",
+    "home-industries.css",
+    "home-why-fq.css",
+    "home-founders.css",
+    "home-how-it-works.css",
+    "home-faq.css",
+    "home-final-cta.css"
+  ],
+  "outputFile": "index.html"
+}

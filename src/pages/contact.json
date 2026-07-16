@@ -1,0 +1,15 @@
+{
+  "title": "Contact | Frontier Quotient",
+  "description": "Get in touch with Frontier Quotient to discuss your finance and accounting needs across the GCC.",
+  "sections": [
+    "contact/01-main.html",
+    "contact/02-locations.html",
+    "contact/03-quick-faq.html"
+  ],
+  "css": [
+    "contact-main.css",
+    "contact-locations.css",
+    "contact-quick-faq.css"
+  ],
+  "outputFile": "contact.html"
+}

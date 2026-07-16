@@ -1,0 +1,129 @@
+.filters {
+  position: relative;
+  background: var(--color-cream);
+  height: 72px;
+  overflow: hidden;
+}
+
+.filters__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 72px;
+}
+
+.filters__inner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 71px;
+  width: 100%;
+  height: 1px;
+  background: var(--color-navy);
+  opacity: 0.08;
+}
+
+/* Flex row instead of hardcoded per-tab `left` pixel offsets. The previous
+   fixed-position approach used magic numbers that already overlapped for
+   2 of the 6 tabs at their default width ("PROFESSIONAL SERVICES" started
+   before "LOGISTICS" even ended) and would re-break for any OTHER tab the
+   moment it became active, since the active state grows the font-size
+   (13px -> 15px) and hardcoded positions don't reflow around that. Flex +
+   gap sizes itself to whatever the actual rendered text width is. */
+.filters__group {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
+}
+
+.filters__tab {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: var(--color-navy);
+  opacity: 0.4;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filters__tab--active {
+  font-size: 15px;
+  color: var(--color-brand-red);
+  opacity: 1;
+}
+
+/* Underline indicator, sized to whichever tab is active via a pseudo-element
+   instead of a hardcoded child span — the original markup only had this span
+   on the first tab (fixed 80px width matching "ALL WORK"'s text), which
+   broke as soon as a different tab could become active via real filtering.
+   width:100% on an absolutely-positioned pseudo-element matches the
+   button's own content width automatically, whatever that tab's label is. */
+.filters__tab--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 3px;
+  width: 100%;
+  height: 2px;
+  background: var(--color-brand-red);
+}
+
+/* No mobile Figma frame exists for this filter bar. Six tabs (one with a
+   long label like "PROFESSIONAL SERVICES") can't fit on a 375px screen
+   without either wrapping to several rows or scrolling horizontally.
+   Chose a horizontally-scrollable strip — the scroll/overflow lives on
+   `.filters__inner` (the viewport), while `.filters__group` (the actual
+   parent of the tab buttons) is reset off its desktop absolute positioning
+   and becomes the flex row itself, since it — not `.filters__inner` — is
+   what directly wraps the buttons in the DOM. */
+@media (max-width: 900px) {
+  .filters {
+    height: auto;
+  }
+
+  .filters__inner {
+    height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(2, 12, 69, 0.08);
+  }
+
+  .filters__inner::after {
+    display: none;
+  }
+
+  .filters__group {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: max-content;
+    height: auto;
+  }
+
+  .filters__tab {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters__group {
+    gap: 20px;
+  }
+
+  .filters__inner {
+    padding: 14px 16px;
+  }
+}

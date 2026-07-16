@@ -1,0 +1,110 @@
+.cs-final-cta {
+  position: relative;
+  height: 280px;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+/* Dot-grid texture — same construction as the Hero's (see cs-hero.css): ~340
+   individually-positioned 10x1.5px white "Rectangle" divs (opacity 0.06)
+   collapsed into a single tiled SVG background. Dots repeat every 48px
+   horizontally, 34px vertically. */
+.cs-final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='34'%3E%3Crect x='43' y='0' width='10' height='1.5' fill='white' fill-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: 48px 34px;
+  pointer-events: none;
+}
+
+.cs-final-cta__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 280px;
+}
+
+.cs-final-cta__heading {
+  position: absolute;
+  left: 80px;
+  top: 56px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 48px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.cs-final-cta__body {
+  position: absolute;
+  left: 80px;
+  top: 140px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.cs-final-cta__btn {
+  position: absolute;
+  left: 80px;
+  top: 192px;
+  width: 232px;
+  height: 52px;
+  background: var(--color-white);
+  color: var(--color-brand-red);
+  border-radius: 4px;
+}
+
+/* .btn already transitions background-color/color/border-color (base.css) —
+   just needs a hover target color. This button inverts the usual
+   btn-primary treatment (white bg / red text on a red section), so darkening
+   straight to brand-red-hover would fight the white surface; a light cream
+   tint reads as "pressed" without needing a new token. */
+.cs-final-cta__btn:hover {
+  background: var(--color-cream);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists. All three
+   children were absolutely positioned with white-space:nowrap for the
+   1440px desktop layout; reset to static/wrapping so they flow and don't
+   overflow a narrow viewport. */
+@media (max-width: 900px) {
+  .cs-final-cta {
+    height: auto;
+  }
+
+  .cs-final-cta__inner {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .cs-final-cta__heading {
+    position: static;
+    white-space: normal;
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .cs-final-cta__body {
+    position: static;
+    white-space: normal;
+    margin-bottom: 24px;
+  }
+
+  .cs-final-cta__btn {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-final-cta__heading {
+    font-size: 26px;
+  }
+}

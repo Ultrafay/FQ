@@ -1,0 +1,201 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text-body);
+  background: var(--color-white);
+  line-height: normal;
+  /* auto, not hidden — the site's responsive design only has two tiers
+     (a fixed 1440px desktop layout at >=900px, a separate mobile fallback
+     below that), so any viewport in between (900-1440px, e.g. a laptop at
+     1024/1280/1366px) has fixed-width content wider than the viewport.
+     `hidden` silently clipped that overflow (invisible content, no way to
+     reach it); `auto` at least lets it scroll into view. This doesn't make
+     the design fluid in that range, just reachable — a real responsive
+     pass for 900-1440px is a separate, larger undertaking. */
+  overflow-x: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Visually hidden until keyboard-focused — lets a screen-reader/keyboard
+   user jump straight past the (8-item) nav to the actual page content,
+   rather than tabbing through every nav link first on every single page. */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 200;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus-visible {
+  top: 12px;
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+}
+
+/* Baseline focus-visible ring for every interactive element — deliberately
+   branded (navy, matching the site's ink color) rather than left to each
+   browser's default blue, which clashes on the site's darker sections.
+   Only shows for keyboard focus, not mouse clicks, so it doesn't add visual
+   noise to normal pointer use. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-navy);
+  outline-offset: 2px;
+}
+
+.page {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-brand-red);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-brand-red-hover);
+}
+
+/* Generic hover affordance for plain inline text links (nav, footer, card
+   links, etc: anything using base.css's `a { color: inherit }` reset,
+   which otherwise leaves zero visual difference between a link and static
+   text). Component-specific links that want a different hover treatment
+   (e.g. a card that lifts instead) can override this per class. */
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Opt out for links that already have their own dedicated hover treatment
+   (buttons, nav, footer, cards, pills — anything styled per-component
+   below) so the underline doesn't double up with a color/background shift. */
+a.btn:hover,
+.navbar__link:hover,
+.navbar__mobile-link:hover,
+.footer__col-list li a:hover,
+.services__card-link:hover,
+.services__view-all:hover,
+.industries__cta:hover,
+.featured__link:hover,
+.quick-nav__link:hover,
+.industry-detail__case-study-arrow:hover {
+  text-decoration: none;
+}
+
+/* Shared "hollow outline" text effect, used by every outline-style heading
+   word sitewide (Home/About/Services x2/How We Work/Case Studies/Insights/
+   Contact — 8 instances). One class, one implementation — verified via
+   grep that no per-component copy exists anywhere else, and via build.js
+   (base.css is inlined into every page) that all pages get this identical
+   rule.
+   Figma's exact spec for this style (read directly from the properties
+   panel): Montserrat ExtraBold 64px/64px/0, Fill: none, Stroke: #FFFFFF
+   100%, Position: Outside, Weight: 3.
+   Technique: `-webkit-text-stroke` was tried (twice, at different
+   weights) and is the WRONG tool for this spec, not just imprecise —
+   CSS text-stroke always paints centered on the glyph edge (half inside,
+   half outside); there is no CSS property that can position a text
+   stroke "outside" only. Approximating Figma's outside-3 by eyeballing a
+   bigger centered number (5px) was a fudge factor, not a fix, and reads
+   wrong because a centered stroke also erodes into the glyph's hollow
+   interior, which Figma's outside stroke never touches.
+   The mathematically exact equivalent of "outside stroke, weight W, fill:
+   none" is: dilate the glyph silhouette outward by W, then subtract the
+   original silhouette, leaving a W-thick ring that sits entirely outside
+   the letter and never erodes the interior. That is exactly what SVG's
+   `feMorphology` (dilate) + `feComposite` (operator="out") computes —
+   using Figma's literal weight (3) directly, with no calibration. Filter
+   defined once in shell.html, applied here via `filter: url(...)`.
+   (This technique was used earlier in the project and swapped out after
+   a doubling report that was never reproducible across 27+ renders —
+   Chromium/Firefox/WebKit × 1x-3x device pixel ratio, every one clean.
+   Restored because it's the geometrically correct technique for this
+   exact spec, and the text-stroke replacement was a worse, guessed
+   approximation, not a safer one.) */
+.text-outline {
+  color: var(--color-white);
+  filter: url(#text-outline-filter);
+}
+
+/* --- Global Scroll Animations --- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger utilities for children */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}

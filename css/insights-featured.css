@@ -1,0 +1,216 @@
+.featured {
+  position: relative;
+  height: 440px;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.featured__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.featured__image-placeholder {
+  position: absolute;
+  left: 80px;
+  top: 40px;
+  width: 600px;
+  height: 360px;
+  border-radius: 8px;
+  background: var(--color-navy);
+  overflow: hidden;
+}
+
+.featured__tag {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 140px;
+  height: 28px;
+  border-radius: 4px;
+  background: var(--color-brand-red);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.featured__image-caption {
+  position: absolute;
+  left: 0;
+  top: 175px;
+  width: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  opacity: 0.25;
+  text-align: center;
+  margin: 0;
+}
+
+.featured__content {
+  position: absolute;
+  left: 740px;
+  top: 0;
+  width: 540px;
+}
+
+.featured__eyebrow {
+  position: absolute;
+  left: 0;
+  top: 37px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.featured__title {
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 540px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.featured__excerpt {
+  position: absolute;
+  left: 0;
+  top: 216px;
+  width: 540px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-navy);
+  opacity: 0.6;
+  margin: 0;
+}
+
+.featured__meta {
+  position: absolute;
+  left: 0;
+  top: 308px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-navy);
+  opacity: 0.4;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.featured__link {
+  position: absolute;
+  left: 0;
+  top: 340px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.featured__link:hover {
+  color: var(--color-brand-red-hover);
+}
+
+.featured__link-arrow {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.featured__link:hover .featured__link-arrow {
+  transform: translateX(3px);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   section. Image placeholder (kept as a placeholder, per the brief — no
+   real image invented) moves above the text content, both full width,
+   single column. The placeholder keeps `position: relative` (not static)
+   so its tag/caption children — themselves absolutely positioned — stay
+   anchored to it correctly. */
+@media (max-width: 900px) {
+  .featured {
+    height: auto;
+  }
+
+  .featured__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .featured__image-placeholder {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 24px;
+  }
+
+  .featured__content {
+    position: static;
+    left: auto;
+    width: 100%;
+  }
+
+  .featured__eyebrow {
+    position: static;
+  }
+
+  .featured__title {
+    position: static;
+    width: 100%;
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 12px;
+  }
+
+  .featured__excerpt {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .featured__meta {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .featured__link {
+    position: static;
+    display: inline-block;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured__image-placeholder {
+    height: 200px;
+  }
+
+  .featured__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

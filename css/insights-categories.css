@@ -1,0 +1,113 @@
+.categories {
+  position: relative;
+  height: 80px;
+  background: var(--color-cream-alt);
+  overflow: hidden;
+}
+
+.categories__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.categories__inner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 79px;
+  width: 100%;
+  height: 1px;
+  background: var(--color-navy);
+  opacity: 0.08;
+}
+
+.categories__tabs {
+  position: relative;
+  height: 100%;
+}
+
+.categories__tab {
+  position: absolute;
+  top: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--color-navy);
+  opacity: 0.4;
+  white-space: nowrap;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.categories__tab:hover {
+  opacity: 0.7;
+}
+
+.categories__tab--active:hover {
+  opacity: 1;
+}
+
+.categories__tab--active {
+  color: var(--color-brand-red);
+  opacity: 1;
+}
+
+.categories__tab--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 47px;
+  width: 24px;
+  height: 3px;
+  background: var(--color-brand-red);
+}
+
+/* Mobile/tablet fallback — no mobile Figma frame exists for this bar. Each
+   tab was individually absolutely-positioned via inline `left` styles in
+   the HTML (see src/partials/insights/02-categories.html); those inline
+   values are harmless once `position` switches to static/relative below,
+   since `left` only applies to positioned elements. Becomes a horizontally-
+   scrollable strip (own inner element, not the page) for the same reason
+   as the Industries quick-nav — 6 tabs at their natural widths don't wrap
+   cleanly without a hand-tuned per-tab breakpoint. */
+@media (max-width: 900px) {
+  .categories {
+    height: auto;
+    overflow: visible;
+  }
+
+  .categories__inner {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+    padding: 16px 24px;
+  }
+
+  .categories__inner::after {
+    display: none;
+  }
+
+  .categories__tabs {
+    display: flex;
+    gap: 24px;
+    height: auto;
+    width: max-content;
+  }
+
+  .categories__tab {
+    position: relative;
+    top: auto;
+    left: auto !important;
+  }
+
+  .categories__tab--active::after {
+    position: static;
+    display: block;
+    margin-top: 8px;
+  }
+}

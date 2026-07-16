@@ -1,0 +1,17 @@
+{
+  "title": "How We Work | Frontier Quotient",
+  "description": "A simple, structured finance process for GCC businesses — discovery, scope, setup, and ongoing support.",
+  "sections": [
+    "how-we-work/01-hero.html",
+    "how-we-work/02-process.html",
+    "how-we-work/03-tools.html",
+    "how-we-work/04-cta.html"
+  ],
+  "css": [
+    "hww-hero.css",
+    "hww-process.css",
+    "hww-tools.css",
+    "hww-cta.css"
+  ],
+  "outputFile": "how-we-work.html"
+}

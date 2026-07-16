@@ -1,0 +1,153 @@
+.mission {
+  position: relative;
+  background: var(--color-cream);
+  overflow: hidden;
+}
+
+.mission__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 552px;
+}
+
+/* Decorative outline circles, top-right (Figma: three concentric ring SVGs;
+   a 4th "Ellipse" asset was checked and is an empty <g> with no fill/stroke —
+   effectively invisible in Figma, so it is omitted here). */
+.mission__rings {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mission__ring {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mission__ring--1 {
+  left: 1120px;
+  top: 20px;
+  width: 380px;
+  height: 380px;
+  border: 2px solid rgba(43, 107, 37, 0.45);
+}
+
+.mission__ring--2 {
+  left: 1170px;
+  top: 70px;
+  width: 280px;
+  height: 280px;
+  border: 2px solid rgba(139, 10, 50, 0.1);
+}
+
+.mission__ring--3 {
+  left: 1220px;
+  top: 120px;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(139, 10, 50, 0.16);
+}
+
+/* Oversized decorative quote mark watermark */
+.mission__quote-mark {
+  position: absolute;
+  left: 60px;
+  top: -12px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 210px;
+  color: var(--color-brand-red);
+  opacity: 0.13;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.mission__eyebrow {
+  position: absolute;
+  left: 104px;
+  top: 78px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.mission__label {
+  position: absolute;
+  left: 104px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--color-green);
+  white-space: nowrap;
+}
+
+.mission__label--1 { top: 110px; }
+.mission__label--2 { top: 304px; }
+
+.mission__statement {
+  position: absolute;
+  left: 104px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 46px;
+  color: var(--color-navy);
+}
+
+.mission__statement--1 {
+  top: 136px;
+  width: 1046px;
+}
+
+.mission__statement--2 {
+  top: 328px;
+  width: 1100px;
+}
+
+/* No mobile Figma frame — fallback: the concentric decorative rings and
+   the oversized quote-mark watermark are pure decoration, hidden outright.
+   The eyebrow and the two labeled statements convert to normal flow and
+   stack in DOM order; statement font size is stepped down twice so the
+   26px/46px desktop treatment stays readable without feeling oversized
+   at phone widths. */
+@media (max-width: 900px) {
+  .mission__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .mission__rings,
+  .mission__quote-mark {
+    display: none;
+  }
+
+  .mission__eyebrow,
+  .mission__label,
+  .mission__statement {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .mission__label {
+    margin-top: 28px;
+  }
+
+  .mission__statement {
+    width: auto;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission__statement {
+    font-size: 19px;
+  }
+}

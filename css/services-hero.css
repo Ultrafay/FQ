@@ -1,0 +1,275 @@
+.services-hero {
+  position: relative;
+  height: 540px;
+  background: var(--color-black);
+  overflow: hidden;
+}
+
+.services-hero__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 540px;
+}
+
+/* Full-bleed background photo. The earlier "opacity likely wrong, dial down"
+   flag was itself wrong for this section — a fresh Figma pull confirms the
+   photo really is meant to render clearly visible at ~0.65 opacity, not
+   dimmed to near-invisibility like several other pages' heroes. Also
+   replaced the source image: the old file was some other crop/photo
+   entirely (wrong subject framing vs Figma); re-exported directly from the
+   Figma node so the crop matches exactly.
+   Positioned against .services-hero (the true full-width section) instead
+   of .services-hero__inner (capped at --page-width, 1440px) — it used to
+   be `inset: 0` relative to that capped-and-centered inner box, which left
+   solid black gaps on both edges on any viewport wider than 1440px, since
+   the photo never actually reached the true edges. Centering on the
+   viewport itself via left:50%/translateX and sizing to 100vw removes that
+   gap at any width; object-fit: cover on the img handles the crop, same as
+   before. */
+.services-hero__bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.services-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+}
+
+.services-hero__ring {
+  position: absolute;
+  pointer-events: none;
+}
+
+.services-hero__ring--1 {
+  left: 1080px;
+  top: 180px;
+  width: 520px;
+  height: 520px;
+}
+
+.services-hero__ring--2 {
+  left: 1160px;
+  top: 260px;
+  width: 360px;
+  height: 360px;
+}
+
+.services-hero__eyebrow {
+  position: absolute;
+  left: 100px;
+  top: 75px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+/* The Figma export represents this heading as 3 separately-positioned text
+   nodes with overlapping y-ranges (an artifact of how Figma exports mixed
+   solid/outline styling within one wrapping paragraph). Reproduced here as
+   one flowing heading so it wraps exactly like the real screenshot:
+   "Finance & accounting" / "services designed for" / "growth". */
+.services-hero__title {
+  position: absolute;
+  left: 100px;
+  top: 122px;
+  width: 820px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.15;
+  color: var(--color-white);
+}
+
+
+.services-hero__accent {
+  position: absolute;
+  left: 100px;
+  top: 366px;
+  width: 56px;
+  height: 4px;
+  background: var(--color-green);
+}
+
+.services-hero__body {
+  position: absolute;
+  left: 100px;
+  top: 404px;
+  width: 480px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--color-white);
+}
+
+/* "The Full Suite" mockup card */
+.services-hero__card {
+  position: absolute;
+  left: 900px;
+  top: 90px;
+  width: 440px;
+  height: 360px;
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.services-hero__card-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.services-hero__card-label {
+  position: absolute;
+  left: 32px;
+  top: 30px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--color-green);
+  white-space: nowrap;
+}
+
+.services-hero__card-row {
+  position: absolute;
+  left: 32px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.services-hero__card-num {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-green);
+  white-space: nowrap;
+}
+
+.services-hero__card-item {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.services-hero__card-divider {
+  position: absolute;
+  left: 32px;
+  width: 376px;
+  height: 1px;
+  background: var(--color-border-soft);
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   hero. Decorative rings/bg photo hidden; eyebrow/title/accent/body reflow
+   to static full-width stacking; the "Full Suite" mockup card keeps its
+   position:relative (so its own absolute top-strip bar still works) but its
+   internal rows/dividers switch to static flow instead of the fixed `top`
+   offsets baked into their inline styles (those offsets are simply ignored
+   once position is no longer absolute). */
+@media (max-width: 900px) {
+  .services-hero,
+  .services-hero__inner {
+    height: auto;
+  }
+
+  .services-hero__inner {
+    padding: 48px 24px 40px;
+  }
+
+  .services-hero__bg,
+  .services-hero__ring--1,
+  .services-hero__ring--2 {
+    display: none;
+  }
+
+  .services-hero__eyebrow,
+  .services-hero__title,
+  .services-hero__accent,
+  .services-hero__body {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .services-hero__title {
+    margin: 16px 0 0;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .services-hero__accent {
+    margin: 24px 0 0;
+  }
+
+  .services-hero__body {
+    margin: 16px 0 0;
+    width: auto;
+  }
+
+  .services-hero__card {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    padding: 28px 20px 20px;
+    box-sizing: border-box;
+  }
+
+  .services-hero__card-label {
+    position: static;
+    left: auto;
+    top: auto;
+    margin: 0 0 16px;
+  }
+
+  .services-hero__card-row {
+    position: static;
+    left: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .services-hero__card-divider {
+    position: static;
+    left: auto;
+    width: 100%;
+  }
+
+  .services-hero__card-item {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero__title {
+    font-size: 30px;
+  }
+}

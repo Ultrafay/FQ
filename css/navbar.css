@@ -1,0 +1,168 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-white);
+  border-bottom: 3px solid var(--color-brand-red);
+}
+
+.navbar__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 80px;
+}
+
+.navbar__logo {
+  position: absolute;
+  left: 34px;
+  top: -61px;
+  width: 201px;
+  height: 201px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.navbar__links {
+  position: absolute;
+  left: 280px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.navbar__link {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-navy);
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.navbar__link:hover {
+  color: var(--color-brand-red);
+}
+
+.navbar__mobile-link {
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.navbar__mobile-link:hover {
+  color: var(--color-brand-red);
+  background: var(--color-cream);
+}
+
+.navbar__cta {
+  position: absolute;
+  left: 1176px;
+  top: 18px;
+  width: 200px;
+  height: 44px;
+}
+
+.navbar__mobile-cta:hover {
+  background: var(--color-brand-red-hover);
+}
+
+.navbar__menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height: 100%;
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar__menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-navy);
+  margin: 5px 0;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.navbar__menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar__menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.navbar__mobile {
+  display: none;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border);
+}
+
+.navbar__mobile[hidden] {
+  display: none;
+}
+
+.navbar__mobile-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__mobile-link {
+  padding: 14px 24px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--color-navy);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar__mobile-cta {
+  display: flex;
+  margin: 20px 24px;
+  width: auto;
+  height: 48px;
+}
+
+/* Below this width the full nav-links row + logo (which starts at
+   left:280px) no longer fit without crowding — switch to the hamburger
+   pattern. No mobile Figma frame exists for the navbar, so this breakpoint
+   and the drawer style are a judgment call, not a traced value. */
+@media (max-width: 1140px) {
+  .navbar__links,
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__menu-toggle {
+    display: flex;
+  }
+
+  .navbar__logo {
+    left: 20px;
+    top: -55px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .navbar__mobile:not([hidden]) {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__logo {
+    left: 12px;
+    top: -50px;
+    width: 160px;
+    height: 160px;
+  }
+}

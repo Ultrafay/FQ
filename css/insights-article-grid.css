@@ -1,0 +1,255 @@
+.article-grid {
+  position: relative;
+  height: 920px;
+  background: #f8f6f2;
+  overflow: hidden;
+}
+
+.article-grid__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.article-grid__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 56px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.article-grid__grid {
+  position: absolute;
+  left: 80px;
+  top: 96px;
+  display: grid;
+  grid-template-columns: repeat(3, 420px);
+  gap: 20px;
+}
+
+.article-grid__card {
+  position: relative;
+  width: 420px;
+  height: 280px;
+  border-radius: 8px;
+  background: var(--color-white);
+  overflow: hidden;
+  font-family: var(--font-primary);
+  box-shadow: 0 1px 3px rgba(2, 12, 69, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.article-grid__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px -8px rgba(2, 12, 69, 0.18);
+}
+
+.article-grid__card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+}
+
+.article-grid__card--navy { color: var(--color-navy); }
+.article-grid__card--red { color: var(--color-brand-red); }
+.article-grid__card--green { color: var(--color-green); }
+
+/* NOTE: background is set per accent-color modifier below (not
+   `background: currentColor`) because this element also sets its own
+   `color: white` for the label text — if background used `currentColor`
+   here, it would resolve to that same white and the pill would lose its
+   accent color entirely. (Pre-existing bug found during the responsive
+   pass: with no explicit text color, the label inherited `currentColor`
+   from `.article-grid__card--*`, making the text the same color as its
+   `background: currentColor` pill — invisible navy-on-navy/red-on-red/
+   green-on-green text at any viewport width, including desktop.) */
+.article-grid__category {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  padding: 0 10px;
+  height: 22px;
+  border-radius: 3px;
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.article-grid__card--navy .article-grid__category { background: var(--color-navy); }
+.article-grid__card--red .article-grid__category { background: var(--color-brand-red); }
+.article-grid__card--green .article-grid__category { background: var(--color-green); }
+
+.article-grid__category::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0.1;
+}
+
+.article-grid__category {
+  isolation: isolate;
+}
+
+.article-grid__title {
+  position: absolute;
+  left: 24px;
+  top: 52px;
+  width: 372px;
+  height: 72px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.article-grid__excerpt {
+  position: absolute;
+  left: 24px;
+  top: 136px;
+  width: 372px;
+  height: 58px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: var(--color-navy);
+  opacity: 0.55;
+  margin: 0;
+}
+
+.article-grid__card::after {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 212px;
+  width: 372px;
+  height: 1px;
+  background: var(--color-navy);
+  opacity: 0.08;
+}
+
+.article-grid__read-time {
+  position: absolute;
+  left: 24px;
+  top: 224px;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--color-navy);
+  opacity: 0.4;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.article-grid__read-link {
+  position: absolute;
+  left: 340px;
+  top: 224px;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: currentColor;
+  white-space: nowrap;
+}
+
+/* Single-column mobile/tablet fallback — no mobile Figma frame exists for
+   this grid. Cards go full width and their internal content (title,
+   excerpt, category pill, meta row), all absolutely positioned at desktop
+   against a fixed 420x280 card, switches to normal flow so nothing is
+   clipped or forced to overflow a narrower card. The 1px divider (an
+   ::after pseudo-element, originally sandwiched between excerpt and meta
+   via absolute top offsets) is dropped rather than reflowed to keep the
+   card's DOM-order-based flow simple — it's pure decoration. */
+@media (max-width: 900px) {
+  .article-grid {
+    height: auto;
+  }
+
+  .article-grid__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .article-grid__eyebrow {
+    position: static;
+  }
+
+  .article-grid__grid {
+    position: static;
+    left: auto;
+    top: auto;
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .article-grid__card {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .article-grid__card::after {
+    display: none;
+  }
+
+  .article-grid__category {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 16px;
+  }
+
+  .article-grid__title {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .article-grid__excerpt {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .article-grid__read-time {
+    position: static;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .article-grid__read-link {
+    position: static;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-grid__card {
+    padding: 20px;
+  }
+
+  .article-grid__title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

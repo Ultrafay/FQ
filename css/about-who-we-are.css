@@ -1,0 +1,116 @@
+.who-we-are {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.who-we-are__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 360px;
+}
+
+.who-we-are__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 44px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.who-we-are__heading {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.who-we-are__rule {
+  position: absolute;
+  left: 80px;
+  top: 176px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.who-we-are__divider {
+  position: absolute;
+  left: 520px;
+  top: 80px;
+  width: 2px;
+  height: 210px;
+  background: var(--color-green);
+}
+
+.who-we-are__body {
+  position: absolute;
+  left: 580px;
+  top: 40px;
+  width: 780px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  color: var(--color-text-body);
+}
+
+.who-we-are__body p {
+  margin-bottom: 20px;
+}
+
+.who-we-are__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* No mobile Figma frame — fallback: the two-column text-with-divider
+   layout (heading block on the left, body copy on the right, separated
+   by a vertical rule) stacks into a single column. The vertical divider
+   becomes a full-width horizontal rule between the two blocks instead of
+   being hidden, since it's part of the primary content layout, not pure
+   decoration. */
+@media (max-width: 900px) {
+  .who-we-are__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .who-we-are__eyebrow,
+  .who-we-are__heading,
+  .who-we-are__rule,
+  .who-we-are__divider,
+  .who-we-are__body {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .who-we-are__heading {
+    margin-top: 8px;
+    white-space: normal;
+  }
+
+  .who-we-are__rule {
+    margin-top: 16px;
+  }
+
+  .who-we-are__divider {
+    width: 100%;
+    height: 2px;
+    margin-top: 28px;
+  }
+
+  .who-we-are__body {
+    width: auto;
+    margin-top: 28px;
+  }
+}

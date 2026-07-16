@@ -1,0 +1,183 @@
+.trust-intro {
+  position: relative;
+  background: var(--color-white);
+  height: 420px;
+  overflow: hidden;
+}
+
+.trust-intro__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.trust-intro__bg {
+  position: absolute;
+  left: -258px;
+  top: -200px;
+  width: max(1717px, calc(258px + 50% + 50vw));
+  height: 916px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.trust-intro__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trust-intro__quote-mark {
+  position: absolute;
+  left: 40px;
+  top: -20px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 200px;
+  line-height: normal;
+  color: var(--color-brand-red);
+  opacity: 0.08;
+  white-space: nowrap;
+}
+
+.trust-intro__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 46px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.trust-intro__heading {
+  position: absolute;
+  left: 80px;
+  top: 77px;
+  width: 732px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--color-navy);
+}
+
+.trust-intro__cards {
+  position: absolute;
+  left: 80px;
+  top: 205px;
+  display: flex;
+  gap: 25px;
+}
+
+.trust-intro__card {
+  position: relative;
+  width: 410px;
+  height: 180px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border-soft);
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px 0px rgba(3, 13, 69, 0.06);
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.trust-intro__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 14px 30px 0px rgba(3, 13, 69, 0.14);
+}
+
+.trust-intro__card-rule {
+  position: absolute;
+  left: 23px;
+  top: 23px;
+  width: 28px;
+  height: 3px;
+  background: var(--color-green);
+}
+
+.trust-intro__card-quote {
+  position: absolute;
+  left: 23px;
+  top: 39px;
+  width: 362px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-text-body);
+}
+
+.trust-intro__card-attribution {
+  position: absolute;
+  left: 23px;
+  top: 145px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+/* No mobile Figma frame — fallback: background photo hidden (pure
+   decoration), quote-mark watermark hidden, heading/eyebrow flow normally,
+   and the 3 testimonial cards stack into a single column instead of a
+   fixed-width row. */
+@media (max-width: 900px) {
+  .trust-intro {
+    height: auto;
+  }
+
+  .trust-intro__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .trust-intro__bg,
+  .trust-intro__quote-mark {
+    display: none;
+  }
+
+  .trust-intro__eyebrow {
+    position: static;
+  }
+
+  .trust-intro__heading {
+    position: static;
+    width: auto;
+    margin-top: 12px;
+  }
+
+  .trust-intro__cards {
+    position: static;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 16px;
+  }
+
+  .trust-intro__card {
+    width: 100%;
+    height: auto;
+    padding: 23px;
+  }
+
+  .trust-intro__card-rule {
+    position: static;
+  }
+
+  .trust-intro__card-quote {
+    position: static;
+    width: auto;
+    margin-top: 12px;
+  }
+
+  .trust-intro__card-attribution {
+    position: static;
+    margin-top: 16px;
+    display: block;
+  }
+}

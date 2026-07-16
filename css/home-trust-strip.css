@@ -1,0 +1,88 @@
+.trust-strip {
+  position: relative;
+  background: var(--color-navy);
+  height: 120px;
+  overflow: hidden;
+}
+
+.trust-strip__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.trust-strip__item {
+  position: relative;
+  width: 360px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.trust-strip__item:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 1px;
+  height: 60px;
+  background: var(--color-white);
+  opacity: 0.15;
+}
+
+.trust-strip__value {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 100%;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.trust-strip__label {
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.4;
+}
+
+/* No mobile Figma frame — fallback: wrap the 4 stats into a 2x2 grid
+   instead of forcing them into one cramped row. */
+@media (max-width: 900px) {
+  .trust-strip {
+    height: auto;
+  }
+
+  .trust-strip__inner {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+
+  .trust-strip__item {
+    width: 50%;
+    height: 90px;
+  }
+
+  .trust-strip__item:nth-child(2n+1)::before {
+    content: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .trust-strip__value {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  /* Brand colors — sourced from Figma node fills, file 6PetIaQwbely4arXU9zhTL */
+  --color-brand-red: #8b0a32;
+  --color-navy: #020c45;
+  --color-green: #2b6b25;
+  --color-cream: #f8f6f2;
+  --color-pink-light: #f3d9e2;
+  --color-text-muted: #55596b;
+  --color-text-body: #2a2a3a;
+  --color-border: #e4e0d7;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Consolidated from 7 near-duplicate one-off hex values scattered across
+     component CSS (a natural side effect of building 8 pages via
+     independent passes, each faithfully tracing its own section's exact
+     Figma value rather than reusing a shared abstraction) — all within a
+     few points per channel of each other and used in near-identical roles
+     (hairline borders, off-white section backgrounds) on different pages.
+     --color-border-soft covers #eceae4 / #ece9e2 / #ece8df.
+     --color-cream-alt covers #fbfaf7 / #faf9f6 / #f7f5f2 / #f5f2ec. */
+  --color-border-soft: #ece9e2;
+  --color-cream-alt: #f7f5f2;
+
+  /* Hover variants of the brand colors — no Figma hover state exists to
+     trace (a static design tool can't show one), so these are a judgment
+     call: ~12% darker for the two dark brand colors, ~12% lighter for navy
+     since it's already near-black and darkening further reads as "disabled"
+     rather than "hovered". */
+  --color-brand-red-hover: #6f0827;
+  --color-navy-hover: #132466;
+  --color-green-hover: #1f5019;
+
+  /* Typography */
+  --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --page-width: 1440px;
+  --content-padding-x: 80px;
+}

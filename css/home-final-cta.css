@@ -1,0 +1,90 @@
+.final-cta {
+  position: relative;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+.final-cta__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
+}
+
+.final-cta__heading {
+  position: absolute;
+  left: 80px;
+  top: 28px;
+  width: 680px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 64px;
+  color: var(--color-white);
+}
+
+.final-cta__subtext {
+  position: absolute;
+  left: 80px;
+  top: 180px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-white);
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.final-cta__button {
+  position: absolute;
+  left: 80px;
+  top: 227px;
+  width: 240px;
+  height: 56px;
+  border-radius: 4px;
+  background: var(--color-white);
+  color: var(--color-brand-red);
+}
+
+/* Not a .btn-primary (it's a solid-white button on the red section, the
+   inverse of the usual red-on-white), so it doesn't inherit
+   .btn-primary:hover's darken-the-red treatment — needs its own local
+   hover. Shifts the white background to the site's light pink accent
+   (--color-pink-light, already used elsewhere as a tint on red/white
+   surfaces) rather than darkening toward gray, so it stays "on brand". */
+.final-cta__button:hover {
+  background: var(--color-pink-light);
+}
+
+/* No mobile Figma frame — fallback: flow heading/subtext/button normally
+   instead of the fixed 300px-tall absolute stack. */
+@media (max-width: 900px) {
+  .final-cta__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .final-cta__heading,
+  .final-cta__subtext,
+  .final-cta__button {
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .final-cta__heading {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .final-cta__subtext {
+    margin-top: 16px;
+    white-space: normal;
+  }
+
+  .final-cta__button {
+    display: flex;
+    margin-top: 24px;
+  }
+}

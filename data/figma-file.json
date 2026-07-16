@@ -1,0 +1,149 @@
+{
+  "fileKey": "39wDOGlHkYLmj9ObgMOJ3Q",
+  "authenticatedAs": "hamza haseeb (hamza@empirica.ventures)",
+  "canvasPage": { "id": "0:1", "name": "Page 1" },
+  "note": "Full raw structure dump saved as figma-metadata.xml (indented XML, from get_metadata). Node-level styling (colors, fonts, spacing) is fetched per-section via get_design_context during build, since get_metadata only returns id/name/position/size.",
+  "frameWidth": 1440,
+  "pages": [
+    {
+      "pageName": "Home",
+      "groupNodeId": "2:2",
+      "groupName": "Group 3",
+      "canvasOffset": { "x": 0, "y": 0 },
+      "totalHeight": 5921,
+      "sections": [
+        { "nodeId": "2:3", "name": "Navbar", "y": 0, "height": 80 },
+        { "nodeId": "2:15", "name": "Section / 01 – Hero", "y": 80, "height": 620 },
+        { "nodeId": "2:95", "name": "Section / 02 – Trust Strip", "y": 700, "height": 120 },
+        { "nodeId": "2:124", "name": "Section / 03 – Problem Solution", "y": 820, "height": 520 },
+        { "nodeId": "2:107", "name": "Section / 04 – Trust Intro", "y": 1340, "height": 420 },
+        { "nodeId": "2:3533", "name": "Section / 06b – Statement", "y": 1760, "height": 381 },
+        { "nodeId": "2:903", "name": "Section / 05 – Services", "y": 2141, "height": 660 },
+        { "nodeId": "2:2552", "name": "Section / 06 – Industries", "y": 2801, "height": 460 },
+        { "nodeId": "2:974", "name": "Section / 07 – Why FQ", "y": 3261, "height": 560 },
+        { "nodeId": "2:3521", "name": "Section / 07b – Founders", "y": 3821, "height": 360 },
+        { "nodeId": "2:1777", "name": "Section / 08 – How It Works", "y": 4181, "height": 480 },
+        { "nodeId": "2:2514", "name": "Section / 09 – FAQ", "y": 4661, "height": 560 },
+        { "nodeId": "2:2541", "name": "Section / 10 – Final CTA", "y": 5221, "height": 300 },
+        { "nodeId": "2:3081", "name": "Footer", "y": 5521, "height": 400 }
+      ]
+    },
+    {
+      "pageName": "About",
+      "groupNodeId": "2:4606",
+      "groupName": "Group 1",
+      "canvasOffset": { "x": 1745, "y": 309 },
+      "totalHeight": 2252,
+      "sections": [
+        { "nodeId": "2:4659", "name": "Section / 01 – Hero", "y": 309, "height": 520 },
+        { "nodeId": "2:4607", "name": "Section / 02 – Who We Are", "y": 829, "height": 360 },
+        { "nodeId": "2:4613", "name": "Section / 03 – Mission", "y": 1189, "height": 552 },
+        { "nodeId": "2:4624", "name": "Section / 04 – Values", "y": 1741, "height": 520 },
+        { "nodeId": "2:4653", "name": "Section / 05 – CTA", "y": 2261, "height": 300 }
+      ],
+      "note": "No standalone Navbar/Footer frame found inside this group in the metadata scan — verify during build whether About reuses global Navbar/Footer or needs Section-only treatment. Also nearby hidden node 2:3713 'Navbar' (x=1745,y=229) and hidden 2:3725 / 2:4166 'Footer' — appear to be stray/duplicate leftovers (hidden=true), likely not part of the live design."
+    },
+    {
+      "pageName": "Services",
+      "groupNodeId": "2:4666",
+      "groupName": "Group 5",
+      "canvasOffset": { "x": 3532, "y": 71 },
+      "totalHeight": 3340,
+      "sections": [
+        { "nodeId": "2:4667", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:5121", "name": "Section / 01 – Hero", "y": 151, "height": 540 },
+        { "nodeId": "2:5283", "name": "Section / 02 – Trusted By", "y": 691, "height": 400 },
+        { "nodeId": "2:5160", "name": "Section / 03 – Services Grid", "y": 1091, "height": 1620 },
+        { "nodeId": "2:5152", "name": "Section / 04 – Final CTA", "y": 2711, "height": 300 },
+        { "nodeId": "2:4680", "name": "Footer", "y": 3011, "height": 400 }
+      ]
+    },
+    {
+      "pageName": "How We Work",
+      "groupNodeId": "2:5808",
+      "groupName": "Group 2",
+      "canvasOffset": { "x": 5277, "y": 71 },
+      "totalHeight": 2320,
+      "sections": [
+        { "nodeId": "2:5809", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:6261", "name": "Section / 01 – Hero", "y": 151, "height": 460 },
+        { "nodeId": "2:6283", "name": "Section / 02 – Process", "y": 611, "height": 780 },
+        { "nodeId": "2:6352", "name": "Section / Tools", "y": 1391, "height": 300 },
+        { "nodeId": "2:6386", "name": "Section / 03 – CTA", "y": 1691, "height": 300 },
+        { "nodeId": "2:5821", "name": "Footer", "y": 1991, "height": 400 }
+      ],
+      "note": "Hidden duplicate Footer 2:5367 at same canvas region — ignore (hidden=true)."
+    },
+    {
+      "pageName": "Industries",
+      "groupNodeId": "2:6392",
+      "groupName": "Group 7",
+      "canvasOffset": { "x": 7072, "y": 71 },
+      "totalHeight": 3960,
+      "sections": [
+        { "nodeId": "2:6393", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:6406", "name": "Section / 01 – Hero", "y": 151, "height": 380 },
+        { "nodeId": "2:6879", "name": "Section / 02 – Quick Nav", "y": 531, "height": 80 },
+        { "nodeId": "2:7185", "name": "Section / 03 – Direct to Consumer & CPG", "y": 611, "height": 460 },
+        { "nodeId": "2:7219", "name": "Section / 04 – Retail & E-commerce", "y": 1071, "height": 460 },
+        { "nodeId": "2:7253", "name": "Section / 05 – Healthcare", "y": 1531, "height": 460 },
+        { "nodeId": "2:7287", "name": "Section / 06 – Manufacturing", "y": 1991, "height": 460 },
+        { "nodeId": "2:7321", "name": "Section / 07 – Logistics & Supply Chain", "y": 2451, "height": 460 },
+        { "nodeId": "2:7355", "name": "Section / 08 – Construction & Real Estate", "y": 2911, "height": 460 },
+        { "nodeId": "2:6900", "name": "Section / Final CTA", "y": 3371, "height": 260 },
+        { "nodeId": "2:7389", "name": "Footer", "y": 3631, "height": 400 }
+      ]
+    },
+    {
+      "pageName": "Insights",
+      "groupNodeId": "2:7830",
+      "groupName": "Group 8",
+      "canvasOffset": { "x": 8873, "y": 71 },
+      "totalHeight": 2560,
+      "sections": [
+        { "nodeId": "2:7831", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:7843", "name": "Section / 01 – Hero", "y": 151, "height": 480 },
+        { "nodeId": "2:7860", "name": "Section / 02 – Categories", "y": 631, "height": 80 },
+        { "nodeId": "2:7869", "name": "Section / 03 – Featured", "y": 711, "height": 440 },
+        { "nodeId": "2:7879", "name": "Section / 04 – Article Grid", "y": 1151, "height": 920 },
+        { "nodeId": "2:7935", "name": "Section / 05 – Topics", "y": 1911, "height": 320 },
+        { "nodeId": "2:8338", "name": "Footer", "y": 2231, "height": 400 }
+      ]
+    },
+    {
+      "pageName": "Case Studies",
+      "groupNodeId": "2:8778",
+      "groupName": "Group 10",
+      "canvasOffset": { "x": 10621, "y": 71 },
+      "totalHeight": 2192,
+      "sections": [
+        { "nodeId": "2:8779", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:8792", "name": "Section / 01 – Hero", "y": 151, "height": 440 },
+        { "nodeId": "2:9213", "name": "Section / 02 – Filters", "y": 591, "height": 72 },
+        { "nodeId": "2:9949", "name": "Section / 03 – Case Study Grid", "y": 663, "height": 920 },
+        { "nodeId": "2:9223", "name": "Section / Final CTA", "y": 1583, "height": 280 },
+        { "nodeId": "2:9508", "name": "Footer", "y": 1863, "height": 400 }
+      ]
+    },
+    {
+      "pageName": "Contact",
+      "groupNodeId": "2:10055",
+      "groupName": "Group 11",
+      "canvasOffset": { "x": 12321, "y": 71 },
+      "totalHeight": 2360,
+      "sections": [
+        { "nodeId": "2:10512", "name": "Navbar", "y": 71, "height": 80 },
+        { "nodeId": "2:10056", "name": "Section / 01 – Contact Main", "y": 151, "height": 840 },
+        { "nodeId": "2:10427", "name": "Section / 02 – Locations", "y": 991, "height": 480 },
+        { "nodeId": "2:10485", "name": "Section / 03 – Quick FAQ", "y": 1471, "height": 560 },
+        { "nodeId": "2:10524", "name": "Footer", "y": 2031, "height": 400 }
+      ]
+    }
+  ],
+  "strayHiddenFrames": [
+    { "nodeId": "2:3713", "name": "Navbar", "hidden": true, "location": "near About group" },
+    { "nodeId": "2:3725", "name": "Footer", "hidden": true, "location": "near About group" },
+    { "nodeId": "2:4166", "name": "Footer", "hidden": true, "location": "near About group" },
+    { "nodeId": "2:5367", "name": "Footer", "hidden": true, "location": "near How We Work group" }
+  ]
+}

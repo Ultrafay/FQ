@@ -1,0 +1,156 @@
+.values {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.values__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 520px;
+}
+
+.values__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 70px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.values__heading {
+  position: absolute;
+  left: 80px;
+  top: 96px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--color-navy);
+  white-space: nowrap;
+}
+
+.values__rule {
+  position: absolute;
+  left: 80px;
+  top: 162px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.values__grid {
+  position: absolute;
+  left: 80px;
+  top: 200px;
+  display: flex;
+  gap: 16px;
+}
+
+.values__card {
+  position: relative;
+  width: 243px;
+  height: 250px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px 0px rgba(3, 13, 69, 0.06);
+  overflow: hidden;
+  font-family: var(--font-primary);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.values__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 14px 28px 0px rgba(3, 13, 69, 0.14);
+}
+
+.values__card-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 104px;
+}
+
+.values__card-number {
+  position: absolute;
+  left: 20px;
+  top: 21px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-white);
+  opacity: 0.7;
+}
+
+.values__card-title {
+  position: absolute;
+  left: 20px;
+  top: 51px;
+  width: 203px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+}
+
+.values__card-body {
+  position: absolute;
+  left: 20px;
+  top: 125px;
+  width: 203px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--color-text-muted);
+}
+
+/* No mobile Figma frame — fallback: the 5-card row drops to a single flex
+   column (philosophy #3) rather than a 2-column grid. A 2-column tier was
+   considered, but each card's internals (colored header bar, number, title,
+   body) stay absolutely positioned at fixed pixel offsets sized for the
+   243px desktop card width — at 2-column tablet widths the card can get
+   narrower than that (as low as ~208px around 480-500px viewport), which
+   would push title text into more line-wraps than the fixed 104px header
+   bar / 125px body-start offsets budget for, risking clipped/overlapping
+   text. Single-column cards are always >= 327px wide (viewport minus 2x
+   24px padding, even at the 375px floor), comfortably wider than the
+   243px baseline, so wrapping is always equal to or less than desktop —
+   the fixed internal offsets stay safe with no further changes needed. */
+@media (max-width: 900px) {
+  .values__inner {
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .values__eyebrow,
+  .values__heading,
+  .values__rule,
+  .values__grid {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .values__heading {
+    margin-top: 8px;
+    white-space: normal;
+  }
+
+  .values__rule {
+    margin-top: 16px;
+  }
+
+  .values__grid {
+    margin-top: 24px;
+    flex-direction: column;
+  }
+
+  .values__card {
+    width: 100%;
+  }
+}

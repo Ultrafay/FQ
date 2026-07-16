@@ -1,0 +1,100 @@
+.hww-cta {
+  position: relative;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+.hww-cta__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
+}
+
+.hww-cta__heading {
+  position: absolute;
+  left: 80px;
+  top: 73px;
+  width: 760px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-white);
+}
+
+.hww-cta__rule {
+  position: absolute;
+  left: 80px;
+  top: 186px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-border-soft);
+}
+
+.hww-cta__subtext {
+  position: absolute;
+  left: 80px;
+  top: 206px;
+  width: 620px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-pink-light);
+}
+
+.hww-cta__button {
+  position: absolute;
+  left: 1120px;
+  top: 120px;
+  width: 240px;
+  height: 56px;
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-brand-red);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists for this
+   CTA band. Desktop places the button floating at the far right; at
+   mobile it drops below the heading/subtext instead, keeping its own
+   240x56 size (still comfortably tappable, doesn't need to go full-width). */
+@media (max-width: 900px) {
+  .hww-cta__inner {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .hww-cta__heading,
+  .hww-cta__rule,
+  .hww-cta__subtext,
+  .hww-cta__button {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .hww-cta__heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .hww-cta__rule {
+    margin-top: 24px;
+    width: 56px;
+  }
+
+  .hww-cta__subtext {
+    margin-top: 16px;
+  }
+
+  .hww-cta__button {
+    display: inline-flex;
+    width: auto;
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,153 @@
+.statement {
+  position: relative;
+  background: var(--color-brand-red);
+  height: 381px;
+  overflow: hidden;
+}
+
+/* BG / Geometry — reproduces the Figma "BG/Geometry" SVG (3 blurred colour
+   blobs + a 120px diamond/square lattice at 7% opacity) as a single CSS
+   background stack instead of shipping the vector as an image. Values
+   (colors, positions, opacity) taken directly from the exported SVG, 
+   avoiding CSS `transparent` to prevent muddy grayish interpolation. */
+.statement::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 890px 410px at 720px 190px, rgba(176, 21, 64, 1), rgba(176, 21, 64, 0) 70%),
+    radial-gradient(ellipse 450px 500px at -120px 190px, rgba(70, 6, 26, 1), rgba(70, 6, 26, 0) 65%),
+    radial-gradient(ellipse 450px 500px at 1560px 190px, rgba(70, 6, 26, 1), rgba(70, 6, 26, 0) 65%),
+    repeating-linear-gradient(45deg, transparent, transparent 84px, rgba(243, 233, 220, 0.07) 84px, rgba(243, 233, 220, 0.07) 85px),
+    repeating-linear-gradient(-45deg, transparent, transparent 84px, rgba(243, 233, 220, 0.07) 84px, rgba(243, 233, 220, 0.07) 85px);
+  pointer-events: none;
+}
+
+.statement__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+.statement__rule {
+  position: absolute;
+  left: 120px;
+  width: 1200px;
+  height: 1px;
+  background: var(--color-cream);
+  opacity: 0.28;
+}
+
+.statement__rule--top {
+  top: 52px;
+}
+
+.statement__rule--bottom {
+  top: 328px;
+}
+
+.statement__caption {
+  position: absolute;
+  left: 617px;
+  top: 74px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--color-cream);
+  opacity: 0.85;
+  white-space: pre;
+}
+
+/* Small diamond bullet between the caption and the headline — drawn with
+   CSS rather than shipping a 9px SVG for a single decorative glyph. */
+.statement__bullet {
+  position: absolute;
+  left: 715.5px;
+  top: 99.5px;
+  width: 9px;
+  height: 9px;
+}
+
+.statement__bullet::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6.4px;
+  height: 6.4px;
+  background: #6fbf5c;
+  border: 1px solid var(--color-black);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.statement__headline {
+  position: absolute;
+  left: 267px;
+  top: 105px;
+  font-family: 'Amiri', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 104px;
+  line-height: normal;
+  color: var(--color-cream);
+  white-space: nowrap;
+}
+
+.statement__tagline {
+  position: absolute;
+  left: 457px;
+  top: 300px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--color-cream);
+  opacity: 0.6;
+  white-space: pre;
+}
+
+/* No mobile Figma frame — fallback: the 104px Arabic headline and the
+   pre-formatted caption/tagline are the widest fixed-position elements on
+   the page; stack everything centered and let the headline shrink with
+   clamp() instead of overflowing. The top/bottom rules and bullet are pure
+   decoration and are hidden. */
+@media (max-width: 900px) {
+  .statement {
+    height: auto;
+  }
+
+  .statement__inner {
+    height: auto;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .statement__rule,
+  .statement__bullet {
+    display: none;
+  }
+
+  .statement__caption {
+    position: static;
+    white-space: normal;
+  }
+
+  .statement__headline {
+    position: static;
+    font-size: clamp(40px, 16vw, 90px);
+    margin-top: 20px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .statement__tagline {
+    position: static;
+    white-space: normal;
+    margin-top: 20px;
+  }
+}

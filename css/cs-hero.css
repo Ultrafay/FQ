@@ -1,0 +1,249 @@
+.cs-hero {
+  position: relative;
+  height: 440px;
+  background: var(--color-black);
+  overflow: hidden;
+}
+
+/* Background photo — Figma export states opacity 61%. The prior "blend-mode
+   gap" assumption (dial stated opacity down to near-invisible) was wrong
+   here just like About/Insights/Services/How We Work — a fresh Figma pull
+   confirms the photo (office/team collaboration scene) is meant to render
+   clearly visible at ~0.61. It was also invisible for an unrelated reason:
+   z-index: -1 with no stacking context established on .cs-hero (position:
+   relative alone doesn't create one) sent this element behind the section's
+   own black background instead of just behind later siblings — removed.
+   `left` was also a fixed -207px measured from the true viewport edge (same
+   issue as About's bg): only correct at exactly 1440px, drifting into a
+   growing right-side gap at any wider viewport. `calc(50% - 927px)` =
+   `calc(50% - 720px - 207px)` reproduces -207px at 1440px while
+   re-centering on the true viewport at any other width. */
+.cs-hero__bg {
+  position: absolute;
+  left: calc(50% - 927px);
+  top: -256px;
+  width: 1672px;
+  height: 941px;
+  opacity: 0.61;
+  pointer-events: none;
+}
+
+.cs-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dot-grid texture — reproduces ~340 individually-positioned 10x1.5px white
+   "Rectangle" divs (opacity 0.04) as a single tiled SVG background. Dots
+   repeat every 48px horizontally, 36px vertically; the tile's rect sits at
+   local x=43 so tiling also reproduces the partial edge column the export
+   had at left=-5px (43 - 48 = -5). */
+.cs-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='36'%3E%3Crect x='43' y='0' width='10' height='1.5' fill='white' fill-opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 48px 36px;
+  pointer-events: none;
+}
+
+.cs-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 62px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+/* Source text node exports "Proven" as a solid white line and "Outcomes!" as
+   a second, text-color-transparent line with identical geometry (a duplicate
+   text node retaining only its bounding box, no visible fill/stroke data —
+   a known Figma export quirk where fill data is dropped). The most plausible
+   reading of a hero design otherwise entirely in solid white with no other
+   stylistic cue is a deliberate hollow/outline treatment on the second word
+   for visual variety, so it's rendered here with a white text-stroke and a
+   transparent fill. Flagged as an assumption — verify against the Figma
+   screenshot; if wrong, simplest fix is making both lines solid white. */
+.cs-hero__headline {
+  position: absolute;
+  left: 80px;
+  top: 90px;
+  width: 693px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 76px;
+}
+
+.cs-hero__headline-line {
+  display: block;
+  color: var(--color-white);
+}
+
+.cs-hero__body {
+  position: absolute;
+  left: 80px;
+  top: 276px;
+  width: 491px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-white);
+}
+
+.cs-hero__stats {
+  position: absolute;
+  left: 1060px;
+  top: 0;
+  width: 240px;
+  height: 440px;
+}
+
+.cs-hero__stat-value {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 48px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.cs-hero__stat-label {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-white);
+  opacity: 0.96;
+  white-space: nowrap;
+}
+
+.cs-hero__stat-divider {
+  position: absolute;
+  left: 0;
+  width: 240px;
+  height: 1px;
+  background: var(--color-white);
+  opacity: 0.36;
+}
+
+.cs-hero__stat--1 .cs-hero__stat-value { top: 48px; }
+.cs-hero__stat--1 .cs-hero__stat-label { top: 102px; }
+.cs-hero__stat--1 .cs-hero__stat-divider { top: 128px; }
+
+.cs-hero__stat--2 .cs-hero__stat-value { top: 168px; }
+.cs-hero__stat--2 .cs-hero__stat-label { top: 222px; }
+.cs-hero__stat--2 .cs-hero__stat-divider { top: 248px; }
+
+/* Subtle highlight panel behind the third (current/last) stat only. */
+.cs-hero__stat--3::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 276px;
+  width: 240px;
+  height: 120px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.cs-hero__stat--3 .cs-hero__stat-value { top: 288px; }
+.cs-hero__stat--3 .cs-hero__stat-label { top: 342px; }
+
+/* Stacked mobile/tablet fallback — no mobile Figma frame exists, so this
+   reflow (headline/body/stats stacked top-to-bottom, right-column stats
+   block dropped into flow below the body copy) is a judgment call. Every
+   text node here was absolutely positioned for the 1440px desktop layout;
+   reset to static so it flows naturally instead. */
+@media (max-width: 900px) {
+  .cs-hero {
+    height: auto;
+    padding: 48px 24px 40px;
+  }
+
+  .cs-hero__bg {
+    display: none;
+  }
+
+  .cs-hero__eyebrow {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .cs-hero__headline {
+    position: static;
+    width: auto;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .cs-hero__body {
+    position: static;
+    width: auto;
+    margin-bottom: 32px;
+  }
+
+  .cs-hero__stats {
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Value/label/divider were positioned via fixed top offsets scoped by
+     descendant selector (.cs-hero__stat--N .cs-hero__stat-value); matching
+     that same descendant-selector specificity here (rather than the bare
+     class) is what lets these overrides win. */
+  .cs-hero__stats .cs-hero__stat-value,
+  .cs-hero__stats .cs-hero__stat-label,
+  .cs-hero__stats .cs-hero__stat-divider {
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .cs-hero__stats .cs-hero__stat-value { margin-bottom: 4px; }
+  .cs-hero__stats .cs-hero__stat-label { margin-bottom: 0; }
+  .cs-hero__stats .cs-hero__stat-divider { display: none; }
+
+  .cs-hero__stat {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .cs-hero__stat--3 {
+    border-bottom: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 12px 12px 16px;
+  }
+
+  .cs-hero__stat--3::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-hero__headline {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

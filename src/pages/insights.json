@@ -1,0 +1,19 @@
+{
+  "title": "Insights | Frontier Quotient",
+  "description": "Finance clarity, by category — practical insights on cash flow, VAT compliance, and business growth for GCC operators.",
+  "sections": [
+    "insights/01-hero.html",
+    "insights/02-categories.html",
+    "insights/03-featured.html",
+    "insights/04-article-grid.html",
+    "insights/05-topics.html"
+  ],
+  "css": [
+    "insights-hero.css",
+    "insights-categories.css",
+    "insights-featured.css",
+    "insights-article-grid.css",
+    "insights-topics.css"
+  ],
+  "outputFile": "insights.html"
+}

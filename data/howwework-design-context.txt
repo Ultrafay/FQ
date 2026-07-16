@@ -1,0 +1,1472 @@
+<frame id="52:21" name="Group 7" x="9454" y="-78" width="1440" height="3960">
+  <frame id="1:6717" name="Navbar" x="9454" y="-78" width="1440" height="80">
+    <frame id="52:13" name="Group 6" x="34" y="-61" width="1342" height="201">
+      <text id="1:6718" name="Home" x="280" y="30" width="41" height="16" />
+      <text id="1:6719" name="About" x="366" y="30" width="41" height="16" />
+      <text id="1:6720" name="Services" x="452" y="30" width="55" height="16" />
+      <text id="1:6721" name="How We Work" x="552" y="30" width="95" height="16" />
+      <text id="1:6722" name="Industries" x="692" y="30" width="66" height="16" />
+      <text id="1:6723" name="Case Studies" x="803" y="30" width="85" height="16" />
+      <frame id="1:6724" name="Frame" x="1176" y="18" width="200" height="44">
+        <text id="1:6725" name="BOOK A CONSULTATION" x="0" y="14" width="200" height="18" />
+      </frame>
+      <rounded-rectangle id="1:6726" name="1 3" x="34" y="-61" width="201" height="201" />
+      <text id="1:6727" name="Insights" x="933" y="30" width="53" height="16" />
+      <text id="1:6728" name="Contact Us" x="1031" y="30" width="73" height="16" />
+    </frame>
+  </frame>
+  <frame id="1:6729" name="Section / 01 – Hero" x="9454" y="2" width="1440" height="380">
+    <ellipse id="1:6730" name="Ellipse" x="0" y="0" width="3" height="3" />
+    <ellipse id="1:6769" name="Ellipse" x="20" y="36" width="3" height="3" />
+    <ellipse id="1:6807" name="Ellipse" x="0" y="72" width="3" height="3" />
+    <ellipse id="1:6845" name="Ellipse" x="20" y="108" width="3" height="3" />
+    <ellipse id="1:6883" name="Ellipse" x="0" y="144" width="3" height="3" />
+    <ellipse id="1:6921" name="Ellipse" x="20" y="180" width="3" height="3" />
+    <ellipse id="1:6959" name="Ellipse" x="0" y="216" width="3" height="3" />
+    <ellipse id="1:6997" name="Ellipse" x="20" y="252" width="3" height="3" />
+    <ellipse id="1:7035" name="Ellipse" x="0" y="288" width="3" height="3" />
+    <ellipse id="1:7073" name="Ellipse" x="20" y="324" width="3" height="3" />
+    <ellipse id="1:7111" name="Ellipse" x="0" y="360" width="3" height="3" />
+    <ellipse id="1:7149" name="Ellipse" x="20" y="396" width="3" height="3" />
+    <frame id="52:20" name="Group 6" x="-189" y="-412" width="1704" height="923">
+      <rounded-rectangle id="1:6731" name="ChatGPT Image Jun 6, 2026, 02_12_06 AM 1" x="-189" y="-412" width="1704" height="923" />
+      <ellipse id="1:6732" name="Ellipse" x="40" y="0" width="3" height="3" />
+      <ellipse id="1:6733" name="Ellipse" x="80" y="0" width="3" height="3" />
+      <ellipse id="1:6734" name="Ellipse" x="120" y="0" width="3" height="3" />
+      <ellipse id="1:6735" name="Ellipse" x="160" y="0" width="3" height="3" />
+      <ellipse id="1:6736" name="Ellipse" x="200" y="0" width="3" height="3" />
+      <ellipse id="1:6737" name="Ellipse" x="240" y="0" width="3" height="3" />
+      <ellipse id="1:6738" name="Ellipse" x="280" y="0" width="3" height="3" />
+      <ellipse id="1:6739" name="Ellipse" x="320" y="0" width="3" height="3" />
+      <ellipse id="1:6740" name="Ellipse" x="360" y="0" width="3" height="3" />
+      <ellipse id="1:6741" name="Ellipse" x="400" y="0" width="3" height="3" />
+      <ellipse id="1:6742" name="Ellipse" x="440" y="0" width="3" height="3" />
+      <ellipse id="1:6743" name="Ellipse" x="480" y="0" width="3" height="3" />
+      <ellipse id="1:6744" name="Ellipse" x="520" y="0" width="3" height="3" />
+      <ellipse id="1:6745" name="Ellipse" x="560" y="0" width="3" height="3" />
+      <ellipse id="1:6746" name="Ellipse" x="600" y="0" width="3" height="3" />
+      <ellipse id="1:6747" name="Ellipse" x="640" y="0" width="3" height="3" />
+      <ellipse id="1:6748" name="Ellipse" x="680" y="0" width="3" height="3" />
+      <ellipse id="1:6749" name="Ellipse" x="720" y="0" width="3" height="3" />
+      <ellipse id="1:6750" name="Ellipse" x="760" y="0" width="3" height="3" />
+      <ellipse id="1:6751" name="Ellipse" x="800" y="0" width="3" height="3" />
+      <ellipse id="1:6752" name="Ellipse" x="840" y="0" width="3" height="3" />
+      <ellipse id="1:6753" name="Ellipse" x="880" y="0" width="3" height="3" />
+      <ellipse id="1:6754" name="Ellipse" x="920" y="0" width="3" height="3" />
+      <ellipse id="1:6755" name="Ellipse" x="960" y="0" width="3" height="3" />
+      <ellipse id="1:6756" name="Ellipse" x="1000" y="0" width="3" height="3" />
+      <ellipse id="1:6757" name="Ellipse" x="1040" y="0" width="3" height="3" />
+      <ellipse id="1:6758" name="Ellipse" x="1080" y="0" width="3" height="3" />
+      <ellipse id="1:6759" name="Ellipse" x="1120" y="0" width="3" height="3" />
+      <ellipse id="1:6760" name="Ellipse" x="1160" y="0" width="3" height="3" />
+      <ellipse id="1:6761" name="Ellipse" x="1200" y="0" width="3" height="3" />
+      <ellipse id="1:6762" name="Ellipse" x="1240" y="0" width="3" height="3" />
+      <ellipse id="1:6763" name="Ellipse" x="1280" y="0" width="3" height="3" />
+      <ellipse id="1:6764" name="Ellipse" x="1320" y="0" width="3" height="3" />
+      <ellipse id="1:6765" name="Ellipse" x="1360" y="0" width="3" height="3" />
+      <ellipse id="1:6766" name="Ellipse" x="1400" y="0" width="3" height="3" />
+      <ellipse id="1:6767" name="Ellipse" x="1440" y="0" width="3" height="3" />
+      <ellipse id="1:6768" name="Ellipse" x="1480" y="0" width="3" height="3" />
+      <ellipse id="1:6770" name="Ellipse" x="60" y="36" width="3" height="3" />
+      <ellipse id="1:6771" name="Ellipse" x="100" y="36" width="3" height="3" />
+      <ellipse id="1:6772" name="Ellipse" x="140" y="36" width="3" height="3" />
+      <ellipse id="1:6773" name="Ellipse" x="180" y="36" width="3" height="3" />
+      <ellipse id="1:6774" name="Ellipse" x="220" y="36" width="3" height="3" />
+      <ellipse id="1:6775" name="Ellipse" x="260" y="36" width="3" height="3" />
+      <ellipse id="1:6776" name="Ellipse" x="300" y="36" width="3" height="3" />
+      <ellipse id="1:6777" name="Ellipse" x="340" y="36" width="3" height="3" />
+      <ellipse id="1:6778" name="Ellipse" x="380" y="36" width="3" height="3" />
+      <ellipse id="1:6779" name="Ellipse" x="420" y="36" width="3" height="3" />
+      <ellipse id="1:6780" name="Ellipse" x="460" y="36" width="3" height="3" />
+      <ellipse id="1:6781" name="Ellipse" x="500" y="36" width="3" height="3" />
+      <ellipse id="1:6782" name="Ellipse" x="540" y="36" width="3" height="3" />
+      <ellipse id="1:6783" name="Ellipse" x="580" y="36" width="3" height="3" />
+      <ellipse id="1:6784" name="Ellipse" x="620" y="36" width="3" height="3" />
+      <ellipse id="1:6785" name="Ellipse" x="660" y="36" width="3" height="3" />
+      <ellipse id="1:6786" name="Ellipse" x="700" y="36" width="3" height="3" />
+      <ellipse id="1:6787" name="Ellipse" x="740" y="36" width="3" height="3" />
+      <ellipse id="1:6788" name="Ellipse" x="780" y="36" width="3" height="3" />
+      <ellipse id="1:6789" name="Ellipse" x="820" y="36" width="3" height="3" />
+      <ellipse id="1:6790" name="Ellipse" x="860" y="36" width="3" height="3" />
+      <ellipse id="1:6791" name="Ellipse" x="900" y="36" width="3" height="3" />
+      <ellipse id="1:6792" name="Ellipse" x="940" y="36" width="3" height="3" />
+      <ellipse id="1:6793" name="Ellipse" x="980" y="36" width="3" height="3" />
+      <ellipse id="1:6794" name="Ellipse" x="1020" y="36" width="3" height="3" />
+      <ellipse id="1:6795" name="Ellipse" x="1060" y="36" width="3" height="3" />
+      <ellipse id="1:6796" name="Ellipse" x="1100" y="36" width="3" height="3" />
+      <ellipse id="1:6797" name="Ellipse" x="1140" y="36" width="3" height="3" />
+      <ellipse id="1:6798" name="Ellipse" x="1180" y="36" width="3" height="3" />
+      <ellipse id="1:6799" name="Ellipse" x="1220" y="36" width="3" height="3" />
+      <ellipse id="1:6800" name="Ellipse" x="1260" y="36" width="3" height="3" />
+      <ellipse id="1:6801" name="Ellipse" x="1300" y="36" width="3" height="3" />
+      <ellipse id="1:6802" name="Ellipse" x="1340" y="36" width="3" height="3" />
+      <ellipse id="1:6803" name="Ellipse" x="1380" y="36" width="3" height="3" />
+      <ellipse id="1:6804" name="Ellipse" x="1420" y="36" width="3" height="3" />
+      <ellipse id="1:6805" name="Ellipse" x="1460" y="36" width="3" height="3" />
+      <ellipse id="1:6806" name="Ellipse" x="1500" y="36" width="3" height="3" />
+      <ellipse id="1:6808" name="Ellipse" x="40" y="72" width="3" height="3" />
+      <ellipse id="1:6809" name="Ellipse" x="80" y="72" width="3" height="3" />
+      <ellipse id="1:6810" name="Ellipse" x="120" y="72" width="3" height="3" />
+      <ellipse id="1:6811" name="Ellipse" x="160" y="72" width="3" height="3" />
+      <ellipse id="1:6812" name="Ellipse" x="200" y="72" width="3" height="3" />
+      <ellipse id="1:6813" name="Ellipse" x="240" y="72" width="3" height="3" />
+      <ellipse id="1:6814" name="Ellipse" x="280" y="72" width="3" height="3" />
+      <ellipse id="1:6815" name="Ellipse" x="320" y="72" width="3" height="3" />
+      <ellipse id="1:6816" name="Ellipse" x="360" y="72" width="3" height="3" />
+      <ellipse id="1:6817" name="Ellipse" x="400" y="72" width="3" height="3" />
+      <ellipse id="1:6818" name="Ellipse" x="440" y="72" width="3" height="3" />
+      <ellipse id="1:6819" name="Ellipse" x="480" y="72" width="3" height="3" />
+      <ellipse id="1:6820" name="Ellipse" x="520" y="72" width="3" height="3" />
+      <ellipse id="1:6821" name="Ellipse" x="560" y="72" width="3" height="3" />
+      <ellipse id="1:6822" name="Ellipse" x="600" y="72" width="3" height="3" />
+      <ellipse id="1:6823" name="Ellipse" x="640" y="72" width="3" height="3" />
+      <ellipse id="1:6824" name="Ellipse" x="680" y="72" width="3" height="3" />
+      <ellipse id="1:6825" name="Ellipse" x="720" y="72" width="3" height="3" />
+      <ellipse id="1:6826" name="Ellipse" x="760" y="72" width="3" height="3" />
+      <ellipse id="1:6827" name="Ellipse" x="800" y="72" width="3" height="3" />
+      <ellipse id="1:6828" name="Ellipse" x="840" y="72" width="3" height="3" />
+      <ellipse id="1:6829" name="Ellipse" x="880" y="72" width="3" height="3" />
+      <ellipse id="1:6830" name="Ellipse" x="920" y="72" width="3" height="3" />
+      <ellipse id="1:6831" name="Ellipse" x="960" y="72" width="3" height="3" />
+      <ellipse id="1:6832" name="Ellipse" x="1000" y="72" width="3" height="3" />
+      <ellipse id="1:6833" name="Ellipse" x="1040" y="72" width="3" height="3" />
+      <ellipse id="1:6834" name="Ellipse" x="1080" y="72" width="3" height="3" />
+      <ellipse id="1:6835" name="Ellipse" x="1120" y="72" width="3" height="3" />
+      <ellipse id="1:6836" name="Ellipse" x="1160" y="72" width="3" height="3" />
+      <ellipse id="1:6837" name="Ellipse" x="1200" y="72" width="3" height="3" />
+      <ellipse id="1:6838" name="Ellipse" x="1240" y="72" width="3" height="3" />
+      <ellipse id="1:6839" name="Ellipse" x="1280" y="72" width="3" height="3" />
+      <ellipse id="1:6840" name="Ellipse" x="1320" y="72" width="3" height="3" />
+      <ellipse id="1:6841" name="Ellipse" x="1360" y="72" width="3" height="3" />
+      <ellipse id="1:6842" name="Ellipse" x="1400" y="72" width="3" height="3" />
+      <ellipse id="1:6843" name="Ellipse" x="1440" y="72" width="3" height="3" />
+      <ellipse id="1:6844" name="Ellipse" x="1480" y="72" width="3" height="3" />
+      <ellipse id="1:6846" name="Ellipse" x="60" y="108" width="3" height="3" />
+      <ellipse id="1:6847" name="Ellipse" x="100" y="108" width="3" height="3" />
+      <ellipse id="1:6848" name="Ellipse" x="140" y="108" width="3" height="3" />
+      <ellipse id="1:6849" name="Ellipse" x="180" y="108" width="3" height="3" />
+      <ellipse id="1:6850" name="Ellipse" x="220" y="108" width="3" height="3" />
+      <ellipse id="1:6851" name="Ellipse" x="260" y="108" width="3" height="3" />
+      <ellipse id="1:6852" name="Ellipse" x="300" y="108" width="3" height="3" />
+      <ellipse id="1:6853" name="Ellipse" x="340" y="108" width="3" height="3" />
+      <ellipse id="1:6854" name="Ellipse" x="380" y="108" width="3" height="3" />
+      <ellipse id="1:6855" name="Ellipse" x="420" y="108" width="3" height="3" />
+      <ellipse id="1:6856" name="Ellipse" x="460" y="108" width="3" height="3" />
+      <ellipse id="1:6857" name="Ellipse" x="500" y="108" width="3" height="3" />
+      <ellipse id="1:6858" name="Ellipse" x="540" y="108" width="3" height="3" />
+      <ellipse id="1:6859" name="Ellipse" x="580" y="108" width="3" height="3" />
+      <ellipse id="1:6860" name="Ellipse" x="620" y="108" width="3" height="3" />
+      <ellipse id="1:6861" name="Ellipse" x="660" y="108" width="3" height="3" />
+      <ellipse id="1:6862" name="Ellipse" x="700" y="108" width="3" height="3" />
+      <ellipse id="1:6863" name="Ellipse" x="740" y="108" width="3" height="3" />
+      <ellipse id="1:6864" name="Ellipse" x="780" y="108" width="3" height="3" />
+      <ellipse id="1:6865" name="Ellipse" x="820" y="108" width="3" height="3" />
+      <ellipse id="1:6866" name="Ellipse" x="860" y="108" width="3" height="3" />
+      <ellipse id="1:6867" name="Ellipse" x="900" y="108" width="3" height="3" />
+      <ellipse id="1:6868" name="Ellipse" x="940" y="108" width="3" height="3" />
+      <ellipse id="1:6869" name="Ellipse" x="980" y="108" width="3" height="3" />
+      <ellipse id="1:6870" name="Ellipse" x="1020" y="108" width="3" height="3" />
+      <ellipse id="1:6871" name="Ellipse" x="1060" y="108" width="3" height="3" />
+      <ellipse id="1:6872" name="Ellipse" x="1100" y="108" width="3" height="3" />
+      <ellipse id="1:6873" name="Ellipse" x="1140" y="108" width="3" height="3" />
+      <ellipse id="1:6874" name="Ellipse" x="1180" y="108" width="3" height="3" />
+      <ellipse id="1:6875" name="Ellipse" x="1220" y="108" width="3" height="3" />
+      <ellipse id="1:6876" name="Ellipse" x="1260" y="108" width="3" height="3" />
+      <ellipse id="1:6877" name="Ellipse" x="1300" y="108" width="3" height="3" />
+      <ellipse id="1:6878" name="Ellipse" x="1340" y="108" width="3" height="3" />
+      <ellipse id="1:6879" name="Ellipse" x="1380" y="108" width="3" height="3" />
+      <ellipse id="1:6880" name="Ellipse" x="1420" y="108" width="3" height="3" />
+      <ellipse id="1:6881" name="Ellipse" x="1460" y="108" width="3" height="3" />
+      <ellipse id="1:6882" name="Ellipse" x="1500" y="108" width="3" height="3" />
+      <ellipse id="1:6884" name="Ellipse" x="40" y="144" width="3" height="3" />
+      <ellipse id="1:6885" name="Ellipse" x="80" y="144" width="3" height="3" />
+      <ellipse id="1:6886" name="Ellipse" x="120" y="144" width="3" height="3" />
+      <ellipse id="1:6887" name="Ellipse" x="160" y="144" width="3" height="3" />
+      <ellipse id="1:6888" name="Ellipse" x="200" y="144" width="3" height="3" />
+      <ellipse id="1:6889" name="Ellipse" x="240" y="144" width="3" height="3" />
+      <ellipse id="1:6890" name="Ellipse" x="280" y="144" width="3" height="3" />
+      <ellipse id="1:6891" name="Ellipse" x="320" y="144" width="3" height="3" />
+      <ellipse id="1:6892" name="Ellipse" x="360" y="144" width="3" height="3" />
+      <ellipse id="1:6893" name="Ellipse" x="400" y="144" width="3" height="3" />
+      <ellipse id="1:6894" name="Ellipse" x="440" y="144" width="3" height="3" />
+      <ellipse id="1:6895" name="Ellipse" x="480" y="144" width="3" height="3" />
+      <ellipse id="1:6896" name="Ellipse" x="520" y="144" width="3" height="3" />
+      <ellipse id="1:6897" name="Ellipse" x="560" y="144" width="3" height="3" />
+      <ellipse id="1:6898" name="Ellipse" x="600" y="144" width="3" height="3" />
+      <ellipse id="1:6899" name="Ellipse" x="640" y="144" width="3" height="3" />
+      <ellipse id="1:6900" name="Ellipse" x="680" y="144" width="3" height="3" />
+      <ellipse id="1:6901" name="Ellipse" x="720" y="144" width="3" height="3" />
+      <ellipse id="1:6902" name="Ellipse" x="760" y="144" width="3" height="3" />
+      <ellipse id="1:6903" name="Ellipse" x="800" y="144" width="3" height="3" />
+      <ellipse id="1:6904" name="Ellipse" x="840" y="144" width="3" height="3" />
+      <ellipse id="1:6905" name="Ellipse" x="880" y="144" width="3" height="3" />
+      <ellipse id="1:6906" name="Ellipse" x="920" y="144" width="3" height="3" />
+      <ellipse id="1:6907" name="Ellipse" x="960" y="144" width="3" height="3" />
+      <ellipse id="1:6908" name="Ellipse" x="1000" y="144" width="3" height="3" />
+      <ellipse id="1:6909" name="Ellipse" x="1040" y="144" width="3" height="3" />
+      <ellipse id="1:6910" name="Ellipse" x="1080" y="144" width="3" height="3" />
+      <ellipse id="1:6911" name="Ellipse" x="1120" y="144" width="3" height="3" />
+      <ellipse id="1:6912" name="Ellipse" x="1160" y="144" width="3" height="3" />
+      <ellipse id="1:6913" name="Ellipse" x="1200" y="144" width="3" height="3" />
+      <ellipse id="1:6914" name="Ellipse" x="1240" y="144" width="3" height="3" />
+      <ellipse id="1:6915" name="Ellipse" x="1280" y="144" width="3" height="3" />
+      <ellipse id="1:6916" name="Ellipse" x="1320" y="144" width="3" height="3" />
+      <ellipse id="1:6917" name="Ellipse" x="1360" y="144" width="3" height="3" />
+      <ellipse id="1:6918" name="Ellipse" x="1400" y="144" width="3" height="3" />
+      <ellipse id="1:6919" name="Ellipse" x="1440" y="144" width="3" height="3" />
+      <ellipse id="1:6920" name="Ellipse" x="1480" y="144" width="3" height="3" />
+      <ellipse id="1:6922" name="Ellipse" x="60" y="180" width="3" height="3" />
+      <ellipse id="1:6923" name="Ellipse" x="100" y="180" width="3" height="3" />
+      <ellipse id="1:6924" name="Ellipse" x="140" y="180" width="3" height="3" />
+      <ellipse id="1:6925" name="Ellipse" x="180" y="180" width="3" height="3" />
+      <ellipse id="1:6926" name="Ellipse" x="220" y="180" width="3" height="3" />
+      <ellipse id="1:6927" name="Ellipse" x="260" y="180" width="3" height="3" />
+      <ellipse id="1:6928" name="Ellipse" x="300" y="180" width="3" height="3" />
+      <ellipse id="1:6929" name="Ellipse" x="340" y="180" width="3" height="3" />
+      <ellipse id="1:6930" name="Ellipse" x="380" y="180" width="3" height="3" />
+      <ellipse id="1:6931" name="Ellipse" x="420" y="180" width="3" height="3" />
+      <ellipse id="1:6932" name="Ellipse" x="460" y="180" width="3" height="3" />
+      <ellipse id="1:6933" name="Ellipse" x="500" y="180" width="3" height="3" />
+      <ellipse id="1:6934" name="Ellipse" x="540" y="180" width="3" height="3" />
+      <ellipse id="1:6935" name="Ellipse" x="580" y="180" width="3" height="3" />
+      <ellipse id="1:6936" name="Ellipse" x="620" y="180" width="3" height="3" />
+      <ellipse id="1:6937" name="Ellipse" x="660" y="180" width="3" height="3" />
+      <ellipse id="1:6938" name="Ellipse" x="700" y="180" width="3" height="3" />
+      <ellipse id="1:6939" name="Ellipse" x="740" y="180" width="3" height="3" />
+      <ellipse id="1:6940" name="Ellipse" x="780" y="180" width="3" height="3" />
+      <ellipse id="1:6941" name="Ellipse" x="820" y="180" width="3" height="3" />
+      <ellipse id="1:6942" name="Ellipse" x="860" y="180" width="3" height="3" />
+      <ellipse id="1:6943" name="Ellipse" x="900" y="180" width="3" height="3" />
+      <ellipse id="1:6944" name="Ellipse" x="940" y="180" width="3" height="3" />
+      <ellipse id="1:6945" name="Ellipse" x="980" y="180" width="3" height="3" />
+      <ellipse id="1:6946" name="Ellipse" x="1020" y="180" width="3" height="3" />
+      <ellipse id="1:6947" name="Ellipse" x="1060" y="180" width="3" height="3" />
+      <ellipse id="1:6948" name="Ellipse" x="1100" y="180" width="3" height="3" />
+      <ellipse id="1:6949" name="Ellipse" x="1140" y="180" width="3" height="3" />
+      <ellipse id="1:6950" name="Ellipse" x="1180" y="180" width="3" height="3" />
+      <ellipse id="1:6951" name="Ellipse" x="1220" y="180" width="3" height="3" />
+      <ellipse id="1:6952" name="Ellipse" x="1260" y="180" width="3" height="3" />
+      <ellipse id="1:6953" name="Ellipse" x="1300" y="180" width="3" height="3" />
+      <ellipse id="1:6954" name="Ellipse" x="1340" y="180" width="3" height="3" />
+      <ellipse id="1:6955" name="Ellipse" x="1380" y="180" width="3" height="3" />
+      <ellipse id="1:6956" name="Ellipse" x="1420" y="180" width="3" height="3" />
+      <ellipse id="1:6957" name="Ellipse" x="1460" y="180" width="3" height="3" />
+      <ellipse id="1:6958" name="Ellipse" x="1500" y="180" width="3" height="3" />
+      <ellipse id="1:6960" name="Ellipse" x="40" y="216" width="3" height="3" />
+      <ellipse id="1:6961" name="Ellipse" x="80" y="216" width="3" height="3" />
+      <ellipse id="1:6962" name="Ellipse" x="120" y="216" width="3" height="3" />
+      <ellipse id="1:6963" name="Ellipse" x="160" y="216" width="3" height="3" />
+      <ellipse id="1:6964" name="Ellipse" x="200" y="216" width="3" height="3" />
+      <ellipse id="1:6965" name="Ellipse" x="240" y="216" width="3" height="3" />
+      <ellipse id="1:6966" name="Ellipse" x="280" y="216" width="3" height="3" />
+      <ellipse id="1:6967" name="Ellipse" x="320" y="216" width="3" height="3" />
+      <ellipse id="1:6968" name="Ellipse" x="360" y="216" width="3" height="3" />
+      <ellipse id="1:6969" name="Ellipse" x="400" y="216" width="3" height="3" />
+      <ellipse id="1:6970" name="Ellipse" x="440" y="216" width="3" height="3" />
+      <ellipse id="1:6971" name="Ellipse" x="480" y="216" width="3" height="3" />
+      <ellipse id="1:6972" name="Ellipse" x="520" y="216" width="3" height="3" />
+      <ellipse id="1:6973" name="Ellipse" x="560" y="216" width="3" height="3" />
+      <ellipse id="1:6974" name="Ellipse" x="600" y="216" width="3" height="3" />
+      <ellipse id="1:6975" name="Ellipse" x="640" y="216" width="3" height="3" />
+      <ellipse id="1:6976" name="Ellipse" x="680" y="216" width="3" height="3" />
+      <ellipse id="1:6977" name="Ellipse" x="720" y="216" width="3" height="3" />
+      <ellipse id="1:6978" name="Ellipse" x="760" y="216" width="3" height="3" />
+      <ellipse id="1:6979" name="Ellipse" x="800" y="216" width="3" height="3" />
+      <ellipse id="1:6980" name="Ellipse" x="840" y="216" width="3" height="3" />
+      <ellipse id="1:6981" name="Ellipse" x="880" y="216" width="3" height="3" />
+      <ellipse id="1:6982" name="Ellipse" x="920" y="216" width="3" height="3" />
+      <ellipse id="1:6983" name="Ellipse" x="960" y="216" width="3" height="3" />
+      <ellipse id="1:6984" name="Ellipse" x="1000" y="216" width="3" height="3" />
+      <ellipse id="1:6985" name="Ellipse" x="1040" y="216" width="3" height="3" />
+      <ellipse id="1:6986" name="Ellipse" x="1080" y="216" width="3" height="3" />
+      <ellipse id="1:6987" name="Ellipse" x="1120" y="216" width="3" height="3" />
+      <ellipse id="1:6988" name="Ellipse" x="1160" y="216" width="3" height="3" />
+      <ellipse id="1:6989" name="Ellipse" x="1200" y="216" width="3" height="3" />
+      <ellipse id="1:6990" name="Ellipse" x="1240" y="216" width="3" height="3" />
+      <ellipse id="1:6991" name="Ellipse" x="1280" y="216" width="3" height="3" />
+      <ellipse id="1:6992" name="Ellipse" x="1320" y="216" width="3" height="3" />
+      <ellipse id="1:6993" name="Ellipse" x="1360" y="216" width="3" height="3" />
+      <ellipse id="1:6994" name="Ellipse" x="1400" y="216" width="3" height="3" />
+      <ellipse id="1:6995" name="Ellipse" x="1440" y="216" width="3" height="3" />
+      <ellipse id="1:6996" name="Ellipse" x="1480" y="216" width="3" height="3" />
+      <ellipse id="1:6998" name="Ellipse" x="60" y="252" width="3" height="3" />
+      <ellipse id="1:6999" name="Ellipse" x="100" y="252" width="3" height="3" />
+      <ellipse id="1:7000" name="Ellipse" x="140" y="252" width="3" height="3" />
+      <ellipse id="1:7001" name="Ellipse" x="180" y="252" width="3" height="3" />
+      <ellipse id="1:7002" name="Ellipse" x="220" y="252" width="3" height="3" />
+      <ellipse id="1:7003" name="Ellipse" x="260" y="252" width="3" height="3" />
+      <ellipse id="1:7004" name="Ellipse" x="300" y="252" width="3" height="3" />
+      <ellipse id="1:7005" name="Ellipse" x="340" y="252" width="3" height="3" />
+      <ellipse id="1:7006" name="Ellipse" x="380" y="252" width="3" height="3" />
+      <ellipse id="1:7007" name="Ellipse" x="420" y="252" width="3" height="3" />
+      <ellipse id="1:7008" name="Ellipse" x="460" y="252" width="3" height="3" />
+      <ellipse id="1:7009" name="Ellipse" x="500" y="252" width="3" height="3" />
+      <ellipse id="1:7010" name="Ellipse" x="540" y="252" width="3" height="3" />
+      <ellipse id="1:7011" name="Ellipse" x="580" y="252" width="3" height="3" />
+      <ellipse id="1:7012" name="Ellipse" x="620" y="252" width="3" height="3" />
+      <ellipse id="1:7013" name="Ellipse" x="660" y="252" width="3" height="3" />
+      <ellipse id="1:7014" name="Ellipse" x="700" y="252" width="3" height="3" />
+      <ellipse id="1:7015" name="Ellipse" x="740" y="252" width="3" height="3" />
+      <ellipse id="1:7016" name="Ellipse" x="780" y="252" width="3" height="3" />
+      <ellipse id="1:7017" name="Ellipse" x="820" y="252" width="3" height="3" />
+      <ellipse id="1:7018" name="Ellipse" x="860" y="252" width="3" height="3" />
+      <ellipse id="1:7019" name="Ellipse" x="900" y="252" width="3" height="3" />
+      <ellipse id="1:7020" name="Ellipse" x="940" y="252" width="3" height="3" />
+      <ellipse id="1:7021" name="Ellipse" x="980" y="252" width="3" height="3" />
+      <ellipse id="1:7022" name="Ellipse" x="1020" y="252" width="3" height="3" />
+      <ellipse id="1:7023" name="Ellipse" x="1060" y="252" width="3" height="3" />
+      <ellipse id="1:7024" name="Ellipse" x="1100" y="252" width="3" height="3" />
+      <ellipse id="1:7025" name="Ellipse" x="1140" y="252" width="3" height="3" />
+      <ellipse id="1:7026" name="Ellipse" x="1180" y="252" width="3" height="3" />
+      <ellipse id="1:7027" name="Ellipse" x="1220" y="252" width="3" height="3" />
+      <ellipse id="1:7028" name="Ellipse" x="1260" y="252" width="3" height="3" />
+      <ellipse id="1:7029" name="Ellipse" x="1300" y="252" width="3" height="3" />
+      <ellipse id="1:7030" name="Ellipse" x="1340" y="252" width="3" height="3" />
+      <ellipse id="1:7031" name="Ellipse" x="1380" y="252" width="3" height="3" />
+      <ellipse id="1:7032" name="Ellipse" x="1420" y="252" width="3" height="3" />
+      <ellipse id="1:7033" name="Ellipse" x="1460" y="252" width="3" height="3" />
+      <ellipse id="1:7034" name="Ellipse" x="1500" y="252" width="3" height="3" />
+      <ellipse id="1:7036" name="Ellipse" x="40" y="288" width="3" height="3" />
+      <ellipse id="1:7037" name="Ellipse" x="80" y="288" width="3" height="3" />
+      <ellipse id="1:7038" name="Ellipse" x="120" y="288" width="3" height="3" />
+      <ellipse id="1:7039" name="Ellipse" x="160" y="288" width="3" height="3" />
+      <ellipse id="1:7040" name="Ellipse" x="200" y="288" width="3" height="3" />
+      <ellipse id="1:7041" name="Ellipse" x="240" y="288" width="3" height="3" />
+      <ellipse id="1:7042" name="Ellipse" x="280" y="288" width="3" height="3" />
+      <ellipse id="1:7043" name="Ellipse" x="320" y="288" width="3" height="3" />
+      <ellipse id="1:7044" name="Ellipse" x="360" y="288" width="3" height="3" />
+      <ellipse id="1:7045" name="Ellipse" x="400" y="288" width="3" height="3" />
+      <ellipse id="1:7046" name="Ellipse" x="440" y="288" width="3" height="3" />
+      <ellipse id="1:7047" name="Ellipse" x="480" y="288" width="3" height="3" />
+      <ellipse id="1:7048" name="Ellipse" x="520" y="288" width="3" height="3" />
+      <ellipse id="1:7049" name="Ellipse" x="560" y="288" width="3" height="3" />
+      <ellipse id="1:7050" name="Ellipse" x="600" y="288" width="3" height="3" />
+      <ellipse id="1:7051" name="Ellipse" x="640" y="288" width="3" height="3" />
+      <ellipse id="1:7052" name="Ellipse" x="680" y="288" width="3" height="3" />
+      <ellipse id="1:7053" name="Ellipse" x="720" y="288" width="3" height="3" />
+      <ellipse id="1:7054" name="Ellipse" x="760" y="288" width="3" height="3" />
+      <ellipse id="1:7055" name="Ellipse" x="800" y="288" width="3" height="3" />
+      <ellipse id="1:7056" name="Ellipse" x="840" y="288" width="3" height="3" />
+      <ellipse id="1:7057" name="Ellipse" x="880" y="288" width="3" height="3" />
+      <ellipse id="1:7058" name="Ellipse" x="920" y="288" width="3" height="3" />
+      <ellipse id="1:7059" name="Ellipse" x="960" y="288" width="3" height="3" />
+      <ellipse id="1:7060" name="Ellipse" x="1000" y="288" width="3" height="3" />
+      <ellipse id="1:7061" name="Ellipse" x="1040" y="288" width="3" height="3" />
+      <ellipse id="1:7062" name="Ellipse" x="1080" y="288" width="3" height="3" />
+      <ellipse id="1:7063" name="Ellipse" x="1120" y="288" width="3" height="3" />
+      <ellipse id="1:7064" name="Ellipse" x="1160" y="288" width="3" height="3" />
+      <ellipse id="1:7065" name="Ellipse" x="1200" y="288" width="3" height="3" />
+      <ellipse id="1:7066" name="Ellipse" x="1240" y="288" width="3" height="3" />
+      <ellipse id="1:7067" name="Ellipse" x="1280" y="288" width="3" height="3" />
+      <ellipse id="1:7068" name="Ellipse" x="1320" y="288" width="3" height="3" />
+      <ellipse id="1:7069" name="Ellipse" x="1360" y="288" width="3" height="3" />
+      <ellipse id="1:7070" name="Ellipse" x="1400" y="288" width="3" height="3" />
+      <ellipse id="1:7071" name="Ellipse" x="1440" y="288" width="3" height="3" />
+      <ellipse id="1:7072" name="Ellipse" x="1480" y="288" width="3" height="3" />
+      <ellipse id="1:7074" name="Ellipse" x="60" y="324" width="3" height="3" />
+      <ellipse id="1:7075" name="Ellipse" x="100" y="324" width="3" height="3" />
+      <ellipse id="1:7076" name="Ellipse" x="140" y="324" width="3" height="3" />
+      <ellipse id="1:7077" name="Ellipse" x="180" y="324" width="3" height="3" />
+      <ellipse id="1:7078" name="Ellipse" x="220" y="324" width="3" height="3" />
+      <ellipse id="1:7079" name="Ellipse" x="260" y="324" width="3" height="3" />
+      <ellipse id="1:7080" name="Ellipse" x="300" y="324" width="3" height="3" />
+      <ellipse id="1:7081" name="Ellipse" x="340" y="324" width="3" height="3" />
+      <ellipse id="1:7082" name="Ellipse" x="380" y="324" width="3" height="3" />
+      <ellipse id="1:7083" name="Ellipse" x="420" y="324" width="3" height="3" />
+      <ellipse id="1:7084" name="Ellipse" x="460" y="324" width="3" height="3" />
+      <ellipse id="1:7085" name="Ellipse" x="500" y="324" width="3" height="3" />
+      <ellipse id="1:7086" name="Ellipse" x="540" y="324" width="3" height="3" />
+      <ellipse id="1:7087" name="Ellipse" x="580" y="324" width="3" height="3" />
+      <ellipse id="1:7088" name="Ellipse" x="620" y="324" width="3" height="3" />
+      <ellipse id="1:7089" name="Ellipse" x="660" y="324" width="3" height="3" />
+      <ellipse id="1:7090" name="Ellipse" x="700" y="324" width="3" height="3" />
+      <ellipse id="1:7091" name="Ellipse" x="740" y="324" width="3" height="3" />
+      <ellipse id="1:7092" name="Ellipse" x="780" y="324" width="3" height="3" />
+      <ellipse id="1:7093" name="Ellipse" x="820" y="324" width="3" height="3" />
+      <ellipse id="1:7094" name="Ellipse" x="860" y="324" width="3" height="3" />
+      <ellipse id="1:7095" name="Ellipse" x="900" y="324" width="3" height="3" />
+      <ellipse id="1:7096" name="Ellipse" x="940" y="324" width="3" height="3" />
+      <ellipse id="1:7097" name="Ellipse" x="980" y="324" width="3" height="3" />
+      <ellipse id="1:7098" name="Ellipse" x="1020" y="324" width="3" height="3" />
+      <ellipse id="1:7099" name="Ellipse" x="1060" y="324" width="3" height="3" />
+      <ellipse id="1:7100" name="Ellipse" x="1100" y="324" width="3" height="3" />
+      <ellipse id="1:7101" name="Ellipse" x="1140" y="324" width="3" height="3" />
+      <ellipse id="1:7102" name="Ellipse" x="1180" y="324" width="3" height="3" />
+      <ellipse id="1:7103" name="Ellipse" x="1220" y="324" width="3" height="3" />
+      <ellipse id="1:7104" name="Ellipse" x="1260" y="324" width="3" height="3" />
+      <ellipse id="1:7105" name="Ellipse" x="1300" y="324" width="3" height="3" />
+      <ellipse id="1:7106" name="Ellipse" x="1340" y="324" width="3" height="3" />
+      <ellipse id="1:7107" name="Ellipse" x="1380" y="324" width="3" height="3" />
+      <ellipse id="1:7108" name="Ellipse" x="1420" y="324" width="3" height="3" />
+      <ellipse id="1:7109" name="Ellipse" x="1460" y="324" width="3" height="3" />
+      <ellipse id="1:7110" name="Ellipse" x="1500" y="324" width="3" height="3" />
+      <ellipse id="1:7112" name="Ellipse" x="40" y="360" width="3" height="3" />
+      <ellipse id="1:7113" name="Ellipse" x="80" y="360" width="3" height="3" />
+      <ellipse id="1:7114" name="Ellipse" x="120" y="360" width="3" height="3" />
+      <ellipse id="1:7115" name="Ellipse" x="160" y="360" width="3" height="3" />
+      <ellipse id="1:7116" name="Ellipse" x="200" y="360" width="3" height="3" />
+      <ellipse id="1:7117" name="Ellipse" x="240" y="360" width="3" height="3" />
+      <ellipse id="1:7118" name="Ellipse" x="280" y="360" width="3" height="3" />
+      <ellipse id="1:7119" name="Ellipse" x="320" y="360" width="3" height="3" />
+      <ellipse id="1:7120" name="Ellipse" x="360" y="360" width="3" height="3" />
+      <ellipse id="1:7121" name="Ellipse" x="400" y="360" width="3" height="3" />
+      <ellipse id="1:7122" name="Ellipse" x="440" y="360" width="3" height="3" />
+      <ellipse id="1:7123" name="Ellipse" x="480" y="360" width="3" height="3" />
+      <ellipse id="1:7124" name="Ellipse" x="520" y="360" width="3" height="3" />
+      <ellipse id="1:7125" name="Ellipse" x="560" y="360" width="3" height="3" />
+      <ellipse id="1:7126" name="Ellipse" x="600" y="360" width="3" height="3" />
+      <ellipse id="1:7127" name="Ellipse" x="640" y="360" width="3" height="3" />
+      <ellipse id="1:7128" name="Ellipse" x="680" y="360" width="3" height="3" />
+      <ellipse id="1:7129" name="Ellipse" x="720" y="360" width="3" height="3" />
+      <ellipse id="1:7130" name="Ellipse" x="760" y="360" width="3" height="3" />
+      <ellipse id="1:7131" name="Ellipse" x="800" y="360" width="3" height="3" />
+      <ellipse id="1:7132" name="Ellipse" x="840" y="360" width="3" height="3" />
+      <ellipse id="1:7133" name="Ellipse" x="880" y="360" width="3" height="3" />
+      <ellipse id="1:7134" name="Ellipse" x="920" y="360" width="3" height="3" />
+      <ellipse id="1:7135" name="Ellipse" x="960" y="360" width="3" height="3" />
+      <ellipse id="1:7136" name="Ellipse" x="1000" y="360" width="3" height="3" />
+      <ellipse id="1:7137" name="Ellipse" x="1040" y="360" width="3" height="3" />
+      <ellipse id="1:7138" name="Ellipse" x="1080" y="360" width="3" height="3" />
+      <ellipse id="1:7139" name="Ellipse" x="1120" y="360" width="3" height="3" />
+      <ellipse id="1:7140" name="Ellipse" x="1160" y="360" width="3" height="3" />
+      <ellipse id="1:7141" name="Ellipse" x="1200" y="360" width="3" height="3" />
+      <ellipse id="1:7142" name="Ellipse" x="1240" y="360" width="3" height="3" />
+      <ellipse id="1:7143" name="Ellipse" x="1280" y="360" width="3" height="3" />
+      <ellipse id="1:7144" name="Ellipse" x="1320" y="360" width="3" height="3" />
+      <ellipse id="1:7145" name="Ellipse" x="1360" y="360" width="3" height="3" />
+      <ellipse id="1:7146" name="Ellipse" x="1400" y="360" width="3" height="3" />
+      <ellipse id="1:7147" name="Ellipse" x="1440" y="360" width="3" height="3" />
+      <ellipse id="1:7148" name="Ellipse" x="1480" y="360" width="3" height="3" />
+      <ellipse id="1:7150" name="Ellipse" x="60" y="396" width="3" height="3" />
+      <ellipse id="1:7151" name="Ellipse" x="100" y="396" width="3" height="3" />
+      <ellipse id="1:7152" name="Ellipse" x="140" y="396" width="3" height="3" />
+      <ellipse id="1:7153" name="Ellipse" x="180" y="396" width="3" height="3" />
+      <ellipse id="1:7154" name="Ellipse" x="220" y="396" width="3" height="3" />
+      <ellipse id="1:7155" name="Ellipse" x="260" y="396" width="3" height="3" />
+      <ellipse id="1:7156" name="Ellipse" x="300" y="396" width="3" height="3" />
+      <ellipse id="1:7157" name="Ellipse" x="340" y="396" width="3" height="3" />
+      <ellipse id="1:7158" name="Ellipse" x="380" y="396" width="3" height="3" />
+      <ellipse id="1:7159" name="Ellipse" x="420" y="396" width="3" height="3" />
+      <ellipse id="1:7160" name="Ellipse" x="460" y="396" width="3" height="3" />
+      <ellipse id="1:7161" name="Ellipse" x="500" y="396" width="3" height="3" />
+      <ellipse id="1:7162" name="Ellipse" x="540" y="396" width="3" height="3" />
+      <ellipse id="1:7163" name="Ellipse" x="580" y="396" width="3" height="3" />
+      <ellipse id="1:7164" name="Ellipse" x="620" y="396" width="3" height="3" />
+      <ellipse id="1:7165" name="Ellipse" x="660" y="396" width="3" height="3" />
+      <ellipse id="1:7166" name="Ellipse" x="700" y="396" width="3" height="3" />
+      <ellipse id="1:7167" name="Ellipse" x="740" y="396" width="3" height="3" />
+      <ellipse id="1:7168" name="Ellipse" x="780" y="396" width="3" height="3" />
+      <ellipse id="1:7169" name="Ellipse" x="820" y="396" width="3" height="3" />
+      <ellipse id="1:7170" name="Ellipse" x="860" y="396" width="3" height="3" />
+      <ellipse id="1:7171" name="Ellipse" x="900" y="396" width="3" height="3" />
+      <ellipse id="1:7172" name="Ellipse" x="940" y="396" width="3" height="3" />
+      <ellipse id="1:7173" name="Ellipse" x="980" y="396" width="3" height="3" />
+      <ellipse id="1:7174" name="Ellipse" x="1020" y="396" width="3" height="3" />
+      <ellipse id="1:7175" name="Ellipse" x="1060" y="396" width="3" height="3" />
+      <ellipse id="1:7176" name="Ellipse" x="1100" y="396" width="3" height="3" />
+      <ellipse id="1:7177" name="Ellipse" x="1140" y="396" width="3" height="3" />
+      <ellipse id="1:7178" name="Ellipse" x="1180" y="396" width="3" height="3" />
+      <ellipse id="1:7179" name="Ellipse" x="1220" y="396" width="3" height="3" />
+      <ellipse id="1:7180" name="Ellipse" x="1260" y="396" width="3" height="3" />
+      <ellipse id="1:7181" name="Ellipse" x="1300" y="396" width="3" height="3" />
+      <ellipse id="1:7182" name="Ellipse" x="1340" y="396" width="3" height="3" />
+      <ellipse id="1:7183" name="Ellipse" x="1380" y="396" width="3" height="3" />
+      <ellipse id="1:7184" name="Ellipse" x="1420" y="396" width="3" height="3" />
+      <ellipse id="1:7185" name="Ellipse" x="1460" y="396" width="3" height="3" />
+      <ellipse id="1:7186" name="Ellipse" x="1500" y="396" width="3" height="3" />
+      <text id="1:7187" name="INDUSTRIES WE SERVE" x="80" y="72" width="238" height="18" />
+      <text id="1:7188" name="Finance built for type of business." x="80" y="104" width="720" height="148" />
+      <text id="1:7189" name="your" x="654" y="104" width="155" height="68" />
+      <text id="1:7190" name="We don&#39;t believe in generic finance support. Every industry has its own financial reality — and we work with yours." x="80" y="261" width="640" height="60" />
+      <frame id="1:7191" name="Frame" x="1060" y="80" width="240" height="36">
+        <text id="1:7192" name="Direct to Consumer &amp; CPG" x="0" y="10" width="240" height="16" />
+      </frame>
+      <frame id="1:7193" name="Frame" x="1060" y="130" width="240" height="36">
+        <text id="1:7194" name="Retail &amp; E-commerce" x="0" y="10" width="240" height="16" />
+      </frame>
+      <frame id="1:7195" name="Frame" x="1060" y="180" width="240" height="36">
+        <text id="1:7196" name="Healthcare" x="0" y="10" width="240" height="16" />
+      </frame>
+      <frame id="1:7197" name="Frame" x="1060" y="230" width="240" height="36">
+        <text id="1:7198" name="Manufacturing" x="0" y="10" width="240" height="16" />
+      </frame>
+      <frame id="1:7199" name="Frame" x="1060" y="280" width="240" height="36">
+        <text id="1:7200" name="Logistics &amp; Supply Chain" x="0" y="10" width="240" height="16" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1:7201" name="Section / 02 – Quick Nav" x="9454" y="382" width="1440" height="80">
+    <frame id="52:17" name="Group 6" x="0" y="16" width="1440" height="64">
+      <rounded-rectangle id="1:7202" name="Rectangle" x="0" y="79" width="1440" height="1" />
+      <text id="1:7203" name="01" x="30" y="16" width="11" height="12" />
+      <text id="1:7204" name="Direct to Consumer &amp; CPG" x="30" y="32" width="190" height="16" />
+      <text id="1:7205" name="02" x="270" y="16" width="13" height="12" />
+      <text id="1:7206" name="Retail &amp; E-commerce" x="270" y="32" width="190" height="16" />
+      <rounded-rectangle id="1:7207" name="Rectangle" x="240" y="16" width="1" height="48" />
+      <text id="1:7208" name="03" x="510" y="16" width="13" height="12" />
+      <text id="1:7209" name="Healthcare" x="510" y="32" width="190" height="16" />
+      <rounded-rectangle id="1:7210" name="Rectangle" x="480" y="16" width="1" height="48" />
+      <text id="1:7211" name="04" x="750" y="16" width="14" height="12" />
+      <text id="1:7212" name="Manufacturing" x="750" y="32" width="190" height="16" />
+      <rounded-rectangle id="1:7213" name="Rectangle" x="720" y="16" width="1" height="48" />
+      <text id="1:7214" name="05" x="990" y="16" width="13" height="12" />
+      <text id="1:7215" name="Logistics &amp; Supply Chain" x="990" y="32" width="190" height="16" />
+      <rounded-rectangle id="1:7216" name="Rectangle" x="960" y="16" width="1" height="48" />
+      <text id="1:7217" name="06" x="1230" y="16" width="14" height="12" />
+      <text id="1:7218" name="Construction &amp; Real Estate" x="1230" y="32" width="190" height="16" />
+      <rounded-rectangle id="1:7219" name="Rectangle" x="1200" y="16" width="1" height="48" />
+      <rounded-rectangle id="1:7220" name="Rectangle" x="0" y="77" width="240" height="3" />
+    </frame>
+  </frame>
+  <frame id="1:7221" name="Section / Final CTA" x="9454" y="3222" width="1440" height="260">
+    <rounded-rectangle id="1:7222" name="Rectangle" x="-5" y="0" width="10" height="1.5" />
+    <rounded-rectangle id="1:7253" name="Rectangle" x="-5" y="32" width="10" height="1.5" />
+    <rounded-rectangle id="1:7284" name="Rectangle" x="-5" y="64" width="10" height="1.5" />
+    <rounded-rectangle id="1:7315" name="Rectangle" x="-5" y="96" width="10" height="1.5" />
+    <rounded-rectangle id="1:7346" name="Rectangle" x="-5" y="128" width="10" height="1.5" />
+    <rounded-rectangle id="1:7377" name="Rectangle" x="-5" y="160" width="10" height="1.5" />
+    <rounded-rectangle id="1:7408" name="Rectangle" x="-5" y="192" width="10" height="1.5" />
+    <rounded-rectangle id="1:7439" name="Rectangle" x="-5" y="224" width="10" height="1.5" />
+    <rounded-rectangle id="1:7470" name="Rectangle" x="-5" y="256" width="10" height="1.5" />
+    <frame id="52:15" name="Group 6" x="43" y="0" width="1402" height="257.5">
+      <rounded-rectangle id="1:7223" name="Rectangle" x="43" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7224" name="Rectangle" x="91" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7225" name="Rectangle" x="139" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7226" name="Rectangle" x="187" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7227" name="Rectangle" x="235" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7228" name="Rectangle" x="283" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7229" name="Rectangle" x="331" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7230" name="Rectangle" x="379" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7231" name="Rectangle" x="427" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7232" name="Rectangle" x="475" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7233" name="Rectangle" x="523" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7234" name="Rectangle" x="571" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7235" name="Rectangle" x="619" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7236" name="Rectangle" x="667" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7237" name="Rectangle" x="715" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7238" name="Rectangle" x="763" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7239" name="Rectangle" x="811" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7240" name="Rectangle" x="859" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7241" name="Rectangle" x="907" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7242" name="Rectangle" x="955" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7243" name="Rectangle" x="1003" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7244" name="Rectangle" x="1051" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7245" name="Rectangle" x="1099" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7246" name="Rectangle" x="1147" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7247" name="Rectangle" x="1195" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7248" name="Rectangle" x="1243" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7249" name="Rectangle" x="1291" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7250" name="Rectangle" x="1339" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7251" name="Rectangle" x="1387" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7252" name="Rectangle" x="1435" y="0" width="10" height="1.5" />
+      <rounded-rectangle id="1:7254" name="Rectangle" x="43" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7255" name="Rectangle" x="91" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7256" name="Rectangle" x="139" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7257" name="Rectangle" x="187" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7258" name="Rectangle" x="235" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7259" name="Rectangle" x="283" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7260" name="Rectangle" x="331" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7261" name="Rectangle" x="379" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7262" name="Rectangle" x="427" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7263" name="Rectangle" x="475" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7264" name="Rectangle" x="523" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7265" name="Rectangle" x="571" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7266" name="Rectangle" x="619" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7267" name="Rectangle" x="667" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7268" name="Rectangle" x="715" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7269" name="Rectangle" x="763" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7270" name="Rectangle" x="811" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7271" name="Rectangle" x="859" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7272" name="Rectangle" x="907" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7273" name="Rectangle" x="955" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7274" name="Rectangle" x="1003" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7275" name="Rectangle" x="1051" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7276" name="Rectangle" x="1099" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7277" name="Rectangle" x="1147" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7278" name="Rectangle" x="1195" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7279" name="Rectangle" x="1243" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7280" name="Rectangle" x="1291" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7281" name="Rectangle" x="1339" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7282" name="Rectangle" x="1387" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7283" name="Rectangle" x="1435" y="32" width="10" height="1.5" />
+      <rounded-rectangle id="1:7285" name="Rectangle" x="43" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7286" name="Rectangle" x="91" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7287" name="Rectangle" x="139" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7288" name="Rectangle" x="187" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7289" name="Rectangle" x="235" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7290" name="Rectangle" x="283" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7291" name="Rectangle" x="331" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7292" name="Rectangle" x="379" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7293" name="Rectangle" x="427" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7294" name="Rectangle" x="475" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7295" name="Rectangle" x="523" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7296" name="Rectangle" x="571" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7297" name="Rectangle" x="619" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7298" name="Rectangle" x="667" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7299" name="Rectangle" x="715" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7300" name="Rectangle" x="763" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7301" name="Rectangle" x="811" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7302" name="Rectangle" x="859" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7303" name="Rectangle" x="907" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7304" name="Rectangle" x="955" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7305" name="Rectangle" x="1003" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7306" name="Rectangle" x="1051" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7307" name="Rectangle" x="1099" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7308" name="Rectangle" x="1147" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7309" name="Rectangle" x="1195" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7310" name="Rectangle" x="1243" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7311" name="Rectangle" x="1291" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7312" name="Rectangle" x="1339" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7313" name="Rectangle" x="1387" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7314" name="Rectangle" x="1435" y="64" width="10" height="1.5" />
+      <rounded-rectangle id="1:7316" name="Rectangle" x="43" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7317" name="Rectangle" x="91" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7318" name="Rectangle" x="139" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7319" name="Rectangle" x="187" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7320" name="Rectangle" x="235" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7321" name="Rectangle" x="283" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7322" name="Rectangle" x="331" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7323" name="Rectangle" x="379" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7324" name="Rectangle" x="427" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7325" name="Rectangle" x="475" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7326" name="Rectangle" x="523" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7327" name="Rectangle" x="571" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7328" name="Rectangle" x="619" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7329" name="Rectangle" x="667" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7330" name="Rectangle" x="715" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7331" name="Rectangle" x="763" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7332" name="Rectangle" x="811" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7333" name="Rectangle" x="859" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7334" name="Rectangle" x="907" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7335" name="Rectangle" x="955" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7336" name="Rectangle" x="1003" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7337" name="Rectangle" x="1051" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7338" name="Rectangle" x="1099" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7339" name="Rectangle" x="1147" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7340" name="Rectangle" x="1195" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7341" name="Rectangle" x="1243" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7342" name="Rectangle" x="1291" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7343" name="Rectangle" x="1339" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7344" name="Rectangle" x="1387" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7345" name="Rectangle" x="1435" y="96" width="10" height="1.5" />
+      <rounded-rectangle id="1:7347" name="Rectangle" x="43" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7348" name="Rectangle" x="91" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7349" name="Rectangle" x="139" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7350" name="Rectangle" x="187" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7351" name="Rectangle" x="235" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7352" name="Rectangle" x="283" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7353" name="Rectangle" x="331" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7354" name="Rectangle" x="379" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7355" name="Rectangle" x="427" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7356" name="Rectangle" x="475" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7357" name="Rectangle" x="523" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7358" name="Rectangle" x="571" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7359" name="Rectangle" x="619" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7360" name="Rectangle" x="667" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7361" name="Rectangle" x="715" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7362" name="Rectangle" x="763" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7363" name="Rectangle" x="811" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7364" name="Rectangle" x="859" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7365" name="Rectangle" x="907" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7366" name="Rectangle" x="955" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7367" name="Rectangle" x="1003" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7368" name="Rectangle" x="1051" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7369" name="Rectangle" x="1099" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7370" name="Rectangle" x="1147" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7371" name="Rectangle" x="1195" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7372" name="Rectangle" x="1243" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7373" name="Rectangle" x="1291" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7374" name="Rectangle" x="1339" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7375" name="Rectangle" x="1387" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7376" name="Rectangle" x="1435" y="128" width="10" height="1.5" />
+      <rounded-rectangle id="1:7378" name="Rectangle" x="43" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7379" name="Rectangle" x="91" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7380" name="Rectangle" x="139" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7381" name="Rectangle" x="187" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7382" name="Rectangle" x="235" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7383" name="Rectangle" x="283" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7384" name="Rectangle" x="331" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7385" name="Rectangle" x="379" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7386" name="Rectangle" x="427" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7387" name="Rectangle" x="475" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7388" name="Rectangle" x="523" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7389" name="Rectangle" x="571" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7390" name="Rectangle" x="619" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7391" name="Rectangle" x="667" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7392" name="Rectangle" x="715" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7393" name="Rectangle" x="763" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7394" name="Rectangle" x="811" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7395" name="Rectangle" x="859" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7396" name="Rectangle" x="907" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7397" name="Rectangle" x="955" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7398" name="Rectangle" x="1003" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7399" name="Rectangle" x="1051" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7400" name="Rectangle" x="1099" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7401" name="Rectangle" x="1147" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7402" name="Rectangle" x="1195" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7403" name="Rectangle" x="1243" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7404" name="Rectangle" x="1291" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7405" name="Rectangle" x="1339" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7406" name="Rectangle" x="1387" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7407" name="Rectangle" x="1435" y="160" width="10" height="1.5" />
+      <rounded-rectangle id="1:7409" name="Rectangle" x="43" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7410" name="Rectangle" x="91" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7411" name="Rectangle" x="139" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7412" name="Rectangle" x="187" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7413" name="Rectangle" x="235" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7414" name="Rectangle" x="283" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7415" name="Rectangle" x="331" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7416" name="Rectangle" x="379" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7417" name="Rectangle" x="427" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7418" name="Rectangle" x="475" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7419" name="Rectangle" x="523" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7420" name="Rectangle" x="571" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7421" name="Rectangle" x="619" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7422" name="Rectangle" x="667" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7423" name="Rectangle" x="715" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7424" name="Rectangle" x="763" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7425" name="Rectangle" x="811" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7426" name="Rectangle" x="859" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7427" name="Rectangle" x="907" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7428" name="Rectangle" x="955" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7429" name="Rectangle" x="1003" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7430" name="Rectangle" x="1051" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7431" name="Rectangle" x="1099" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7432" name="Rectangle" x="1147" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7433" name="Rectangle" x="1195" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7434" name="Rectangle" x="1243" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7435" name="Rectangle" x="1291" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7436" name="Rectangle" x="1339" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7437" name="Rectangle" x="1387" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7438" name="Rectangle" x="1435" y="192" width="10" height="1.5" />
+      <rounded-rectangle id="1:7440" name="Rectangle" x="43" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7441" name="Rectangle" x="91" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7442" name="Rectangle" x="139" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7443" name="Rectangle" x="187" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7444" name="Rectangle" x="235" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7445" name="Rectangle" x="283" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7446" name="Rectangle" x="331" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7447" name="Rectangle" x="379" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7448" name="Rectangle" x="427" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7449" name="Rectangle" x="475" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7450" name="Rectangle" x="523" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7451" name="Rectangle" x="571" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7452" name="Rectangle" x="619" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7453" name="Rectangle" x="667" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7454" name="Rectangle" x="715" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7455" name="Rectangle" x="763" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7456" name="Rectangle" x="811" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7457" name="Rectangle" x="859" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7458" name="Rectangle" x="907" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7459" name="Rectangle" x="955" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7460" name="Rectangle" x="1003" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7461" name="Rectangle" x="1051" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7462" name="Rectangle" x="1099" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7463" name="Rectangle" x="1147" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7464" name="Rectangle" x="1195" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7465" name="Rectangle" x="1243" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7466" name="Rectangle" x="1291" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7467" name="Rectangle" x="1339" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7468" name="Rectangle" x="1387" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7469" name="Rectangle" x="1435" y="224" width="10" height="1.5" />
+      <rounded-rectangle id="1:7471" name="Rectangle" x="43" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7472" name="Rectangle" x="91" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7473" name="Rectangle" x="139" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7474" name="Rectangle" x="187" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7475" name="Rectangle" x="235" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7476" name="Rectangle" x="283" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7477" name="Rectangle" x="331" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7478" name="Rectangle" x="379" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7479" name="Rectangle" x="427" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7480" name="Rectangle" x="475" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7481" name="Rectangle" x="523" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7482" name="Rectangle" x="571" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7483" name="Rectangle" x="619" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7484" name="Rectangle" x="667" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7485" name="Rectangle" x="715" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7486" name="Rectangle" x="763" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7487" name="Rectangle" x="811" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7488" name="Rectangle" x="859" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7489" name="Rectangle" x="907" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7490" name="Rectangle" x="955" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7491" name="Rectangle" x="1003" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7492" name="Rectangle" x="1051" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7493" name="Rectangle" x="1099" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7494" name="Rectangle" x="1147" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7495" name="Rectangle" x="1195" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7496" name="Rectangle" x="1243" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7497" name="Rectangle" x="1291" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7498" name="Rectangle" x="1339" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7499" name="Rectangle" x="1387" y="256" width="10" height="1.5" />
+      <rounded-rectangle id="1:7500" name="Rectangle" x="1435" y="256" width="10" height="1.5" />
+      <text id="1:7501" name="Don&#39;t see your industry?" x="80" y="48" width="577" height="54" />
+      <text id="1:7502" name="We work across many sectors. Tell us about your business and we&#39;ll let you know how we can help." x="80" y="116" width="640" height="52" />
+      <frame id="1:7503" name="Frame" x="80" y="184" width="220" height="52">
+        <text id="1:7504" name="BOOK A CONSULTATION" x="0" y="17" width="220" height="18" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="1:7505" name="Section / 03 – Direct to Consumer &amp; CPG" x="9454" y="462" width="1440" height="460">
+    <frame id="52:14" name="Group 6" x="-70" y="0" width="1510" height="460">
+      <rounded-rectangle id="1:7506" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7507" name="Rectangle" x="0" y="0" width="440" height="460" />
+      <text id="1:7508" name="01" x="-70" y="24" width="325" height="366" />
+      <text id="1:7509" name="KEY CHALLENGES" x="72" y="60" width="155" height="18" />
+      <ellipse id="1:7510" name="Ellipse" x="72" y="92" width="5" height="5" />
+      <text id="1:7511" name="Working capital tied up in inventory" x="88" y="83" width="300" height="15" />
+      <ellipse id="1:7512" name="Ellipse" x="72" y="124" width="5" height="5" />
+      <text id="1:7513" name="Channel and SKU-level profitability" x="88" y="115" width="300" height="15" />
+      <ellipse id="1:7514" name="Ellipse" x="72" y="156" width="5" height="5" />
+      <text id="1:7515" name="Marketing spend vs. contribution margin" x="88" y="147" width="300" height="15" />
+      <ellipse id="1:7516" name="Ellipse" x="72" y="188" width="5" height="5" />
+      <text id="1:7517" name="Cash flow across sales cycles" x="88" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7518" name="Rectangle" x="72" y="224" width="300" height="1" />
+      <text id="1:7519" name="SERVICES WE PROVIDE" x="72" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7520" name="Rectangle" x="72" y="258" width="300" height="30" />
+      <text id="1:7521" name="Cash Flow &amp; Forecasting" x="84" y="265" width="150" height="15" />
+      <rounded-rectangle id="1:7522" name="Rectangle" x="72" y="294" width="300" height="30" />
+      <text id="1:7523" name="Management Reporting" x="84" y="301" width="148" height="15" />
+      <rounded-rectangle id="1:7524" name="Rectangle" x="72" y="330" width="300" height="30" />
+      <text id="1:7525" name="Bookkeeping &amp; Accounting" x="84" y="337" width="168" height="15" />
+      <rounded-rectangle id="1:7526" name="Rectangle" x="72" y="366" width="300" height="30" />
+      <text id="1:7527" name="FP&amp;A / Business Finance" x="84" y="373" width="150" height="15" />
+      <rounded-rectangle id="1:7528" name="Rectangle" x="470" y="70" width="2" height="320" />
+      <text id="1:7529" name="INDUSTRY · 01" x="500" y="56" width="134" height="18" />
+      <text id="1:7530" name="Direct to Consumer &amp; CPG" x="500" y="80" width="800" height="92" />
+      <text id="1:7531" name="Working-capital and margin clarity for product brands." x="500" y="184" width="800" height="18" />
+      <text id="1:7532" name="D2C and CPG brands juggle inventory, multi-channel sales, and thin margins. We build finance systems that reveal true unit economics and free up cash tied in stock." x="500" y="214" width="760" height="44" />
+      <rounded-rectangle id="1:7533" name="Rectangle" x="500" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7534" name="Rectangle" x="500" y="382" width="4" height="52" />
+      <text id="1:7535" name="CASE STUDY" x="520" y="392" width="112" height="18" />
+      <text id="1:7536" name="How we helped a D2C brand optimise their working capital by 50%" x="520" y="408" width="700" height="16" />
+      <text id="1:7537" name="→" x="1246" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7538" name="Section / 04 – Retail &amp; E-commerce" x="9454" y="922" width="1440" height="460">
+    <frame id="52:16" name="Group 6" x="0" y="0" width="1573" height="460">
+      <rounded-rectangle id="1:7539" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7540" name="Rectangle" x="1000" y="0" width="440" height="460" />
+      <text id="1:7541" name="02" x="1190" y="24" width="383" height="366" />
+      <text id="1:7542" name="KEY CHALLENGES" x="1072" y="60" width="155" height="18" />
+      <ellipse id="1:7543" name="Ellipse" x="1072" y="92" width="5" height="5" />
+      <text id="1:7544" name="Multi-platform revenue reconciliation" x="1088" y="83" width="300" height="15" />
+      <ellipse id="1:7545" name="Ellipse" x="1072" y="124" width="5" height="5" />
+      <text id="1:7546" name="Inventory valuation and stock accounting" x="1088" y="115" width="300" height="15" />
+      <ellipse id="1:7547" name="Ellipse" x="1072" y="156" width="5" height="5" />
+      <text id="1:7548" name="High return rates affecting revenue" x="1088" y="147" width="300" height="15" />
+      <ellipse id="1:7549" name="Ellipse" x="1072" y="188" width="5" height="5" />
+      <text id="1:7550" name="Cash flow gaps between sale and settlement" x="1088" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7551" name="Rectangle" x="1072" y="224" width="300" height="1" />
+      <text id="1:7552" name="SERVICES WE PROVIDE" x="1072" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7553" name="Rectangle" x="1072" y="258" width="300" height="30" />
+      <text id="1:7554" name="Bookkeeping &amp; Accounting" x="1084" y="265" width="168" height="15" />
+      <rounded-rectangle id="1:7555" name="Rectangle" x="1072" y="294" width="300" height="30" />
+      <text id="1:7556" name="Cash Flow &amp; Forecasting" x="1084" y="301" width="150" height="15" />
+      <rounded-rectangle id="1:7557" name="Rectangle" x="1072" y="330" width="300" height="30" />
+      <text id="1:7558" name="Management Reporting" x="1084" y="337" width="148" height="15" />
+      <rounded-rectangle id="1:7559" name="Rectangle" x="1072" y="366" width="300" height="30" />
+      <text id="1:7560" name="Tax &amp; VAT Compliance" x="1084" y="373" width="135" height="15" />
+      <rounded-rectangle id="1:7561" name="Rectangle" x="966" y="70" width="2" height="320" />
+      <text id="1:7562" name="INDUSTRY · 02" x="80" y="56" width="137" height="18" />
+      <text id="1:7563" name="Retail &amp; E-commerce" x="80" y="80" width="800" height="92" />
+      <text id="1:7564" name="Finance support for inventory-heavy businesses." x="80" y="184" width="800" height="18" />
+      <text id="1:7565" name="Retail and e-commerce businesses face multi-platform revenue, inventory management, high return rates, and cash flow tied up in stock. We give you real visibility into what&#39;s actually profitable." x="80" y="214" width="760" height="44" />
+      <rounded-rectangle id="1:7566" name="Rectangle" x="80" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7567" name="Rectangle" x="80" y="382" width="4" height="52" />
+      <text id="1:7568" name="CASE STUDY" x="100" y="392" width="112" height="18" />
+      <text id="1:7569" name="How we gave a retail group real-time visibility into product margins" x="100" y="408" width="700" height="16" />
+      <text id="1:7570" name="→" x="826" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7571" name="Section / 05 – Healthcare" x="9454" y="1382" width="1440" height="460">
+    <frame id="52:19" name="Group 6" x="-70" y="0" width="1510" height="460">
+      <rounded-rectangle id="1:7572" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7573" name="Rectangle" x="0" y="0" width="440" height="460" />
+      <text id="1:7574" name="03" x="-70" y="24" width="384" height="366" />
+      <text id="1:7575" name="KEY CHALLENGES" x="72" y="60" width="155" height="18" />
+      <ellipse id="1:7576" name="Ellipse" x="72" y="92" width="5" height="5" />
+      <text id="1:7577" name="Insurance and payer reconciliation" x="88" y="83" width="300" height="15" />
+      <ellipse id="1:7578" name="Ellipse" x="72" y="124" width="5" height="5" />
+      <text id="1:7579" name="Revenue recognition across services" x="88" y="115" width="300" height="15" />
+      <ellipse id="1:7580" name="Ellipse" x="72" y="156" width="5" height="5" />
+      <text id="1:7581" name="Regulatory and VAT compliance" x="88" y="147" width="300" height="15" />
+      <ellipse id="1:7582" name="Ellipse" x="72" y="188" width="5" height="5" />
+      <text id="1:7583" name="Multi-location cost control" x="88" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7584" name="Rectangle" x="72" y="224" width="300" height="1" />
+      <text id="1:7585" name="SERVICES WE PROVIDE" x="72" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7586" name="Rectangle" x="72" y="258" width="300" height="30" />
+      <text id="1:7587" name="Bookkeeping &amp; Accounting" x="84" y="265" width="168" height="15" />
+      <rounded-rectangle id="1:7588" name="Rectangle" x="72" y="294" width="300" height="30" />
+      <text id="1:7589" name="Management Reporting" x="84" y="301" width="148" height="15" />
+      <rounded-rectangle id="1:7590" name="Rectangle" x="72" y="330" width="300" height="30" />
+      <text id="1:7591" name="Tax &amp; VAT Compliance" x="84" y="337" width="135" height="15" />
+      <rounded-rectangle id="1:7592" name="Rectangle" x="72" y="366" width="300" height="30" />
+      <text id="1:7593" name="Cash Flow &amp; Forecasting" x="84" y="373" width="150" height="15" />
+      <rounded-rectangle id="1:7594" name="Rectangle" x="470" y="70" width="2" height="320" />
+      <text id="1:7595" name="INDUSTRY · 03" x="500" y="56" width="137" height="18" />
+      <text id="1:7596" name="Healthcare" x="500" y="80" width="800" height="46" />
+      <text id="1:7597" name="Compliance-ready finance for clinics and care providers." x="500" y="138" width="800" height="18" />
+      <text id="1:7598" name="Healthcare operators balance patient volumes, payer cycles, and strict compliance. We structure reporting and cash flow so leadership can focus on care, not spreadsheets." x="500" y="168" width="760" height="44" />
+      <rounded-rectangle id="1:7599" name="Rectangle" x="500" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7600" name="Rectangle" x="500" y="382" width="4" height="52" />
+      <text id="1:7601" name="CASE STUDY" x="520" y="392" width="112" height="18" />
+      <text id="1:7602" name="How we streamlined month-end close for a multi-clinic group" x="520" y="408" width="700" height="16" />
+      <text id="1:7603" name="→" x="1246" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7604" name="Section / 06 – Manufacturing" x="9454" y="1842" width="1440" height="460">
+    <frame id="52:18" name="Group 6" x="0" y="0" width="1606" height="460">
+      <rounded-rectangle id="1:7605" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7606" name="Rectangle" x="1000" y="0" width="440" height="460" />
+      <text id="1:7607" name="04" x="1190" y="24" width="416" height="366" />
+      <text id="1:7608" name="KEY CHALLENGES" x="1072" y="60" width="155" height="18" />
+      <ellipse id="1:7609" name="Ellipse" x="1072" y="92" width="5" height="5" />
+      <text id="1:7610" name="Inventory and COGS accounting" x="1088" y="83" width="300" height="15" />
+      <ellipse id="1:7611" name="Ellipse" x="1072" y="124" width="5" height="5" />
+      <text id="1:7612" name="Production and unit-level costing" x="1088" y="115" width="300" height="15" />
+      <ellipse id="1:7613" name="Ellipse" x="1072" y="156" width="5" height="5" />
+      <text id="1:7614" name="Margin visibility by product line" x="1088" y="147" width="300" height="15" />
+      <ellipse id="1:7615" name="Ellipse" x="1072" y="188" width="5" height="5" />
+      <text id="1:7616" name="Supplier terms and working capital" x="1088" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7617" name="Rectangle" x="1072" y="224" width="300" height="1" />
+      <text id="1:7618" name="SERVICES WE PROVIDE" x="1072" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7619" name="Rectangle" x="1072" y="258" width="300" height="30" />
+      <text id="1:7620" name="Bookkeeping &amp; Accounting" x="1084" y="265" width="168" height="15" />
+      <rounded-rectangle id="1:7621" name="Rectangle" x="1072" y="294" width="300" height="30" />
+      <text id="1:7622" name="Management Reporting" x="1084" y="301" width="148" height="15" />
+      <rounded-rectangle id="1:7623" name="Rectangle" x="1072" y="330" width="300" height="30" />
+      <text id="1:7624" name="Cash Flow &amp; Forecasting" x="1084" y="337" width="150" height="15" />
+      <rounded-rectangle id="1:7625" name="Rectangle" x="1072" y="366" width="300" height="30" />
+      <text id="1:7626" name="FP&amp;A / Business Finance" x="1084" y="373" width="150" height="15" />
+      <rounded-rectangle id="1:7627" name="Rectangle" x="966" y="70" width="2" height="320" />
+      <text id="1:7628" name="INDUSTRY · 04" x="80" y="56" width="139" height="18" />
+      <text id="1:7629" name="Manufacturing" x="80" y="80" width="800" height="46" />
+      <text id="1:7630" name="Cost, inventory, and margin control for producers." x="80" y="138" width="800" height="18" />
+      <text id="1:7631" name="Manufacturers live and die by cost accuracy. We bring structure to COGS, inventory, and production costing so you know the true margin on every product line." x="80" y="168" width="760" height="44" />
+      <rounded-rectangle id="1:7632" name="Rectangle" x="80" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7633" name="Rectangle" x="80" y="382" width="4" height="52" />
+      <text id="1:7634" name="CASE STUDY" x="100" y="392" width="112" height="18" />
+      <text id="1:7635" name="How we rebuilt product-level costing for a GCC manufacturer" x="100" y="408" width="700" height="16" />
+      <text id="1:7636" name="→" x="826" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7637" name="Section / 07 – Logistics &amp; Supply Chain" x="9454" y="2302" width="1440" height="460">
+    <frame id="52:12" name="Group 6" x="-70" y="0" width="1510" height="460">
+      <rounded-rectangle id="1:7638" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7639" name="Rectangle" x="0" y="0" width="440" height="460" />
+      <text id="1:7640" name="05" x="-70" y="24" width="388" height="366" />
+      <text id="1:7641" name="KEY CHALLENGES" x="72" y="60" width="155" height="18" />
+      <ellipse id="1:7642" name="Ellipse" x="72" y="92" width="5" height="5" />
+      <text id="1:7643" name="Cash flow across long payment cycles" x="88" y="83" width="300" height="15" />
+      <ellipse id="1:7644" name="Ellipse" x="72" y="124" width="5" height="5" />
+      <text id="1:7645" name="Receivables and credit management" x="88" y="115" width="300" height="15" />
+      <ellipse id="1:7646" name="Ellipse" x="72" y="156" width="5" height="5" />
+      <text id="1:7647" name="Fleet and asset cost tracking" x="88" y="147" width="300" height="15" />
+      <ellipse id="1:7648" name="Ellipse" x="72" y="188" width="5" height="5" />
+      <text id="1:7649" name="Multi-entity, cross-border accounting" x="88" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7650" name="Rectangle" x="72" y="224" width="300" height="1" />
+      <text id="1:7651" name="SERVICES WE PROVIDE" x="72" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7652" name="Rectangle" x="72" y="258" width="300" height="30" />
+      <text id="1:7653" name="Cash Flow &amp; Forecasting" x="84" y="265" width="150" height="15" />
+      <rounded-rectangle id="1:7654" name="Rectangle" x="72" y="294" width="300" height="30" />
+      <text id="1:7655" name="Bookkeeping &amp; Accounting" x="84" y="301" width="168" height="15" />
+      <rounded-rectangle id="1:7656" name="Rectangle" x="72" y="330" width="300" height="30" />
+      <text id="1:7657" name="Management Reporting" x="84" y="337" width="148" height="15" />
+      <rounded-rectangle id="1:7658" name="Rectangle" x="72" y="366" width="300" height="30" />
+      <text id="1:7659" name="Tax &amp; VAT Compliance" x="84" y="373" width="135" height="15" />
+      <rounded-rectangle id="1:7660" name="Rectangle" x="470" y="70" width="2" height="320" />
+      <text id="1:7661" name="INDUSTRY · 05" x="500" y="56" width="138" height="18" />
+      <text id="1:7662" name="Logistics &amp; Supply Chain" x="500" y="80" width="800" height="92" />
+      <text id="1:7663" name="Cash flow and operational finance for asset-heavy operations." x="500" y="184" width="800" height="18" />
+      <text id="1:7664" name="Logistics and supply-chain businesses run on tight margins and heavy assets. We keep cash flow, receivables, and operating costs under control so you can scale without surprises." x="500" y="214" width="760" height="44" />
+      <rounded-rectangle id="1:7665" name="Rectangle" x="500" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7666" name="Rectangle" x="500" y="382" width="4" height="52" />
+      <text id="1:7667" name="CASE STUDY" x="520" y="392" width="112" height="18" />
+      <text id="1:7668" name="How we tightened receivables and cash flow for a logistics operator" x="520" y="410" width="700" height="16" />
+      <text id="1:7669" name="→" x="1246" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7670" name="Section / 08 – Construction &amp; Real Estate" x="9454" y="2762" width="1440" height="460">
+    <frame id="52:11" name="Group 6" x="0" y="0" width="1591" height="460">
+      <rounded-rectangle id="1:7671" name="Rectangle" x="0" y="0" width="1440" height="1" />
+      <rounded-rectangle id="1:7672" name="Rectangle" x="1000" y="0" width="440" height="460" />
+      <text id="1:7673" name="06" x="1190" y="24" width="401" height="366" />
+      <text id="1:7674" name="KEY CHALLENGES" x="1072" y="60" width="155" height="18" />
+      <ellipse id="1:7675" name="Ellipse" x="1072" y="92" width="5" height="5" />
+      <text id="1:7676" name="Project-based cost tracking" x="1088" y="83" width="300" height="15" />
+      <ellipse id="1:7677" name="Ellipse" x="1072" y="124" width="5" height="5" />
+      <text id="1:7678" name="Retentions and progress billing" x="1088" y="115" width="300" height="15" />
+      <ellipse id="1:7679" name="Ellipse" x="1072" y="156" width="5" height="5" />
+      <text id="1:7680" name="Cash flow across long cycles" x="1088" y="147" width="300" height="15" />
+      <ellipse id="1:7681" name="Ellipse" x="1072" y="188" width="5" height="5" />
+      <text id="1:7682" name="WIP and revenue recognition" x="1088" y="179" width="300" height="15" />
+      <rounded-rectangle id="1:7683" name="Rectangle" x="1072" y="224" width="300" height="1" />
+      <text id="1:7684" name="SERVICES WE PROVIDE" x="1072" y="238" width="204" height="18" />
+      <rounded-rectangle id="1:7685" name="Rectangle" x="1072" y="258" width="300" height="30" />
+      <text id="1:7686" name="Management Reporting" x="1084" y="265" width="148" height="15" />
+      <rounded-rectangle id="1:7687" name="Rectangle" x="1072" y="294" width="300" height="30" />
+      <text id="1:7688" name="Cash Flow &amp; Forecasting" x="1084" y="301" width="150" height="15" />
+      <rounded-rectangle id="1:7689" name="Rectangle" x="1072" y="330" width="300" height="30" />
+      <text id="1:7690" name="Bookkeeping &amp; Accounting" x="1084" y="337" width="168" height="15" />
+      <rounded-rectangle id="1:7691" name="Rectangle" x="1072" y="366" width="300" height="30" />
+      <text id="1:7692" name="FP&amp;A / Business Finance" x="1084" y="373" width="150" height="15" />
+      <rounded-rectangle id="1:7693" name="Rectangle" x="966" y="70" width="2" height="320" />
+      <text id="1:7694" name="INDUSTRY · 06" x="80" y="56" width="138" height="18" />
+      <text id="1:7695" name="Construction &amp; Real Estate" x="80" y="80" width="800" height="92" />
+      <text id="1:7696" name="Project reporting and operational finance." x="80" y="184" width="800" height="18" />
+      <text id="1:7697" name="Construction and real estate businesses manage long project cycles, retentions, and complex costs. We build project-level reporting and cash flow control so every job stays profitable." x="80" y="214" width="760" height="44" />
+      <rounded-rectangle id="1:7698" name="Rectangle" x="80" y="382" width="780" height="52" />
+      <rounded-rectangle id="1:7699" name="Rectangle" x="80" y="382" width="4" height="52" />
+      <text id="1:7700" name="CASE STUDY" x="100" y="392" width="112" height="18" />
+      <text id="1:7701" name="How we brought project-level profitability into focus for a developer" x="100" y="408" width="700" height="16" />
+      <text id="1:7702" name="→" x="826" y="397" width="11" height="22" />
+    </frame>
+  </frame>
+  <frame id="1:7703" name="Footer" x="9454" y="3482" width="1440" height="400">
+    <ellipse id="1:7704" name="Ellipse" x="0" y="0" width="2.5" height="2.5" />
+    <ellipse id="1:7741" name="Ellipse" x="20" y="38" width="2.5" height="2.5" />
+    <ellipse id="1:7778" name="Ellipse" x="0" y="76" width="2.5" height="2.5" />
+    <ellipse id="1:7815" name="Ellipse" x="20" y="114" width="2.5" height="2.5" />
+    <ellipse id="1:7852" name="Ellipse" x="0" y="152" width="2.5" height="2.5" />
+    <ellipse id="1:7889" name="Ellipse" x="20" y="190" width="2.5" height="2.5" />
+    <ellipse id="1:7926" name="Ellipse" x="0" y="228" width="2.5" height="2.5" />
+    <ellipse id="1:7963" name="Ellipse" x="20" y="266" width="2.5" height="2.5" />
+    <ellipse id="1:8000" name="Ellipse" x="0" y="304" width="2.5" height="2.5" />
+    <ellipse id="1:8037" name="Ellipse" x="20" y="342" width="2.5" height="2.5" />
+    <ellipse id="1:8074" name="Ellipse" x="0" y="380" width="2.5" height="2.5" />
+    <frame id="52:10" name="Group 6" x="0" y="-46" width="1462.5" height="428.5">
+      <ellipse id="1:7705" name="Ellipse" x="40" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7706" name="Ellipse" x="80" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7707" name="Ellipse" x="120" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7708" name="Ellipse" x="160" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7709" name="Ellipse" x="200" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7710" name="Ellipse" x="240" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7711" name="Ellipse" x="280" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7712" name="Ellipse" x="320" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7713" name="Ellipse" x="360" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7714" name="Ellipse" x="400" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7715" name="Ellipse" x="440" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7716" name="Ellipse" x="480" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7717" name="Ellipse" x="520" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7718" name="Ellipse" x="560" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7719" name="Ellipse" x="600" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7720" name="Ellipse" x="640" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7721" name="Ellipse" x="680" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7722" name="Ellipse" x="720" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7723" name="Ellipse" x="760" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7724" name="Ellipse" x="800" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7725" name="Ellipse" x="840" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7726" name="Ellipse" x="880" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7727" name="Ellipse" x="920" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7728" name="Ellipse" x="960" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7729" name="Ellipse" x="1000" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7730" name="Ellipse" x="1040" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7731" name="Ellipse" x="1080" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7732" name="Ellipse" x="1120" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7733" name="Ellipse" x="1160" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7734" name="Ellipse" x="1200" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7735" name="Ellipse" x="1240" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7736" name="Ellipse" x="1280" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7737" name="Ellipse" x="1320" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7738" name="Ellipse" x="1360" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7739" name="Ellipse" x="1400" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7740" name="Ellipse" x="1440" y="0" width="2.5" height="2.5" />
+      <ellipse id="1:7742" name="Ellipse" x="60" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7743" name="Ellipse" x="100" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7744" name="Ellipse" x="140" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7745" name="Ellipse" x="180" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7746" name="Ellipse" x="220" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7747" name="Ellipse" x="260" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7748" name="Ellipse" x="300" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7749" name="Ellipse" x="340" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7750" name="Ellipse" x="380" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7751" name="Ellipse" x="420" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7752" name="Ellipse" x="460" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7753" name="Ellipse" x="500" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7754" name="Ellipse" x="540" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7755" name="Ellipse" x="580" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7756" name="Ellipse" x="620" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7757" name="Ellipse" x="660" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7758" name="Ellipse" x="700" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7759" name="Ellipse" x="740" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7760" name="Ellipse" x="780" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7761" name="Ellipse" x="820" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7762" name="Ellipse" x="860" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7763" name="Ellipse" x="900" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7764" name="Ellipse" x="940" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7765" name="Ellipse" x="980" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7766" name="Ellipse" x="1020" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7767" name="Ellipse" x="1060" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7768" name="Ellipse" x="1100" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7769" name="Ellipse" x="1140" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7770" name="Ellipse" x="1180" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7771" name="Ellipse" x="1220" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7772" name="Ellipse" x="1260" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7773" name="Ellipse" x="1300" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7774" name="Ellipse" x="1340" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7775" name="Ellipse" x="1380" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7776" name="Ellipse" x="1420" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7777" name="Ellipse" x="1460" y="38" width="2.5" height="2.5" />
+      <ellipse id="1:7779" name="Ellipse" x="40" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7780" name="Ellipse" x="80" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7781" name="Ellipse" x="120" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7782" name="Ellipse" x="160" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7783" name="Ellipse" x="200" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7784" name="Ellipse" x="240" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7785" name="Ellipse" x="280" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7786" name="Ellipse" x="320" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7787" name="Ellipse" x="360" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7788" name="Ellipse" x="400" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7789" name="Ellipse" x="440" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7790" name="Ellipse" x="480" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7791" name="Ellipse" x="520" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7792" name="Ellipse" x="560" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7793" name="Ellipse" x="600" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7794" name="Ellipse" x="640" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7795" name="Ellipse" x="680" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7796" name="Ellipse" x="720" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7797" name="Ellipse" x="760" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7798" name="Ellipse" x="800" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7799" name="Ellipse" x="840" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7800" name="Ellipse" x="880" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7801" name="Ellipse" x="920" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7802" name="Ellipse" x="960" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7803" name="Ellipse" x="1000" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7804" name="Ellipse" x="1040" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7805" name="Ellipse" x="1080" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7806" name="Ellipse" x="1120" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7807" name="Ellipse" x="1160" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7808" name="Ellipse" x="1200" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7809" name="Ellipse" x="1240" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7810" name="Ellipse" x="1280" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7811" name="Ellipse" x="1320" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7812" name="Ellipse" x="1360" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7813" name="Ellipse" x="1400" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7814" name="Ellipse" x="1440" y="76" width="2.5" height="2.5" />
+      <ellipse id="1:7816" name="Ellipse" x="60" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7817" name="Ellipse" x="100" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7818" name="Ellipse" x="140" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7819" name="Ellipse" x="180" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7820" name="Ellipse" x="220" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7821" name="Ellipse" x="260" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7822" name="Ellipse" x="300" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7823" name="Ellipse" x="340" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7824" name="Ellipse" x="380" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7825" name="Ellipse" x="420" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7826" name="Ellipse" x="460" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7827" name="Ellipse" x="500" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7828" name="Ellipse" x="540" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7829" name="Ellipse" x="580" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7830" name="Ellipse" x="620" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7831" name="Ellipse" x="660" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7832" name="Ellipse" x="700" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7833" name="Ellipse" x="740" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7834" name="Ellipse" x="780" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7835" name="Ellipse" x="820" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7836" name="Ellipse" x="860" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7837" name="Ellipse" x="900" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7838" name="Ellipse" x="940" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7839" name="Ellipse" x="980" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7840" name="Ellipse" x="1020" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7841" name="Ellipse" x="1060" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7842" name="Ellipse" x="1100" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7843" name="Ellipse" x="1140" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7844" name="Ellipse" x="1180" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7845" name="Ellipse" x="1220" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7846" name="Ellipse" x="1260" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7847" name="Ellipse" x="1300" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7848" name="Ellipse" x="1340" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7849" name="Ellipse" x="1380" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7850" name="Ellipse" x="1420" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7851" name="Ellipse" x="1460" y="114" width="2.5" height="2.5" />
+      <ellipse id="1:7853" name="Ellipse" x="40" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7854" name="Ellipse" x="80" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7855" name="Ellipse" x="120" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7856" name="Ellipse" x="160" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7857" name="Ellipse" x="200" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7858" name="Ellipse" x="240" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7859" name="Ellipse" x="280" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7860" name="Ellipse" x="320" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7861" name="Ellipse" x="360" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7862" name="Ellipse" x="400" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7863" name="Ellipse" x="440" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7864" name="Ellipse" x="480" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7865" name="Ellipse" x="520" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7866" name="Ellipse" x="560" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7867" name="Ellipse" x="600" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7868" name="Ellipse" x="640" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7869" name="Ellipse" x="680" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7870" name="Ellipse" x="720" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7871" name="Ellipse" x="760" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7872" name="Ellipse" x="800" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7873" name="Ellipse" x="840" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7874" name="Ellipse" x="880" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7875" name="Ellipse" x="920" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7876" name="Ellipse" x="960" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7877" name="Ellipse" x="1000" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7878" name="Ellipse" x="1040" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7879" name="Ellipse" x="1080" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7880" name="Ellipse" x="1120" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7881" name="Ellipse" x="1160" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7882" name="Ellipse" x="1200" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7883" name="Ellipse" x="1240" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7884" name="Ellipse" x="1280" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7885" name="Ellipse" x="1320" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7886" name="Ellipse" x="1360" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7887" name="Ellipse" x="1400" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7888" name="Ellipse" x="1440" y="152" width="2.5" height="2.5" />
+      <ellipse id="1:7890" name="Ellipse" x="60" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7891" name="Ellipse" x="100" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7892" name="Ellipse" x="140" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7893" name="Ellipse" x="180" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7894" name="Ellipse" x="220" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7895" name="Ellipse" x="260" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7896" name="Ellipse" x="300" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7897" name="Ellipse" x="340" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7898" name="Ellipse" x="380" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7899" name="Ellipse" x="420" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7900" name="Ellipse" x="460" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7901" name="Ellipse" x="500" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7902" name="Ellipse" x="540" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7903" name="Ellipse" x="580" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7904" name="Ellipse" x="620" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7905" name="Ellipse" x="660" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7906" name="Ellipse" x="700" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7907" name="Ellipse" x="740" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7908" name="Ellipse" x="780" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7909" name="Ellipse" x="820" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7910" name="Ellipse" x="860" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7911" name="Ellipse" x="900" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7912" name="Ellipse" x="940" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7913" name="Ellipse" x="980" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7914" name="Ellipse" x="1020" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7915" name="Ellipse" x="1060" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7916" name="Ellipse" x="1100" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7917" name="Ellipse" x="1140" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7918" name="Ellipse" x="1180" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7919" name="Ellipse" x="1220" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7920" name="Ellipse" x="1260" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7921" name="Ellipse" x="1300" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7922" name="Ellipse" x="1340" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7923" name="Ellipse" x="1380" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7924" name="Ellipse" x="1420" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7925" name="Ellipse" x="1460" y="190" width="2.5" height="2.5" />
+      <ellipse id="1:7927" name="Ellipse" x="40" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7928" name="Ellipse" x="80" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7929" name="Ellipse" x="120" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7930" name="Ellipse" x="160" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7931" name="Ellipse" x="200" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7932" name="Ellipse" x="240" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7933" name="Ellipse" x="280" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7934" name="Ellipse" x="320" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7935" name="Ellipse" x="360" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7936" name="Ellipse" x="400" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7937" name="Ellipse" x="440" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7938" name="Ellipse" x="480" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7939" name="Ellipse" x="520" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7940" name="Ellipse" x="560" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7941" name="Ellipse" x="600" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7942" name="Ellipse" x="640" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7943" name="Ellipse" x="680" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7944" name="Ellipse" x="720" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7945" name="Ellipse" x="760" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7946" name="Ellipse" x="800" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7947" name="Ellipse" x="840" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7948" name="Ellipse" x="880" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7949" name="Ellipse" x="920" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7950" name="Ellipse" x="960" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7951" name="Ellipse" x="1000" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7952" name="Ellipse" x="1040" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7953" name="Ellipse" x="1080" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7954" name="Ellipse" x="1120" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7955" name="Ellipse" x="1160" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7956" name="Ellipse" x="1200" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7957" name="Ellipse" x="1240" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7958" name="Ellipse" x="1280" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7959" name="Ellipse" x="1320" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7960" name="Ellipse" x="1360" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7961" name="Ellipse" x="1400" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7962" name="Ellipse" x="1440" y="228" width="2.5" height="2.5" />
+      <ellipse id="1:7964" name="Ellipse" x="60" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7965" name="Ellipse" x="100" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7966" name="Ellipse" x="140" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7967" name="Ellipse" x="180" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7968" name="Ellipse" x="220" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7969" name="Ellipse" x="260" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7970" name="Ellipse" x="300" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7971" name="Ellipse" x="340" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7972" name="Ellipse" x="380" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7973" name="Ellipse" x="420" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7974" name="Ellipse" x="460" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7975" name="Ellipse" x="500" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7976" name="Ellipse" x="540" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7977" name="Ellipse" x="580" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7978" name="Ellipse" x="620" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7979" name="Ellipse" x="660" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7980" name="Ellipse" x="700" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7981" name="Ellipse" x="740" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7982" name="Ellipse" x="780" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7983" name="Ellipse" x="820" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7984" name="Ellipse" x="860" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7985" name="Ellipse" x="900" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7986" name="Ellipse" x="940" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7987" name="Ellipse" x="980" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7988" name="Ellipse" x="1020" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7989" name="Ellipse" x="1060" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7990" name="Ellipse" x="1100" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7991" name="Ellipse" x="1140" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7992" name="Ellipse" x="1180" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7993" name="Ellipse" x="1220" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7994" name="Ellipse" x="1260" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7995" name="Ellipse" x="1300" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7996" name="Ellipse" x="1340" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7997" name="Ellipse" x="1380" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7998" name="Ellipse" x="1420" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:7999" name="Ellipse" x="1460" y="266" width="2.5" height="2.5" />
+      <ellipse id="1:8001" name="Ellipse" x="40" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8002" name="Ellipse" x="80" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8003" name="Ellipse" x="120" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8004" name="Ellipse" x="160" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8005" name="Ellipse" x="200" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8006" name="Ellipse" x="240" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8007" name="Ellipse" x="280" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8008" name="Ellipse" x="320" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8009" name="Ellipse" x="360" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8010" name="Ellipse" x="400" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8011" name="Ellipse" x="440" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8012" name="Ellipse" x="480" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8013" name="Ellipse" x="520" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8014" name="Ellipse" x="560" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8015" name="Ellipse" x="600" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8016" name="Ellipse" x="640" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8017" name="Ellipse" x="680" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8018" name="Ellipse" x="720" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8019" name="Ellipse" x="760" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8020" name="Ellipse" x="800" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8021" name="Ellipse" x="840" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8022" name="Ellipse" x="880" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8023" name="Ellipse" x="920" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8024" name="Ellipse" x="960" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8025" name="Ellipse" x="1000" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8026" name="Ellipse" x="1040" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8027" name="Ellipse" x="1080" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8028" name="Ellipse" x="1120" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8029" name="Ellipse" x="1160" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8030" name="Ellipse" x="1200" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8031" name="Ellipse" x="1240" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8032" name="Ellipse" x="1280" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8033" name="Ellipse" x="1320" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8034" name="Ellipse" x="1360" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8035" name="Ellipse" x="1400" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8036" name="Ellipse" x="1440" y="304" width="2.5" height="2.5" />
+      <ellipse id="1:8038" name="Ellipse" x="60" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8039" name="Ellipse" x="100" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8040" name="Ellipse" x="140" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8041" name="Ellipse" x="180" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8042" name="Ellipse" x="220" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8043" name="Ellipse" x="260" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8044" name="Ellipse" x="300" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8045" name="Ellipse" x="340" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8046" name="Ellipse" x="380" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8047" name="Ellipse" x="420" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8048" name="Ellipse" x="460" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8049" name="Ellipse" x="500" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8050" name="Ellipse" x="540" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8051" name="Ellipse" x="580" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8052" name="Ellipse" x="620" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8053" name="Ellipse" x="660" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8054" name="Ellipse" x="700" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8055" name="Ellipse" x="740" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8056" name="Ellipse" x="780" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8057" name="Ellipse" x="820" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8058" name="Ellipse" x="860" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8059" name="Ellipse" x="900" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8060" name="Ellipse" x="940" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8061" name="Ellipse" x="980" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8062" name="Ellipse" x="1020" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8063" name="Ellipse" x="1060" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8064" name="Ellipse" x="1100" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8065" name="Ellipse" x="1140" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8066" name="Ellipse" x="1180" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8067" name="Ellipse" x="1220" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8068" name="Ellipse" x="1260" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8069" name="Ellipse" x="1300" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8070" name="Ellipse" x="1340" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8071" name="Ellipse" x="1380" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8072" name="Ellipse" x="1420" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8073" name="Ellipse" x="1460" y="342" width="2.5" height="2.5" />
+      <ellipse id="1:8075" name="Ellipse" x="40" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8076" name="Ellipse" x="80" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8077" name="Ellipse" x="120" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8078" name="Ellipse" x="160" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8079" name="Ellipse" x="200" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8080" name="Ellipse" x="240" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8081" name="Ellipse" x="280" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8082" name="Ellipse" x="320" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8083" name="Ellipse" x="360" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8084" name="Ellipse" x="400" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8085" name="Ellipse" x="440" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8086" name="Ellipse" x="480" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8087" name="Ellipse" x="520" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8088" name="Ellipse" x="560" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8089" name="Ellipse" x="600" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8090" name="Ellipse" x="640" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8091" name="Ellipse" x="680" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8092" name="Ellipse" x="720" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8093" name="Ellipse" x="760" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8094" name="Ellipse" x="800" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8095" name="Ellipse" x="840" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8096" name="Ellipse" x="880" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8097" name="Ellipse" x="920" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8098" name="Ellipse" x="960" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8099" name="Ellipse" x="1000" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8100" name="Ellipse" x="1040" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8101" name="Ellipse" x="1080" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8102" name="Ellipse" x="1120" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8103" name="Ellipse" x="1160" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8104" name="Ellipse" x="1200" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8105" name="Ellipse" x="1240" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8106" name="Ellipse" x="1280" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8107" name="Ellipse" x="1320" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8108" name="Ellipse" x="1360" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8109" name="Ellipse" x="1400" y="380" width="2.5" height="2.5" />
+      <ellipse id="1:8110" name="Ellipse" x="1440" y="380" width="2.5" height="2.5" />
+      <rounded-rectangle id="1:8111" name="Rectangle" x="0" y="0" width="1440" height="5" />
+      <rounded-rectangle id="1:8112" name="1 3" x="65" y="-46" width="211" height="211" />
+      <text id="1:8113" name="Strategic finance for the Gulf&#39;s operators." x="80" y="106" width="260" height="52" />
+      <text id="1:8114" name="الحدود تُدفع، النجاح يُقاس" x="80" y="170" width="144" height="17" />
+      <text id="1:8115" name="SERVICES" x="380" y="40" width="69" height="12" />
+      <rounded-rectangle id="1:8116" name="Rectangle" x="380" y="58" width="32" height="2" />
+      <text id="1:8117" name="Bookkeeping &amp; Accounting" x="380" y="72" width="179" height="16" />
+      <text id="1:8118" name="Management Reporting" x="380" y="102" width="159" height="16" />
+      <text id="1:8119" name="Cash Flow &amp; Forecasting" x="380" y="132" width="159" height="16" />
+      <text id="1:8120" name="FP&amp;A / Business Finance" x="380" y="162" width="160" height="16" />
+      <text id="1:8121" name="Tax &amp; VAT Compliance" x="380" y="192" width="144" height="16" />
+      <text id="1:8122" name="COMPANY" x="640" y="40" width="70" height="12" />
+      <rounded-rectangle id="1:8123" name="Rectangle" x="640" y="58" width="32" height="2" />
+      <text id="1:8124" name="About Us" x="640" y="72" width="61" height="16" />
+      <text id="1:8125" name="How We Work" x="640" y="102" width="94" height="16" />
+      <text id="1:8126" name="Industries" x="640" y="132" width="65" height="16" />
+      <text id="1:8127" name="Insights" x="640" y="162" width="52" height="16" />
+      <text id="1:8128" name="Contact" x="640" y="192" width="52" height="16" />
+      <text id="1:8129" name="CONTACT" x="900" y="40" width="66" height="12" />
+      <rounded-rectangle id="1:8130" name="Rectangle" x="900" y="58" width="32" height="2" />
+      <text id="1:8131" name="info@frontierquotient.com" x="900" y="72" width="175" height="16" />
+      <text id="1:8132" name="UAE · KSA · Qatar · Bahrain" x="900" y="102" width="173" height="16" />
+      <text id="1:8133" name="Mon – Fri, 9am – 6pm" x="900" y="132" width="139" height="16" />
+      <text id="1:8134" name="FOLLOW" x="1160" y="40" width="60" height="12" />
+      <rounded-rectangle id="1:8135" name="Rectangle" x="1160" y="58" width="32" height="2" />
+      <text id="1:8136" name="LinkedIn ↗" x="1160" y="72" width="71" height="16" />
+      <text id="1:8137" name="Twitter / X ↗" x="1160" y="102" width="82" height="16" />
+      <text id="1:8138" name="Instagram ↗" x="1160" y="132" width="81" height="16" />
+      <rounded-rectangle id="1:8139" name="Rectangle" x="80" y="342" width="1280" height="1" />
+      <text id="1:8140" name="© 2026 Frontier Quotient. All rights reserved." x="80" y="356" width="245" height="13" />
+      <text id="1:8141" name="Privacy Policy · Terms of Service" x="1160" y="356" width="179" height="13" />
+      <text id="1:8142" name="Cleanup &amp; Catch-Up Accounting" x="380" y="222" width="212" height="16" />
+    </frame>
+  </frame>
+</frame>
+
+---ENTRY---
+
+IMPORTANT: The design was too large to fit into context with get_design_context. Instead you have received a sparse metadata response, you MUST call get_design_context on the IDs of the sublayers to get the full code. Split up the calls to ensure the sublayers do not also exceed the context limit.

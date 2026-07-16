@@ -30,12 +30,12 @@ body {
 /* 
   Fix for laptops (e.g. 14-inch 1280px viewports):
   Scale the entire 1440px fixed layout proportionally using zoom.
-  This allows the layout to look EXACTLY like a 1920x1080 display,
-  just zoomed out to fit the screen without overlapping/breaking.
+  Subtracting 17px accounts for the Windows vertical scrollbar so
+  the zoomed layout doesn't overflow the physical client width.
 */
 @media (min-width: 901px) and (max-width: 1439px) {
   html {
-    zoom: calc(100vw / 1440);
+    zoom: calc((100vw - 17px) / 1440);
   }
   
   body {

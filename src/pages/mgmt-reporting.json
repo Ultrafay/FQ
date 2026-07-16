@@ -1,0 +1,13 @@
+{
+  "title": "Management Reporting | Frontier Quotient",
+  "description": "Monthly reporting that turns financial data into clear, actionable insights. Dashboards, KPIs, and performance visibility for leadership.",
+  "sections": [
+    "services/mgmt-reporting/01-hero.html",
+    "services/mgmt-reporting/02-body.html",
+    "services/mgmt-reporting/03-cta.html"
+  ],
+  "css": [
+    "svc-detail.css"
+  ],
+  "outputFile": "mgmt-reporting.html"
+}

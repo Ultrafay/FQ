@@ -1,0 +1,541 @@
+/* ===================================================================
+   Service Detail Page — shared CSS
+   Used by all 6 individual service pages. Color theming via
+   --green / --navy / --red modifiers matching the services grid cards.
+   =================================================================== */
+
+/* ---- HERO ---- */
+.svc-detail-hero {
+  position: relative;
+  height: 460px;
+  background: var(--color-black);
+  overflow: hidden;
+}
+
+.svc-detail-hero__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* Decorative grid lines — right half, matching HWW hero pattern */
+.svc-detail-hero__grid {
+  position: absolute;
+  left: 720px;
+  top: 0;
+  width: 720px;
+  height: 460px;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(to right, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px),
+    repeating-linear-gradient(to bottom, var(--color-border-soft) 0, var(--color-border-soft) 1px, transparent 1px, transparent 96px);
+  background-position: 0 0, 0 76px;
+  opacity: 0.35;
+}
+
+/* Decorative concentric rings */
+.svc-detail-hero__ring {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.svc-detail-hero__ring--1 {
+  left: 1010px;
+  top: 50px;
+  width: 360px;
+  height: 360px;
+}
+
+.svc-detail-hero__ring--2 {
+  left: 1065px;
+  top: 105px;
+  width: 250px;
+  height: 250px;
+}
+
+.svc-detail-hero__ring--3 {
+  left: 1120px;
+  top: 160px;
+  width: 140px;
+  height: 140px;
+}
+
+/* Ring colors per accent group */
+.svc-detail-hero--green .svc-detail-hero__ring--1 { border-color: rgba(43, 107, 37, 0.4); }
+.svc-detail-hero--green .svc-detail-hero__ring--2 { border-color: rgba(139, 10, 50, 0.3); }
+.svc-detail-hero--green .svc-detail-hero__ring--3 { border-color: rgba(2, 12, 69, 0.45); }
+
+.svc-detail-hero--navy .svc-detail-hero__ring--1 { border-color: rgba(2, 12, 69, 0.4); }
+.svc-detail-hero--navy .svc-detail-hero__ring--2 { border-color: rgba(43, 107, 37, 0.35); }
+.svc-detail-hero--navy .svc-detail-hero__ring--3 { border-color: rgba(139, 10, 50, 0.3); }
+
+.svc-detail-hero--red .svc-detail-hero__ring--1 { border-color: rgba(139, 10, 50, 0.35); }
+.svc-detail-hero--red .svc-detail-hero__ring--2 { border-color: rgba(2, 12, 69, 0.3); }
+.svc-detail-hero--red .svc-detail-hero__ring--3 { border-color: rgba(43, 107, 37, 0.4); }
+
+/* Center dot */
+.svc-detail-hero__dot {
+  position: absolute;
+  left: 1180px;
+  top: 220px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.svc-detail-hero--green .svc-detail-hero__dot { background: var(--color-green); }
+.svc-detail-hero--navy .svc-detail-hero__dot { background: var(--color-navy); }
+.svc-detail-hero--red .svc-detail-hero__dot { background: var(--color-brand-red); }
+
+/* Icon badge — same as services grid icon, reused with identical sub-classes */
+.svc-detail-hero__icon {
+  position: absolute;
+  left: 80px;
+  top: 56px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.svc-detail-hero--green .svc-detail-hero__icon { background: var(--color-green); }
+.svc-detail-hero--navy .svc-detail-hero__icon { background: var(--color-navy); }
+.svc-detail-hero--red .svc-detail-hero__icon { background: var(--color-brand-red); }
+
+/* Icon glyph internals — same CSS as services-grid.css icon glyphs.
+   Duplicated here because the services-grid CSS is only loaded on the
+   services listing page, not on these individual detail pages. */
+.svc-detail-hero__icon--fpa { position: relative; }
+.svc-detail-hero__icon--fpa .fpa-head {
+  position: absolute; left: 24px; top: 12px; width: 12px; height: 12px;
+  border-radius: 50%; background: #fff;
+}
+.svc-detail-hero__icon--fpa .fpa-body {
+  position: absolute; left: 17px; top: 26px; width: 26px; height: 22px;
+  border-radius: 50%; background: #fff;
+}
+.svc-detail-hero__icon--fpa .fpa-mask {
+  position: absolute; left: 17px; top: 31px; width: 26px; height: 11px;
+  background: var(--color-green);
+}
+
+.svc-detail-hero__icon--mgmt .bar {
+  position: absolute; width: 5px; border-radius: 1px; background: #fff;
+}
+.svc-detail-hero__icon--mgmt .bar--1 { left: 17px; top: 32px; height: 10px; }
+.svc-detail-hero__icon--mgmt .bar--2 { left: 25px; top: 25px; height: 17px; }
+.svc-detail-hero__icon--mgmt .bar--3 { left: 33px; top: 19px; height: 23px; }
+
+.svc-detail-hero__icon--cashflow .cf-line {
+  position: absolute; left: 16px; top: 23px; width: 24px; height: 17px;
+}
+.svc-detail-hero__icon--cashflow .cf-dot {
+  position: absolute; left: 37px; top: 20px; width: 6px; height: 6px;
+}
+
+.svc-detail-hero__icon--bookkeeping .doc-outline {
+  position: absolute; left: 21px; top: 17px; width: 18px; height: 26px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+}
+.svc-detail-hero__icon--bookkeeping .doc-line {
+  position: absolute; height: 2px; border-radius: 1px; background: #fff;
+}
+.svc-detail-hero__icon--bookkeeping .doc-line--1 { left: 25px; top: 22px; width: 11px; }
+.svc-detail-hero__icon--bookkeeping .doc-line--2 { left: 25px; top: 27px; width: 11px; }
+.svc-detail-hero__icon--bookkeeping .doc-line--3 { left: 25px; top: 32px; width: 8px; }
+
+.svc-detail-hero__icon--tax .tax-shield {
+  position: absolute; left: 19px; top: 17px; width: 22px; height: 25px;
+}
+.svc-detail-hero__icon--tax .tax-check {
+  position: absolute; left: 24px; top: 26px; width: 11px; height: 8px;
+}
+
+.svc-detail-hero__icon--cleanup .paper-back {
+  position: absolute; left: 21px; top: 17px; width: 18px; height: 22px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+}
+.svc-detail-hero__icon--cleanup .paper-front {
+  position: absolute; left: 17px; top: 22px; width: 18px; height: 22px;
+  border: 2.2px solid #fff; border-radius: 2px; box-sizing: border-box;
+  background: var(--color-brand-red);
+}
+.svc-detail-hero__icon--cleanup .doc-line {
+  position: absolute; height: 2px; border-radius: 1px; background: #fff;
+}
+.svc-detail-hero__icon--cleanup .doc-line--1 { left: 21px; top: 28px; width: 10px; }
+.svc-detail-hero__icon--cleanup .doc-line--2 { left: 21px; top: 33px; width: 10px; }
+
+.svc-detail-hero__eyebrow {
+  position: absolute;
+  left: 80px;
+  top: 140px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-white);
+  white-space: nowrap;
+}
+
+.svc-detail-hero__heading {
+  position: absolute;
+  left: 80px;
+  top: 176px;
+  width: 690px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 60px;
+  color: var(--color-white);
+}
+
+.svc-detail-hero__rule {
+  position: absolute;
+  left: 80px;
+  top: 320px;
+  width: 64px;
+  height: 5px;
+}
+
+.svc-detail-hero--green .svc-detail-hero__rule { background: var(--color-green); }
+.svc-detail-hero--navy .svc-detail-hero__rule { background: var(--color-navy); }
+.svc-detail-hero--red .svc-detail-hero__rule { background: var(--color-brand-red); }
+
+.svc-detail-hero__body {
+  position: absolute;
+  left: 80px;
+  top: 348px;
+  width: 560px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .svc-detail-hero {
+    height: auto;
+  }
+
+  .svc-detail-hero__inner {
+    padding: 48px 24px 40px;
+  }
+
+  .svc-detail-hero__grid,
+  .svc-detail-hero__ring--1,
+  .svc-detail-hero__ring--2,
+  .svc-detail-hero__ring--3,
+  .svc-detail-hero__dot {
+    display: none;
+  }
+
+  .svc-detail-hero__icon {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 20px;
+  }
+
+  .svc-detail-hero__eyebrow,
+  .svc-detail-hero__heading,
+  .svc-detail-hero__rule,
+  .svc-detail-hero__body {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .svc-detail-hero__heading {
+    margin-top: 12px;
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .svc-detail-hero__rule {
+    margin-top: 20px;
+  }
+
+  .svc-detail-hero__body {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .svc-detail-hero__heading {
+    font-size: 28px;
+  }
+}
+
+/* ---- BODY ---- */
+.svc-detail-content {
+  position: relative;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.svc-detail-content__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  padding: 72px 80px 80px;
+  display: flex;
+  gap: 60px;
+}
+
+.svc-detail-content__left {
+  flex: 0 0 400px;
+}
+
+.svc-detail-content__eyebrow {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--color-brand-red);
+  white-space: nowrap;
+}
+
+.svc-detail-content__heading {
+  margin-top: 12px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--color-navy);
+}
+
+.svc-detail-content__rule {
+  margin-top: 24px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.svc-detail-content__divider {
+  flex: 0 0 2px;
+  background: var(--color-green);
+  align-self: stretch;
+}
+
+.svc-detail-content__right {
+  flex: 1;
+  min-width: 0;
+}
+
+.svc-detail-content__body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--color-text-body);
+}
+
+.svc-detail-content__body p {
+  margin-bottom: 24px;
+}
+
+.svc-detail-content__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* "What you get" sub-section */
+.svc-detail-includes {
+  position: relative;
+  background: var(--color-cream);
+  overflow: hidden;
+}
+
+.svc-detail-includes__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  padding: 64px 80px 72px;
+}
+
+.svc-detail-includes__heading {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 28px;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.svc-detail-includes__rule {
+  width: 48px;
+  height: 4px;
+  background: var(--color-green);
+  margin-bottom: 32px;
+}
+
+.svc-detail-includes__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 48px;
+  list-style: none;
+}
+
+.svc-detail-includes__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-text-body);
+}
+
+/* Green checkmark bullet */
+.svc-detail-includes__item::before {
+  content: '✓';
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-green);
+  background: #e9f0e7;
+}
+
+@media (max-width: 900px) {
+  .svc-detail-content__inner {
+    padding: 40px 24px;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .svc-detail-content__left {
+    flex: none;
+    width: 100%;
+  }
+
+  .svc-detail-content__divider {
+    flex: none;
+    width: 100%;
+    height: 2px;
+    margin: 28px 0;
+  }
+
+  .svc-detail-content__right {
+    flex: none;
+    width: 100%;
+  }
+
+  .svc-detail-content__heading {
+    white-space: normal;
+  }
+
+  .svc-detail-includes__inner {
+    padding: 40px 24px;
+  }
+
+  .svc-detail-includes__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- CTA ---- */
+.svc-detail-cta {
+  position: relative;
+  background: var(--color-brand-red);
+  overflow: hidden;
+}
+
+.svc-detail-cta__inner {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  position: relative;
+  height: 300px;
+}
+
+.svc-detail-cta__heading {
+  position: absolute;
+  left: 80px;
+  top: 73px;
+  width: 760px;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 42px;
+  color: var(--color-white);
+}
+
+.svc-detail-cta__rule {
+  position: absolute;
+  left: 80px;
+  top: 186px;
+  width: 56px;
+  height: 5px;
+  background: var(--color-green);
+}
+
+.svc-detail-cta__subtext {
+  position: absolute;
+  left: 80px;
+  top: 206px;
+  width: 620px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-pink-light);
+}
+
+.svc-detail-cta__button {
+  position: absolute;
+  left: 1120px;
+  top: 120px;
+  width: 240px;
+  height: 56px;
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-brand-red);
+}
+
+.svc-detail-cta__button:hover {
+  background: var(--color-pink-light);
+}
+
+@media (max-width: 900px) {
+  .svc-detail-cta__inner {
+    height: auto;
+    padding: 48px 24px;
+  }
+
+  .svc-detail-cta__heading,
+  .svc-detail-cta__rule,
+  .svc-detail-cta__subtext,
+  .svc-detail-cta__button {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+  }
+
+  .svc-detail-cta__heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .svc-detail-cta__rule {
+    margin-top: 24px;
+    width: 56px;
+  }
+
+  .svc-detail-cta__subtext {
+    margin-top: 16px;
+  }
+
+  .svc-detail-cta__button {
+    display: inline-flex;
+    width: auto;
+    margin-top: 24px;
+  }
+}

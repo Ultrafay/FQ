@@ -1,0 +1,13 @@
+{
+  "title": "Cleanup & Catch-Up Accounting | Frontier Quotient",
+  "description": "Resolve accounting backlogs and make your financial records reliable again. Historical cleanup, reconciliation, and reporting fixes.",
+  "sections": [
+    "services/cleanup/01-hero.html",
+    "services/cleanup/02-body.html",
+    "services/cleanup/03-cta.html"
+  ],
+  "css": [
+    "svc-detail.css"
+  ],
+  "outputFile": "cleanup.html"
+}

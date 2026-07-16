@@ -1,0 +1,13 @@
+{
+  "title": "Tax & VAT Compliance | Frontier Quotient",
+  "description": "Stay compliant with local VAT and tax regulations. Accurate filings, regulatory monitoring, and the confidence to focus on growth.",
+  "sections": [
+    "services/tax-vat/01-hero.html",
+    "services/tax-vat/02-body.html",
+    "services/tax-vat/03-cta.html"
+  ],
+  "css": [
+    "svc-detail.css"
+  ],
+  "outputFile": "tax-vat.html"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Cash Flow & Forecasting | Frontier Quotient",
+  "description": "Better planning and financial visibility. Rolling cash flow forecasts, scenario planning, and working capital optimization.",
+  "sections": [
+    "services/cashflow/01-hero.html",
+    "services/cashflow/02-body.html",
+    "services/cashflow/03-cta.html"
+  ],
+  "css": [
+    "svc-detail.css"
+  ],
+  "outputFile": "cashflow.html"
+}

@@ -77,11 +77,11 @@
 }
 
 .founders__portrait--mudassir {
-  border: 2px solid var(--color-brand-green);
+  border: 2px solid var(--color-green);
 }
 
 .founders__portrait--muzammil {
-  border: 2px solid var(--color-brand-green);
+  border: 2px solid var(--color-brand-red);
 }
 
 .founders__portrait img {

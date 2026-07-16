@@ -24,7 +24,25 @@ body {
      reach it); `auto` at least lets it scroll into view. This doesn't make
      the design fluid in that range, just reachable — a real responsive
      pass for 900-1440px is a separate, larger undertaking. */
-  overflow-x: auto;
+  overflow-x: hidden;
+}
+
+/* 
+  Fix for laptops (e.g. 14-inch 1280px viewports):
+  Scale the entire 1440px fixed layout proportionally using zoom.
+  This allows the layout to look EXACTLY like a 1920x1080 display,
+  just zoomed out to fit the screen without overlapping/breaking.
+*/
+@media (min-width: 901px) and (max-width: 1439px) {
+  html {
+    zoom: calc(100vw / 1440);
+  }
+  
+  body {
+    /* Prevent the body from shrinking below 1440px under zoom */
+    min-width: 1440px;
+    overflow-x: hidden;
+  }
 }
 
 img {

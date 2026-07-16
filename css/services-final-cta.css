@@ -33,9 +33,10 @@
 
 .services-final-cta__heading {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   top: 92px;
-  transform: translateX(-50%);
   width: 960px;
   text-align: center;
   font-family: var(--font-primary);
@@ -43,14 +44,14 @@
   font-size: 32px;
   line-height: 44px;
   color: var(--color-white);
-  margin: 0;
 }
 
 .services-final-cta__body {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   top: 150px;
-  transform: translateX(-50%);
   width: 640px;
   text-align: center;
   font-family: var(--font-primary);
@@ -59,7 +60,6 @@
   line-height: 24px;
   color: var(--color-white);
   opacity: 0.88;
-  margin: 0;
 }
 
 .services-final-cta__btn {
